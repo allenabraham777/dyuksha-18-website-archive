@@ -15,7 +15,7 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/custom.js"></script>
-
+    <script src="js/particles.min.js"></script>
     <script>
        $(document).ready(function(){
 	
@@ -291,6 +291,18 @@ a {
    text-shadow: none;
 }
 
+.white {
+   background-color:white;
+   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.white:hover {
+   color:white;
+   text-shadow: none;
+}
+
+
 .purple {
    background-color: #C49CDE;
    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
@@ -347,7 +359,7 @@ a {
     <div class="loader-image">
 </div>
     <div class="cover"  align="center">
-      <div class="bg-image">
+      <div class="bg-image" id="cover" >
           <div class="bg-overlay"></div>   
       </div>
       
@@ -359,16 +371,17 @@ a {
           <label class="menu-open-button" style="opacity: 1; background-image: url('images/logoxxx.jpg'); background-position: center; background-repeat:no-repeat; background-size:70% 70%;" for="menu-open" >
             <img style="opacity: 0; padding-bottom:8px; padding-left: 4px;  " src="images/logoxx.jpg" width="50px"></img>
          </label>
-          <a href="#" class="menu-item blue"> <i class="fa fa-anchor"></i> </a>
-          <a href="#" class="menu-item green"> <i class="fa fa-coffee"></i> </a>
-          <a href="#" class="menu-item red"> <i class="fa fa-heart"></i> </a>
-          <a href="#" class="menu-item purple"> <i class="fa fa-microphone"></i> </a>
-          <a href="#" class="menu-item orange"> <i class="fa fa-star"></i> </a>
-          <a href="#" class="menu-item lightblue"> <i class="fa fa-diamond"></i> </a>
+          <a onclick="scroll_to_div('events')" class="menu-item white"> <img src="images/events.png" width="48px" style="border-radius: 100%; background-color:white;" ></img> </a>
+          <a href="#" class="menu-item blue"> <i class="fa fa-home"></i> </a>
+          <a href="#" class="menu-item white"><img src="images/workshop.png" width="48px" style="border-radius: 100%; background-color:white;" > </a>
+          <a href="#" class="menu-item orange"> <i class="fa fa-info-circle"></i> </a>
+          <a href="#" class="menu-item white"> <img src="images/informals.png" width="48px" style="border-radius: 100%; background-color:white;" > </a>
+          <a onclick="scroll_to_div('contact')" class="menu-item purple"> <i class="fa fa-phone"></i> </a>
        </nav>  
       </div>
       <div id="drop-arrow" class="drop-arrow" onclick="scroll_to_div('exe')"/>
       </div>
+      <script src="js/particle_exe.js"></script>
     </div>
 
    

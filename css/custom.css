@@ -161,7 +161,7 @@ h4{
     opacity: 0.8;
     width: 380px;
     transform: skewX(-15deg); 
-    background-color: white;
+    background-color:white;
 }
 
 .my_white_box{
@@ -271,7 +271,7 @@ h4{
     }
 }
 
-@media screen and (max-width:600px) and (min-width:421px){
+@media screen and (max-width:600px) and (min-width:563px){
  .my_white_box{
     padding: 10%;
     font-size: 16px;
@@ -296,7 +296,7 @@ h4{
 
 }
 
-@media screen and (max-width:420px){
+@media screen and (max-width:562px){
 
     .box{
         display: inline-block;
@@ -316,7 +316,7 @@ h4{
         left:0;
         right:0;
         bottom: 0;
-        opacity: 0.6;
+        opacity: 0.0;
         width: 100%;
         transform: skewX(0deg); 
         background-color: white;
