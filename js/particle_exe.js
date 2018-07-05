@@ -6,17 +6,17 @@ particlesJS("cover", {
       "value": 200
     },
     "color": {
-      "value": "#f1f1f1"
+      "value": "#fff"
     },
     "shape": {
      "type": "circle",
     },
     "size": {
-      "value": 10,
+      "value": 2,
       "random": true
     },
     "line_linked": {
-      "enable": false
+      "enable": true
     },
     "move": {
       "enable": true,
