@@ -6,6 +6,7 @@
     <title>Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/create.css" />
+    <link rel="shortcut icon" type="image/png" media="screen" href="images/logo.png" />
     <script src="js/create.js"></script>
 </head>
 <body>
