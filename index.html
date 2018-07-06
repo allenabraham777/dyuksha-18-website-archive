@@ -18,8 +18,28 @@
     <script src="js/particles.min.js"></script>
     <script>
        $(document).ready(function(){
-	
-    });
+        
+        var bgCounter = 0,
+        backgrounds = [
+           "images/main.jpg",
+           "images/back1.jpg",
+           "images/back2.jpg",
+           "images/back3.jpg"
+        ];
+
+        function changeBackground()
+        {
+         bgCounter = (bgCounter+1) % backgrounds.length;
+         
+         $('.bg-image').css('background', '#000 url('+backgrounds[bgCounter]+') no-repeat');
+         $('.bg-image').css('background-size', 'cover');
+         $('.bg-image').css('background-position', 'center');
+         $('.bg-image').fadeIn();
+         setTimeout(changeBackground,5000);
+        }
+
+      //  changeBackground();
+      });
    
    
     function scroll_to_div(div_id){
@@ -504,10 +524,10 @@ a {
         
         <div class="footer bg-dark" align="center">
               <div>
-                  <a href=""><img src="images/fb.png" width="42px"></img></a>
-                  <a href=""><img src="images/in.png" width="42px"></img></a>
-                  <a href=""><img src="images/yt.png" width="42px"></img></a>
-                  <a href=""><img src="images/tw.png" width="42px"></img></a>
+                  <a href=""><img src="images/fb.png" width="36px"></img></a>
+                  <a href=""><img src="images/in.png" width="36px"></img></a>
+                  <a href=""><img src="images/yt.png" width="36px"></img></a>
+                  <a href=""><img src="images/tw.png" width="36px"></img></a>
               </div>
               <p>Developed By SnatchDreams &#0169 2018</p>
         </div>

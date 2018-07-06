@@ -12,16 +12,16 @@ particlesJS("cover", {
      "type": "circle",
     },
     "size": {
-      "value": 2,
+      "value": 5,
       "random": true
     },
     "line_linked": {
-      "enable": true
+      "enable": false
     },
     "move": {
       "enable": true,
       "speed": 2,
-      "direction": "bottom",
+      "direction": "top",
       "straight": false
     }
   },
