@@ -46,7 +46,7 @@
      ?>   
     <div class="login-box" align="center">
             <form action="login.php" method="post" algin="center" class="create-form">
-            <img src="images/logo.png" class="register-img" width="64px"/> 
+            <img src="images/logo.png" class="login-image" width="58px"/>
                 <input type="email" class="inputbox" name="email" placeholder="Email Id" required/><br/>
                 <input type="password" class="inputbox" name="password" placeholder="Password" required/><br/>
                 <input type="submit" class="button-tomato" value="Login" /></br>

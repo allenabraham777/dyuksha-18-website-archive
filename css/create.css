@@ -144,11 +144,11 @@ label{
 
   .login-image{
     background-color: teal;
-    border: 2px solid black;
-    box-shadow: 0px 0px 1px 1px black;
+    border: 2px solid rgb(104, 40, 223);
+    box-shadow: 0px 0px 1px 1px rgb(38, 230, 102);
     border-radius: 65px;
     margin-bottom:10px;
-    margin-top:0px;
+    margin-top:-55px;
     height: 65px;
     width: 65px;
   }
