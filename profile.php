@@ -22,6 +22,11 @@
     <script src="main.js"></script>
 </head>
 <body>
+<?php
+   $code=md5($user->email);
+   echo "<img src='https://api.qrserver.com/v1/create-qr-code/?size=150x150&data={$code}'></img>";
+ ?>
+    
     <a href="logout.php" >Logout</a>
 </body>
 </html>

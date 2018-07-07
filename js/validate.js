@@ -27,7 +27,8 @@ $(document).ready(function(){
               minlength: 5
             },
             passwordconfirm:{
-                equalTo: password
+              required:true,
+              equalTo: password
             }
           },
           // Error Messages
@@ -46,6 +47,7 @@ $(document).ready(function(){
               minlength: "<div class='field_errors'><p><i class='fa fa-times'></i>At Least 5 Characters Required</p></div>"
             },
             passwordconfirm:{
+              required: "<div class='field_errors'><p><i class='fa fa-times'></i>This Field is Required</p></div>",
                 equalTo:"<div class='field_errors'><p><i class='fa fa-times'></i>Passwords Doesnt Match</p></div>"
             },
         

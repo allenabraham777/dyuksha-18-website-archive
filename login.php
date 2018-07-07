@@ -2,7 +2,7 @@
  session_start();
  //session_destroy();
  if(isset($_SESSION["user"])){
-     //header("Location:profile.php");
+     header("Location:profile.php");
      exit();
  }
  if(isset($_POST["email"]) && isset($_POST["password"])){
