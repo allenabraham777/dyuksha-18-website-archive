@@ -1,3 +1,30 @@
+<?php
+ session_start();
+ //session_destroy();
+ if(isset($_SESSION["user"])){
+     //header("Location:profile.php");
+     exit();
+ }
+ if(isset($_POST["email"]) && isset($_POST["password"])){
+    include_once("connect.php");
+    include_once("lib/UserClass.php");
+    $email=mysqli_real_escape_string($con,$_POST["email"]);
+    $password=md5(mysqli_real_escape_string($con,$_POST["password"]));
+    $query="SELECT * FROM dusers WHERE email='$email' AND password='$password'";
+    
+    $res=mysqli_query($con,$query);
+    if(mysqli_num_rows($res) > 0){
+        $row=mysqli_fetch_array($res);
+        $name=$row[0];
+        $phone=$row[2];
+        $userObj = new UserClass($name,$email,$phone);
+        var_dump($userObj);      
+        $_SESSION['user']=serialize($userObj);
+        header("Location:profile.php");
+        exit();
+    }
+ }
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,16 +37,23 @@
     <script src="js/create.js"></script>
 </head>
 <body>
-    <div class="bg-create-page">
-         <div class="login-box" align="center">
-            <img src="images/logo.png" class="login-image"/> 
-            <form action="" method="post" algin="center" class="create-form">
+    <div class="bg-create-page" align="center">
+     <?php
+     if(isset($_POST["email"]) && isset($_POST["password"]))
+     {
+         echo "<div class='error_msg'> Invalid Username or Password </div>";
+     }
+     ?>   
+    <div class="login-box" align="center">
+            <form action="login.php" method="post" algin="center" class="create-form">
+            <img src="images/logo.png" class="register-img" width="64px"/> 
                 <input type="email" class="inputbox" name="email" placeholder="Email Id" required/><br/>
                 <input type="password" class="inputbox" name="password" placeholder="Password" required/><br/>
                 <input type="submit" class="button-tomato" value="Login" /></br>
-                <a href="/reset" class="">Forgot Password ?</a>
-            </form>
-         </div>
+                <a href="/reset" class="">Forgot Password</a>
+                <a href="create.php" class="">Create an Account</a>
+            </form>          
+    </div>
     </div>
 </body>
 </html>

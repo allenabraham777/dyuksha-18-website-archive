@@ -33,23 +33,23 @@ $(document).ready(function(){
           // Error Messages
           messages: {
             name: {
-                required:"Please enter your Name",
-                lettersonly: "Name must contain only alphabets"
+                required:"<div class='field_errors'><p><i class='fa fa-times'></i>Please enter your Name</p></div>",
+                lettersonly: "<div class='field_errors'><p><i class='fa fa-times'></i>Should Contain Only Aphabets</p></div>"
             },
             phone: {
-                required:"Please enter your Phone Number",
-                number:"Not a Valid Phone Number",
-                minlength:"Not a Valid Phone Number"
+                required:"<div class='field_errors'><p><i class='fa fa-times'></i>Please enter your Phone Number</p></div>",
+                number:"<div class='field_errors'><p><i class='fa fa-times'></i>Not a valid Phone Number</p></div>",
+                minlength:"<div class='field_errors'><p><i class='fa fa-times'></i>Not a valid Phone Number</p></div>"
             },
             password: {
-              required: "Please provide a password",
-              minlength: "At least 5 characters long"
+              required: "<div class='field_errors'><p><i class='fa fa-times'></i>This Field is Required</p></div>",
+              minlength: "<div class='field_errors'><p><i class='fa fa-times'></i>At Least 5 Characters Required</p></div>"
             },
             passwordconfirm:{
-                equalTo:"Passwords Dont Match"
+                equalTo:"<div class='field_errors'><p><i class='fa fa-times'></i>Passwords Doesnt Match</p></div>"
             },
         
-            email: "<b>Please enter a valid email address</b>"
+            email: "<div class='field_errors'><p><i class='fa fa-times'></i>Not a valid Email Id</p></div>"
             
           },
         
