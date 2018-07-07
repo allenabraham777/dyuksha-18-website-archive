@@ -20,27 +20,27 @@
                 
                 <div class="custom-input">
                         <input type="text" class="inputbox" name="name" id="field1" placeholder="Full Name" required/><br/>
-                        <img src="icons/user.png" width="25px" />
+                        <img src="icons/user.png" width="20px" />
                 </div>
 
                 <div class="custom-input">
                         <input type="email" class="inputbox" name="email" id="field2" placeholder="Email Id" required/><br/>
-                        <img src="icons/mail.png" width="25px" />
+                        <img src="icons/mail.png" width="20px" />
                 </div>
 
                 <div class="custom-input">
                         <input type="text" class="inputbox" name="phone" id="field3" placeholder="Phone Number" required/><br/>
-                        <img src="icons/phone.png" width="25px" />
+                        <img src="icons/phone.png" width="20px" />
                 </div>
                 
                 <div class="custom-input">
                         <input type="password" class="inputbox" id="password" name="password" placeholder="New Password" required/><br/>
-                        <img src="icons/password.png" width="25px" />
+                        <img src="icons/password.png" width="20px" />
                 </div>
                
                 <div class="custom-input">
                         <input type="password" class="inputbox" id="password-confirm" name="passwordconfirm" placeholder="Re-Enter Password" required/><br/>
-                        <img src="icons/password.png" width="25px" />
+                        <img src="icons/password.png" width="20px" />
                 </div>
                 <input type="submit" class="button-yellow" value="Create Account" onclick="checkPasswordField();"/>
             </form>
