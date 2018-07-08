@@ -17,11 +17,14 @@
         $row=mysqli_fetch_array($res);
         $name=$row[0];
         $phone=$row[2];
-        $userObj = new UserClass($name,$email,$phone);
-        var_dump($userObj);      
-        $_SESSION['user']=serialize($userObj);
-        header("Location:profile.php");
-        exit();
+        $active=$row[4];
+        if(strcmp($active,"YES")==0){
+            $userObj = new UserClass($name,$email,$phone);
+            var_dump($userObj);      
+            $_SESSION['user']=serialize($userObj);
+            header("Location:profile.php");
+            exit();
+        }
     }
  }
 ?>
@@ -41,7 +44,29 @@
      <?php
      if(isset($_POST["email"]) && isset($_POST["password"]))
      {
-         echo "<div class='error_msg'> Invalid Username or Password </div>";
+         if(isset($active)){
+            if(strcmp($active,"YES") != 0){
+                echo "<div class='error_msg'> Email Id Not Comfirmed  </div>";   
+            }
+            else{
+                echo "<div class='error_msg'> Invalid Username or Password </div>";
+            }
+         }
+         else{
+            echo "<div class='error_msg'> Invalid Username or Password </div>";
+         }
+     }
+     // Display Messages
+     if(isset($_GET["m"])){
+         $message=$_GET["m"];
+         
+         if($message==404){
+            echo "<div class='error_msg'>  Email Verification Failed </div>";
+         }
+         else if($message==200){
+            echo "<div class='error_msg'> Email Verified Successfully  </div>";
+         }
+
      }
      ?>   
     <div class="login-box" align="center">

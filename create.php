@@ -48,21 +48,33 @@
     <?php
     if(isset($_POST["name"]) && isset($_POST["email"])){
         include_once("connect.php");
-    
+        include_once("lib/extra.php");
         $name=mysqli_real_escape_string($con,$_POST["name"]);
         $phone=mysqli_real_escape_string($con,$_POST["phone"]);
         $email=mysqli_real_escape_string($con,$_POST["email"]);
         $password=md5(mysqli_real_escape_string($con,$_POST["password"]));
         $exist_query="SELECT email FROM dusers WHERE email='$email' or phone='$phone'";
-        $query="INSERT INTO dusers VALUES('$name','$email','$phone','$password')";
+        $query="INSERT INTO dusers VALUES('$name','$email','$phone','$password','NO')";
+
+        // Creating Auth Key
+        $auth_key = create_auth_key($email);
+
+        $confirm_link ="";
+        // Create Function For Sending Mail
+        // $mail_output = mail($email,"Email Confirmation","Please Click the Link to Confirm the Account");
         
+        $query_nonactiveusers="INSERT INTO nonactiveusers VALUES('$email','$auth_key')";
         $res=mysqli_query($con,$exist_query);
         if(mysqli_num_rows($res) > 0){
             echo "<script> swal('','Account Already Exist', 'info');</script>";
         }
         else{
+            // ADDING TO USERS TABLE
             $res=mysqli_query($con,$query);
-            if($res){
+            // ADDING TO NON CONFIRMED TABLE
+            $res2=mysqli_query($con,$query_nonactiveusers);
+
+            if($res && $res2){
                 echo "<script> swal('','Registration Successful', 'success'); </script>";
             }
             else
