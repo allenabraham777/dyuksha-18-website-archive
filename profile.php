@@ -22,6 +22,31 @@
     <link rel="shortcut icon" type="image/png" href="images/tag.png" />
     <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
+<script>
+    function fetchCartItems(){
+        var httpx = new XMLHttpRequest();
+        var events_list = [];
+        httpx.onreadystatechange=function(){
+            if(this.status==200 && this.readyState==4){
+                var res_div = document.getElementById("cart_items");
+                var obj = JSON.parse( this.responseText);
+                var arr = obj.events_in_cart;
+                var out="";
+                
+                var i=0;
+                for(i=0;i<arr.length;i++)
+                {
+                    out+="<div>"+ arr[i] +"</div>";
+                }
+                res_div.innerHTML = out;
+               // alert("hello");
+            }
+        };
+        httpx.open("GET","fetchevents.php",true);
+        httpx.send();
+    }
+    
+</script>
 <body>
     <div class="profile-bg" align="center">
         <div class="profile-cover">
@@ -40,8 +65,10 @@
             ?>
             <a href=""><i class="fa fa-shopping-cart"></i></a>
             <a href="logout.php"><i class="fa fa-sign-out"></i></a>
-            </div>
-            
+            </div>    
+        </div>
+
+        <div id="cart_items">
         </div>
     </div>
  

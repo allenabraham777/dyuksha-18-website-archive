@@ -11,14 +11,27 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/flipclock.css">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/particles.min.js"></script>
+    <script src="js/flipclock.min.js"></script>
     <script>
        $(document).ready(function(){
-        
+        var date = new Date(2018, 8, 20);
+        var now = new Date();
+        var diff = (date.getTime()/1000) - (now.getTime()/1000);
+
+    var clock = $('.clock').FlipClock(diff,{
+        clockFace: 'DailyCounter',
+        countdown: true
+    });  
+        //var clock = $('.clock').FlipClock({
+// ... your options here/
+//});
+
         var bgCounter = 0,
         backgrounds = [
            "images/main.jpg",
@@ -55,18 +68,90 @@
       $(".loader-image").fadeOut("slow");
     });
 
+var countDownDate = new Date("Sep 20, 2018 10:00:00").getTime();
 
-        </script>
+</script>
+
 
 <style>
   @media screen and (max-width: 700px) {
    body {
             width: 100%
    }
+   .clock{
+      zoom:0.5;
+   }
 }
 
 a {
    color: inherit;
+}
+
+
+.flip-clock-wrapper ul.flip:nth-child(2) li a div div.inn,
+.flip-clock-wrapper ul.flip:nth-child(3) li a div div.inn
+{
+    background : grey;
+}
+
+.flip-clock-wrapper ul.flip:nth-child(5) li a div div.inn,
+.flip-clock-wrapper ul.flip:nth-child(6) li a div div.inn
+{
+    background : gray;
+}
+
+.flip-clock-wrapper ul.flip:nth-child(8) li a div div.inn,
+.flip-clock-wrapper ul.flip:nth-child(9) li a div div.inn
+{
+    background : grey;
+}
+
+.flip-clock-wrapper ul.flip:nth-child(11) li a div div.inn,
+.flip-clock-wrapper ul.flip:nth-child(12) li a div div.inn
+{
+    background : gray;
+}
+
+#Timer{
+  text-align: center;
+  margin: auto;
+}
+#Days{
+  margin-top:20px;
+  border-radius:100%;
+  display:block;
+  border: 5px dashed white;
+  width: 165px;
+  height: 165px;
+  color:white;
+  padding:40px;
+  background-color: #42A5F5;
+  font-size:28px;
+}
+#Hours{
+  display:block;
+  width: 165px;
+  color:white;
+  padding: 20px;
+  background-color: #C2185B;
+  font-size:28px;
+}
+
+#Minutes{
+  display:block;
+  width: 165px;
+  color:white;
+  padding: 20px;
+  background-color: #F9A825;
+  font-size:28px;
+}
+#Seconds{
+  display:block;
+  width: 165px;
+  color:white;
+  padding: 20px;
+  background-color: #FF5722;
+  font-size:28px;
 }
 
 .menu-item,
@@ -445,8 +530,11 @@ a {
                    your technical skills and above all, to have an experience of a lifetime.
            </p>
         </div> 
-        <div class="cd-fixed-bg cd-fixed-bg--1">
-          
+        <div class="cd-fixed-bg cd-fixed-bg--1" style="text-align:center;padding: 0px;" align="center">
+        </br>
+          <div class="clock" style="display:inline-block;width: auto;">
+
+          </div>
         </div> 
       
         <div class="home my_white_box" id="events" align="center" style="background-image: url('images/rback_new.png')">

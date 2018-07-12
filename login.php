@@ -70,7 +70,7 @@
      }
      ?>   
     <div class="login-box" align="center">
-            <form action="login.php" method="post" algin="center" class="create-form">
+            <form action="login" method="post" algin="center" class="create-form">
             <img src="images/logo.png" class="login-image" width="58px"/>
                 <input type="email" class="inputbox" name="email" placeholder="Email Id" required/><br/>
                 <input type="password" class="inputbox" name="password" placeholder="Password" required/><br/>
