@@ -68,6 +68,39 @@
       $(".loader-image").fadeOut("slow");
     });
 
+  var a = 0;
+$(window).scroll(function() {
+
+  var oTop = $('#counter').offset().top - window.innerHeight;
+  if (a == 0 && $(window).scrollTop() > oTop) {
+    $('.counter-value').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({
+        countNum: $this.text()
+      }).animate({
+          countNum: countTo
+        },
+
+        {
+
+          duration: 2000,
+          easing: 'swing',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+            //alert('finished');
+          }
+
+        });
+    });
+    a = 1;
+  }
+
+});
+
 var countDownDate = new Date("Sep 20, 2018 10:00:00").getTime();
 
 </script>
@@ -76,15 +109,34 @@ var countDownDate = new Date("Sep 20, 2018 10:00:00").getTime();
 <style>
   @media screen and (max-width: 700px) {
    body {
-            width: 100%
+            width: 100%;
    }
    .clock{
-      zoom:0.5;
+      zoom:0.6;
+   }
+   .counter-value{
+     display:block !important;
+     color:green;
    }
 }
 
+
 a {
    color: inherit;
+}
+
+.fake-div {
+  position:relative;
+}
+#counter{
+
+  text-align:center;
+}
+.counter-value{
+  display:inline-block;
+  color:white;
+  font-size: 22px;
+  font-weight:bold;
 }
 
 
@@ -530,11 +582,17 @@ a {
                    your technical skills and above all, to have an experience of a lifetime.
            </p>
         </div> 
-        <div class="cd-fixed-bg cd-fixed-bg--1" style="text-align:center;padding: 0px;" align="center">
-        </br>
-          <div class="clock" style="display:inline-block;width: auto;">
+        <div class="cd-fixed-bg cd-fixed-bg--1" style="position:relative; text-align:center; padding: 0px;">
+        
+          <div align="center" style="position: absolute;left: 50%;top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);width:100%;">
+            <div class="clock" style="display:inline-block; width:auto;">
+            </div>
+
 
           </div>
+         
+
+
         </div> 
       
         <div class="home my_white_box" id="events" align="center" style="background-image: url('images/rback_new.png')">
@@ -610,7 +668,7 @@ a {
             
         </div> 
         
-        <div class="footer bg-dark" align="center">
+        <div class="footer" align="center">
               <div>
                   <a href=""><img src="images/fb.png" width="32px"></img></a>
                   <a href=""><img src="images/in.png" width="32px"></img></a>

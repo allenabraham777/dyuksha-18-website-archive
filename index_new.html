@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dyuksha 18</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/custom.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/flipclock.css">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/flipclock.min.js"></script>
+    <script>
+       $(document).ready(function(){
+        var date = new Date(2018, 8, 20);
+        var now = new Date();
+        var diff = (date.getTime()/1000) - (now.getTime()/1000);
+
+    var clock = $('.clock').FlipClock(diff,{
+        clockFace: 'DailyCounter',
+        countdown: true
+    });  
+        
+    var itemsMainDiv = ('.MultiCarousel');
+    var itemsDiv = ('.MultiCarousel-inner');
+    var itemWidth = "";
+
+    $('.leftLst, .rightLst').click(function () {
+        var condition = $(this).hasClass("leftLst");
+        if (condition)
+            click(0, this);
+        else
+            click(1, this)
+    });
+
+    ResCarouselSize();
+
+
+
+
+    $(window).resize(function () {
+        ResCarouselSize();
+    });
+
+    //this function define the size of the items
+    function ResCarouselSize() {
+        var incno = 0;
+        var dataItems = ("data-items");
+        var itemClass = ('.item');
+        var id = 0;
+        var btnParentSb = '';
+        var itemsSplit = '';
+        var sampwidth = $(itemsMainDiv).width();
+        var bodyWidth = $('body').width();
+        $(itemsDiv).each(function () {
+            id = id + 1;
+            var itemNumbers = $(this).find(itemClass).length;
+            btnParentSb = $(this).parent().attr(dataItems);
+            itemsSplit = btnParentSb.split(',');
+            $(this).parent().attr("id", "MultiCarousel" + id);
+
+
+            if (bodyWidth >= 1200) {
+                incno = itemsSplit[3];
+                itemWidth = sampwidth / incno;
+            }
+            else if (bodyWidth >= 992) {
+                incno = itemsSplit[2];
+                itemWidth = sampwidth / incno;
+            }
+            else if (bodyWidth >= 768) {
+                incno = itemsSplit[1];
+                itemWidth = sampwidth / incno;
+            }
+            else {
+                incno = itemsSplit[0];
+                itemWidth = sampwidth / incno;
+            }
+            $(this).css({ 'transform': 'translateX(0px)', 'width': itemWidth * itemNumbers });
+            $(this).find(itemClass).each(function () {
+                $(this).outerWidth(itemWidth);
+            });
+
+            $(".leftLst").addClass("over");
+            $(".rightLst").removeClass("over");
+
+        });
+    }
+
+
+    //this function used to move the items
+    function ResCarousel(e, el, s) {
+        var leftBtn = ('.leftLst');
+        var rightBtn = ('.rightLst');
+        var translateXval = '';
+        var divStyle = $(el + ' ' + itemsDiv).css('transform');
+        var values = divStyle.match(/-?[\d\.]+/g);
+        var xds = Math.abs(values[4]);
+        if (e == 0) {
+            translateXval = parseInt(xds) - parseInt(itemWidth * s);
+            $(el + ' ' + rightBtn).removeClass("over");
+
+            if (translateXval <= itemWidth / 2) {
+                translateXval = 0;
+                $(el + ' ' + leftBtn).addClass("over");
+            }
+        }
+        else if (e == 1) {
+            var itemsCondition = $(el).find(itemsDiv).width() - $(el).width();
+            translateXval = parseInt(xds) + parseInt(itemWidth * s);
+            $(el + ' ' + leftBtn).removeClass("over");
+
+            if (translateXval >= itemsCondition - itemWidth / 2) {
+                translateXval = itemsCondition;
+                $(el + ' ' + rightBtn).addClass("over");
+            }
+        }
+        $(el + ' ' + itemsDiv).css('transform', 'translateX(' + -translateXval + 'px)');
+    }
+
+    //It is used to get some elements from btn
+    function click(ell, ee) {
+        var Parent = "#" + $(ee).parent().attr("id");
+        var slide = $(Parent).attr("data-slide");
+        ResCarousel(ell, Parent, slide);
+    }
+
+
+      }
+      );
+   
+   
+    function scroll_to_div(div_id){
+      $('html,body').animate(
+      {
+       scrollTop: $("#"+div_id).offset().top
+      },
+      1200);
+    }
+
+       
+    $(window).on('load', function () {
+      $(".loader-image").fadeOut("slow");
+    });
+
+  var a = 0;
+$(window).scroll(function() {
+
+  var oTop = $('#counter').offset().top - window.innerHeight;
+  if (a == 0 && $(window).scrollTop() > oTop) {
+    $('.counter-value').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({
+        countNum: $this.text()
+      }).animate({
+          countNum: countTo
+        },
+
+        {
+
+          duration: 2000,
+          easing: 'swing',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+            //alert('finished');
+          }
+
+        });
+    });
+    a = 1;
+  }
+
+});
+
+var countDownDate = new Date("Sep 20, 2018 10:00:00").getTime();
+
+</script>
+
+
+<style>
+  @media screen and (max-width: 700px) {
+   body {
+            width: 100%;
+   }
+   .item{
+     text-align: center;
+     padding:10px;
+   }
+   .clock{
+      zoom:0.5;
+   }
+   
+}
+
+
+a {
+   color: inherit;
+}
+
+
+.menu-item,
+.menu-open-button {
+   background: rgba(255, 255, 255,1);
+   border-radius: 100%;
+   width: 80px;
+   height: 80px;
+   margin-left: -40px;
+   position: absolute;
+   color: #FFFFFF;
+   text-align: center;
+   line-height: 80px;
+   -webkit-transform: translate3d(0, 0, 0);
+   transform: translate3d(0, 0, 0);
+   -webkit-transition: -webkit-transform ease-out 200ms;
+   transition: -webkit-transform ease-out 200ms;
+   transition: transform ease-out 200ms;
+   transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
+}
+
+.menu-open {
+   display: none;
+}
+
+.lines {
+   width: 25px;
+   height: 3px;
+   background: #596778;
+   display: block;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   margin-left: -12.5px;
+   margin-top: -1.5px;
+   -webkit-transition: -webkit-transform 200ms;
+   transition: -webkit-transform 200ms;
+   transition: transform 200ms;
+   transition: transform 200ms, -webkit-transform 200ms;
+}
+
+.line-1 {
+   -webkit-transform: translate3d(0, -8px, 0);
+   transform: translate3d(0, -8px, 0);
+}
+
+.line-2 {
+   -webkit-transform: translate3d(0, 0, 0);
+   transform: translate3d(0, 0, 0);
+}
+
+.line-3 {
+   -webkit-transform: translate3d(0, 8px, 0);
+   transform: translate3d(0, 8px, 0);
+}
+
+.menu-open:checked + .menu-open-button .line-1 {
+   -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+   transform: translate3d(0, 0, 0) rotate(45deg);
+}
+
+.menu-open:checked + .menu-open-button .line-2 {
+   -webkit-transform: translate3d(0, 0, 0) scale(0.1, 1);
+   transform: translate3d(0, 0, 0) scale(0.1, 1);
+}
+
+.menu-open:checked + .menu-open-button .line-3 {
+   -webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
+   transform: translate3d(0, 0, 0) rotate(-45deg);
+}
+
+.menu {
+   margin: auto;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   width: 80px;
+   height: 80px;
+   text-align: center;
+   box-sizing: border-box;
+   font-size: 26px;
+  
+}
+
+
+/* .menu-item {
+   transition: all 0.1s ease 0s;
+} */
+
+.menu-item:hover {
+   background: #EEEEEE;
+   color: #3290B1;
+}
+
+.menu-item:nth-child(3) {
+   -webkit-transition-duration: 180ms;
+   transition-duration: 180ms;
+}
+
+.menu-item:nth-child(4) {
+   -webkit-transition-duration: 180ms;
+   transition-duration: 180ms;
+}
+
+.menu-item:nth-child(5) {
+   -webkit-transition-duration: 180ms;
+   transition-duration: 180ms;
+}
+
+.menu-item:nth-child(6) {
+   -webkit-transition-duration: 180ms;
+   transition-duration: 180ms;
+}
+
+.menu-item:nth-child(7) {
+   -webkit-transition-duration: 180ms;
+   transition-duration: 180ms;
+}
+
+.menu-item:nth-child(8) {
+   -webkit-transition-duration: 180ms;
+   transition-duration: 180ms;
+}
+
+.menu-item:nth-child(9) {
+   -webkit-transition-duration: 180ms;
+   transition-duration: 180ms;
+}
+
+.menu-open-button {
+   z-index: 2;
+   -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+   -webkit-transition-duration: 400ms;
+   transition-duration: 400ms;
+   -webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+   transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+   cursor: pointer;
+  /* box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);*/
+}
+
+.menu-open-button:hover {
+   -webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+   transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+}
+
+.menu-open:checked + .menu-open-button {
+   -webkit-transition-timing-function: linear;
+   transition-timing-function: linear;
+   -webkit-transition-duration: 200ms;
+   transition-duration: 200ms;
+   -webkit-transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+   transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+}
+
+.menu-open:checked ~ .menu-item {
+   -webkit-transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+   transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(3) {
+   transition-duration: 180ms;
+   -webkit-transition-duration: 180ms;
+   -webkit-transform: translate3d(0.08361px, -104.99997px, 0);
+   transform: translate3d(0.08361px, -104.99997px, 0);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(4) {
+   transition-duration: 280ms;
+   -webkit-transition-duration: 280ms;
+   -webkit-transform: translate3d(90.9466px, -52.47586px, 0);
+   transform: translate3d(90.9466px, -52.47586px, 0);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(5) {
+   transition-duration: 380ms;
+   -webkit-transition-duration: 380ms;
+   -webkit-transform: translate3d(90.9466px, 52.47586px, 0);
+   transform: translate3d(90.9466px, 52.47586px, 0);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(6) {
+   transition-duration: 480ms;
+   -webkit-transition-duration: 480ms;
+   -webkit-transform: translate3d(0.08361px, 104.99997px, 0);
+   transform: translate3d(0.08361px, 104.99997px, 0);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(7) {
+   transition-duration: 580ms;
+   -webkit-transition-duration: 580ms;
+   -webkit-transform: translate3d(-90.86291px, 52.62064px, 0);
+   transform: translate3d(-90.86291px, 52.62064px, 0);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(8) {
+   transition-duration: 680ms;
+   -webkit-transition-duration: 680ms;
+   -webkit-transform: translate3d(-91.03006px, -52.33095px, 0);
+   transform: translate3d(-91.03006px, -52.33095px, 0);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(9) {
+   transition-duration: 780ms;
+   -webkit-transition-duration: 780ms;
+   -webkit-transform: translate3d(-0.25084px, -104.9997px, 0);
+   transform: translate3d(-0.25084px, -104.9997px, 0);
+}
+
+.blue {
+   background-color: #669AE1;
+   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.blue:hover {
+   color: #669AE1;
+   text-shadow: none;
+}
+
+.green {
+   background-color: #70CC72;
+   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.green:hover {
+   color: #70CC72;
+   text-shadow: none;
+}
+
+.red {
+   background-color: #FE4365;
+   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.red:hover {
+   color: #FE4365;
+   text-shadow: none;
+}
+
+.white {
+   background-color:white;
+   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.white:hover {
+   color:white;
+   text-shadow: none;
+}
+
+
+.purple {
+   background-color: #C49CDE;
+   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.purple:hover {
+   color: #C49CDE;
+   text-shadow: none;
+}
+
+.orange {
+   background-color: #FC913A;
+   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.orange:hover {
+   color: #FC913A;
+   text-shadow: none;
+}
+
+.lightblue {
+   background-color: #62C2E4;
+   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.lightblue:hover {
+   color: #62C2E4;
+   text-shadow: none;
+}
+
+.credit {
+   margin: 24px 20px 120px 0;
+   text-align: right;
+   color: #EEEEEE;
+}
+
+.credit a {
+   padding: 8px 0;
+   color: #C49CDE;
+   text-decoration: none;
+   transition: all 0.3s ease 0s;
+}
+
+.credit a:hover {
+   text-decoration: underline;
+}
+
+.item{
+   padding:10px;
+   color: white;
+   
+}
+
+.first_item .col-md-3{
+  border-right:1px dotted grey;
+  background-image:url("images/bgmask2.png");
+  background-color: rgba(0, 0, 0, 0.8);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+.first_item .col-md-3:hover{
+  border-right:1px dotted grey;
+  background-image:url("images/bgmask2.png");
+  background-color:lightseagreen;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+.item2{
+  padding-left: 20px;
+  padding-right:20px;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+}
+.MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
+.MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
+.MultiCarousel .MultiCarousel-inner .item { float: left;}
+.MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;}
+.MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); border:1px solid black; }
+.MultiCarousel .leftLst { left:0; }
+.MultiCarousel .rightLst { right:0; }
+.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none;  }
+
+#section1{
+  height:100%;
+  background-image:url("images/bgmask2.png");
+  background-color:rgba(70, 131, 180, 0.719);
+}
+.headline h3{
+  color:white;
+  display:block;
+
+}
+.headline{
+  width: 100%;
+  margin:30px;
+}
+#section2{
+  height:100%;
+  background-image:url("images/bgmask2.png");
+  background-color:rgba(46, 139, 86, 0.863);
+}
+.my_full_class{
+    min-height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.my_full_class .row{
+    min-height: 50vh;
+  
+}
+
+</style>
+        
+</head>
+<body>
+    <div class="loader-image">
+</div>
+    <div class="cover"  align="center">
+      <div class="bg-image" id="cover" >
+          <div class="bg-overlay"></div>   
+      </div>
+      
+      <div class="para-gram">  
+      </div>
+      <div class="main-logo">
+        <nav class="menu">
+          <input type="checkbox" href="#" style="opacity: 0;" class="menu-open" name="menu-open" id="menu-open" />
+          <label class="menu-open-button" style="opacity: 1; background-image: url('images/logoxxx.jpg'); background-position: center; background-repeat:no-repeat; background-size:70% 70%;" for="menu-open" >
+            <img style="opacity: 0; padding-bottom:8px; padding-left: 4px;  " src="images/logoxx.jpg" width="50px"></img>
+         </label>
+          <a onclick="scroll_to_div('events')" class="menu-item white"> <img src="images/events.png" width="48px" style="border-radius: 100%; background-color:white;" ></img> </a>
+          <a href="#" class="menu-item blue"> <i class="fa fa-home"></i> </a>
+          <a href="#" class="menu-item white"><img src="images/workshop.png" width="48px" style="border-radius: 100%; background-color:white;" > </a>
+          <a href="#" class="menu-item orange"> <i class="fa fa-info-circle"></i> </a>
+          <a href="#" class="menu-item white"> <img src="images/informals.png" width="48px" style="border-radius: 100%; background-color:white;" > </a>
+          <a onclick="scroll_to_div('contact')" class="menu-item purple"> <i class="fa fa-phone"></i> </a>
+       </nav>  
+      </div>
+      <div id="drop-arrow" class="drop-arrow" onclick="scroll_to_div('exe')"/>
+      </div>
+      <script src="js/particle_exe.js"></script>
+    </div>
+
+   
+    <div id="exe" class="bg-static content container-fluid">
+    <nav class="navbar navbar-expand-lg  sticky-top navbar-light bg-light" style="z-index:500;">
+            <a class="navbar-brand" href="#"><img src="images/navbar_logo.png" height="42px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav  ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" >Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"   onclick="scroll_to_div('events')">Events & Workshops</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"   onclick="scroll_to_div('contact')">Contacts</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.php">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="create.php">Register</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+           
+ 
+<div class="container-fluid" style="margin: 0px; padding:0px;">
+    <div class="row first_item" style="width:100%;margin: 0px; padding:0px;">
+      <div class="col-md-3">
+        <div class="item">
+            <h3>Date:</h3>
+            <p>September 20-23, 2018</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+          <div class="item">
+              <h3>Location:</h3>
+              <p>NSSCE, PALAKKAD, KERALA</p>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="item">
+              <h3>Events:</h3>
+              <p>60+</p>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="item">
+              <h3>Speakers:</h3>
+              <p>22 Professional Speakers</p>
+          </div>
+      </div>
+    </div>
+</div>
+<div class="my_full_class container-fluid">
+    <div class="row" style="width:100%;margin: 0px; padding:0px;  background-image: url('images/rback_new.png')">
+      <div class="col-md-6" style="background-image: url('images/item_2_cover.jpg');">
+        <div class="item2">
+          <img src="images/item_2_cover.jpg" width="100%"></img>
+        </div>
+      </div>
+      <div class="col-md-6" style="position: relative; ">
+        <br/>
+        <div class="item2 item-text" >
+            <h3>About</h3>
+            <p>
+                DYUKSHA is the national level techno-cultural fest organised by the College Union.
+                 This year, it is scehduled in the month of <b>September</b> for the dates <b>20</b> ,
+                  <b>21</b> and <b>22</b>. DYUKSHA consists of 60+ events in total,including 30+ cultural 
+                  events and 10+ workshops of International standards. It gives you a platform to showcase
+                   your technical skills and above all, to have an experience of a lifetime.
+                   <br/>
+           </p>
+        </div>
+      </div>
+    </div>  
+
+    
+    <div class="row" style="width:100%;margin: 0px; padding:0px;">
+      <div class="col-md-6" style="color:white; background:rgba(105, 90, 205, 0.829); position: relative; ">
+        <br/>
+        <div class="item2 item-text" >
+            <h3>How and When ?</h3>
+            <p>
+                DYUKSHA is the national level techno-cultural fest organised by the College Union.
+                 This year, it is scehduled in the month of <b>September</b> for the dates <b>20</b> ,
+                <b>21</b> and <b>22</b>. DYUKSHA consists of 60+ events in total,including 30+ cultural 
+                 events and 10+ workshops of International standards. It gives you a platform to showcase
+                 your technical skills and above all, to have an experience of a lifetime.
+                 <br/>
+           </p>
+        </div>
+      </div>
+
+      <div class="col-md-6" style="background-image: url('images/item_2_cover.jpg');">
+          <div class="item2">
+            <img src="images/item_2_cover.jpg" height="100%" width="100%"></img>
+          </div>
+        </div>
+    </div>  
+</div>        
+
+<div class="cd-fixed-bg-dummy cd-fixed-bg--x" style="position:relative; text-align:center; padding: 0px;">
+        
+    <div align="center" style="position: absolute;left: 50%;top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);width:100%;">
+      <div class="clock" style="display:inline-block; width:auto;">
+      </div>
+
+
+    </div>
+   
+
+
+  </div> 
+          
+<div id="section1" class="container-fluid" style="width:100%; margin:0px; padding:0px;">
+  <div class="row" style="width:100%; margin:0px; padding:50px;">
+    <div class="headline" align="center">
+        <h3>
+            Events
+        </h3>
+    </div>
+    <div class="MultiCarousel" style="width: 100%"data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
+            <div class="MultiCarousel-inner">
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead">Multi Item Carousel</p>
+                        <p>₹ 1</p>
+                        <p>₹ 6000</p>
+                        <p>50% off</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead">Multi Item Carousel</p>
+                        <p>₹ 1</p>
+                        <p>₹ 6000</p>
+                        <p>50% off</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead">Multi Item Carousel</p>
+                        <p>₹ 1</p>
+                        <p>₹ 6000</p>
+                        <p>50% off</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead">Multi Item Carousel</p>
+                        <p>₹ 1</p>
+                        <p>₹ 6000</p>
+                        <p>50% off</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead">Multi Item Carousel</p>
+                        <p>₹ 1</p>
+                        <p>₹ 6000</p>
+                        <p>50% off</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead">Multi Item Carousel</p>
+                        <p>₹ 1</p>
+                        <p>₹ 6000</p>
+                        <p>50% off</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead">Multi Item Carousel</p>
+                        <p>₹ 1</p>
+                        <p>₹ 6000</p>
+                        <p>50% off</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead">Multi Item Carousel</p>
+                        <p>₹ 1</p>
+                        <p>₹ 6000</p>
+                        <p>50% off</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead">Multi Item Carousel</p>
+                        <p>₹ 1</p>
+                        <p>₹ 6000</p>
+                        <p>50% off</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead">Multi Item Carousel</p>
+                        <p>₹ 1</p>
+                        <p>₹ 6000</p>
+                        <p>50% off</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead">Multi Item Carousel</p>
+                        <p>₹ 1</p>
+                        <p>₹ 6000</p>
+                        <p>50% off</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead">Multi Item Carousel</p>
+                        <p>₹ 1</p>
+                        <p>₹ 6000</p>
+                        <p>50% off</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead">Multi Item Carousel</p>
+                        <p>₹ 1</p>
+                        <p>₹ 6000</p>
+                        <p>50% off</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead">Multi Item Carousel</p>
+                        <p>₹ 1</p>
+                        <p>₹ 6000</p>
+                        <p>50% off</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead">Multi Item Carousel</p>
+                        <p>₹ 1</p>
+                        <p>₹ 6000</p>
+                        <p>50% off</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <p class="lead">Multi Item Carousel</p>
+                        <p>₹ 1</p>
+                        <p>₹ 6000</p>
+                        <p>50% off</p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary leftLst"><i class="fa fa-chevron-left"></i></button>
+            <button class="btn btn-primary rightLst"><i class="fa fa-chevron-right"></i></button>
+        </div>
+	</div>
+</div>
+
+
+<div id="section2" class="container-fluid" style="width:100%; margin:0px; padding:0px;">
+    <div class="row" style="width: 100%;margin:0px; padding:50px;">
+      <div class="headline" align="center">
+          <h3>
+              Workshops
+          </h3>
+      </div>
+      <div class="MultiCarousel" style="width: 100%"data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
+              <div class="MultiCarousel-inner">
+                  <div class="item">
+                      <div class="pad15">
+                          <p class="lead">Multi Item Carousel</p>
+                          <p>₹ 1</p>
+                          <p>₹ 6000</p>
+                          <p>50% off</p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="pad15">
+                          <p class="lead">Multi Item Carousel</p>
+                          <p>₹ 1</p>
+                          <p>₹ 6000</p>
+                          <p>50% off</p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="pad15">
+                          <p class="lead">Multi Item Carousel</p>
+                          <p>₹ 1</p>
+                          <p>₹ 6000</p>
+                          <p>50% off</p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="pad15">
+                          <p class="lead">Multi Item Carousel</p>
+                          <p>₹ 1</p>
+                          <p>₹ 6000</p>
+                          <p>50% off</p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="pad15">
+                          <p class="lead">Multi Item Carousel</p>
+                          <p>₹ 1</p>
+                          <p>₹ 6000</p>
+                          <p>50% off</p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="pad15">
+                          <p class="lead">Multi Item Carousel</p>
+                          <p>₹ 1</p>
+                          <p>₹ 6000</p>
+                          <p>50% off</p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="pad15">
+                          <p class="lead">Multi Item Carousel</p>
+                          <p>₹ 1</p>
+                          <p>₹ 6000</p>
+                          <p>50% off</p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="pad15">
+                          <p class="lead">Multi Item Carousel</p>
+                          <p>₹ 1</p>
+                          <p>₹ 6000</p>
+                          <p>50% off</p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="pad15">
+                          <p class="lead">Multi Item Carousel</p>
+                          <p>₹ 1</p>
+                          <p>₹ 6000</p>
+                          <p>50% off</p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="pad15">
+                          <p class="lead">Multi Item Carousel</p>
+                          <p>₹ 1</p>
+                          <p>₹ 6000</p>
+                          <p>50% off</p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="pad15">
+                          <p class="lead">Multi Item Carousel</p>
+                          <p>₹ 1</p>
+                          <p>₹ 6000</p>
+                          <p>50% off</p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="pad15">
+                          <p class="lead">Multi Item Carousel</p>
+                          <p>₹ 1</p>
+                          <p>₹ 6000</p>
+                          <p>50% off</p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="pad15">
+                          <p class="lead">Multi Item Carousel</p>
+                          <p>₹ 1</p>
+                          <p>₹ 6000</p>
+                          <p>50% off</p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="pad15">
+                          <p class="lead">Multi Item Carousel</p>
+                          <p>₹ 1</p>
+                          <p>₹ 6000</p>
+                          <p>50% off</p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="pad15">
+                          <p class="lead">Multi Item Carousel</p>
+                          <p>₹ 1</p>
+                          <p>₹ 6000</p>
+                          <p>50% off</p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="pad15">
+                          <p class="lead">Multi Item Carousel</p>
+                          <p>₹ 1</p>
+                          <p>₹ 6000</p>
+                          <p>50% off</p>
+                      </div>
+                  </div>
+              </div>
+              <button class="btn btn-primary leftLst"><i class="fa fa-chevron-left"></i></button>
+              <button class="btn btn-primary rightLst"><i class="fa fa-chevron-right"></i></button>
+          </div>
+    </div>
+  </div>
+
+  <div class="container-fluid" align="center">
+   <h3>Our Sponsors</h3>
+
+  </div>
+  
+  <div class="footer" align="center">
+      <div>
+          <a href=""><img src="images/fb.png" width="32px"></img></a>
+          <a href=""><img src="images/in.png" width="32px"></img></a>
+          <a href=""><img src="images/yt.png" width="32px"></img></a>
+          <a href=""><img src="images/tw.png" width="32px"></img></a>
+      </div>
+      <p>Developed By SnatchDreams &#0169 2018</p>
+</div>
+</body>
+
+</html>
