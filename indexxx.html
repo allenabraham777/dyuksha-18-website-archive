@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dyuksha 18</title>
+	<meta name="viewport" content="width:device-width,initial-scale:1" >
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<link rel="icon" type="image/png" href="img/logo.png">
+	<link rel="stylesheet" href="css/flipclock.css">
+	<link rel="stylesheet" type="text/css" href="css/fullpage.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/fullpage.min.js"></script>
+	<script src="js/particles.min.js"></script>
+  <script src="js/flipclock.min.js"></script>
+	
+	<script type="text/javascript">
+	  $(document).ready(function(){
+
+				var date = new Date(2018, 8, 20);
+        var now = new Date();
+        var diff = (date.getTime()/1000) - (now.getTime()/1000);
+
+        var clock = $('.clock').FlipClock(diff,{
+          clockFace: 'DailyCounter',
+          countdown: true
+        });
+
+		});
+
+		$(window).on('load', function () {
+			$(".loader").fadeOut("slow");
+		});
+	</script>
+	
+    
+</head>
+<body id="body" onload="load()">
+	<div id="loader" class="mid topfullpage" style="z-index: 1001; background-color: white; position: absolute; width: 100vw;">
+		<img src="img/loader.gif" style="position: absolute; top: 30%; left: 40%; width: 300px;">
+	</div>
+
+	<nav class="navbar navbar-expand-lg  sticky-top navbar-light bg-light" style="z-index:500;">
+		<a class="navbar-brand" href="#"><img src="images/navbar_logo.png" height="42px"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav  ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" >Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link"   onclick="scroll_to_div('events')">Events & Workshops</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link"   onclick="scroll_to_div('contact')">Contacts</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="login.php">Login</a>
+				</li>
+				<li class="nav-item">
+						<a class="nav-link" href="create.php">Register</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	
+	<div class="topfullpage mtrp" style="z-index:60;" id="menu">
+		<div class="btnrest" id="homemenu">
+		  <input type="checkbox" id="toggle"  onclick="shifter()"/>
+		  <label id="show-menu" for="toggle" >
+		    <div class="btn" style="z-index: 100;">
+		      <i class="material-icons md-36 toggleBtn menuBtn" >menu</i>
+		      <i class="material-icons md-36 toggleBtn closeBtn">close</i>
+		    </div>
+		    <div class="btn" onclick="callhome()">
+		      <i class="material-icons md-36 fas fa-home"></i>
+		    </div>
+		    <div class="btn" onclick="callcomp();">
+		      <i class="material-icons md-36 fas fa-chess-queen"></i>
+		    </div>
+		    <div class="btn" onclick="callwork()">
+		      <i class="material-icons md-36 fas fa-briefcase"></i>
+		    </div>
+		    <div class="btn" onclick="calleve()">
+		      <i class="material-icons md-36 fas fa-camera"></i>
+		    </div>
+		    <div class="btn" onclick="callgame()">
+		      <i class="material-icons md-36 fas fa-gamepad"></i>
+		    </div>
+		    <div class="btn" onclick="callcal()">
+		      <i class="material-icons md-36 far fa-calendar-alt"></i>
+		    </div>
+		    <div class="btn" onclick="callmap()">
+		      <i class="material-icons md-36 fas fa-map-marker-alt"></i>
+		    </div>
+		    <div class="btn" onclick="callacc()">
+		      <i class="material-icons md-36 fas fa-bed"></i>
+		    </div>
+		  </label>
+		</div>
+	</div>
+
+
+	<div class="userbtn">
+		<div class="btn" onclick="signup()" >
+			<i class="material-icons md-36 fas fa-home fas fa-user"></i>
+		</div>
+	</div>
+	<!--- <div class="home topfullpage" id="home">
+			<div class="bk-home">
+				<img src="img/logo.png" class="logo" onclick="callabt()">
+
+			</div>
+		</div> -->
+    <div class="homepage " id="wrapper">
+		
+		<div class="section" id="home" data-anchor="sec0">
+			<div class="home mid slide" data-anchor="slide1">
+				<div><img src="images/logo.png" class="logo animated pulse 1s infinite" style="animation-duration: 3s; animation-delay: 0s;" onclick="callabt()"></div>
+				<div><a href="#sec1"><i id="explore" class="fas fa-chevron-down small animated bounce infinite" style="animation-duration: 1s; animation-delay: 0s; animation-timing-function: linear;"></i></a></div>
+			</div>
+			<div class="about mid slide" data-anchor="about">
+				<h1>About</h1>
+				<p>DYUKSHA is the national level techno-cultural fest organised by the College Union. This year, it is scehduled in the month of September for the dates 20 , 21 and 22. DYUKSHA consists of 60+ events in total,including 30+ cultural events and 10+ workshops of International standards. It gives you a platform to showcase your technical skills and above all, to have an experience of a lifetime.</p>
+			</div>
+			<div class="countdown mid slide"  data-anchor="countdown">
+				<div class="timer">
+					<div><img src="images/word.png" class="logo animated pulse 1s infinite" style="animation-duration: 3s; animation-delay: 0s;" onclick="callhome()"></div>
+					<h1>Great Things are Comming</h1>
+					<div class="clock">
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section" data-anchor="sec1">
+			<div class="mid">
+			<div><i class="fas fa-trophy"></i></div>
+			<div><span style="font-size: 30px">COMPETITIONS</span></div>
+			</div>
+		</div>
+		<div  class="section" data-anchor="sec2">
+			<div class="mid">
+			<div><i class="fas fa-toolbox"></i></div>
+			<div><span style="font-size: 30px">WORKSHOPS</span></div>
+			</div>
+			
+		</div>
+		<div class="section" data-anchor="sec3">
+			<div class="mid">
+			<div><i class="fas fa-people-carry"></i></div>
+			<div><span style="font-size: 30px">EVENTS</span></div>
+			</div>
+			
+		</div>
+		<div class="section" data-anchor="sec4">
+			<div class="mid">
+			<div><i class="fas fa-dice"></i></div>
+			<div><span style="font-size: 30px">INFORMALS</span></div>
+			</div>
+			
+		</div>
+		<div class="section" data-anchor="cal">
+			<div class="mid">
+			<div><i class="far fa-calendar-alt"></i></div>
+			</div>
+			
+		</div>
+    </div>
+
+	<div class="competition hide" id="competition">
+		<button class="close" onclick="callhome()"><i class="fas fa-times"></i></button>
+	</div>
+	<div class="map hide" id="map">
+		<button class="close" onclick="callhome()"><i class="fas fa-times"></i></button>
+		<iframe  frameborder="0" style="border:0; text-align: center; height: 600px; width: 1000px; margin:200px auto;" src="https://www.google.com/maps/embed/v1/place?q=nss%20college%20of%20engineering&key=AIzaSyBPtB-7kgGZU943WFdpFOO6BSNkYdREu5o" allowfullscreen></iframe>
+
+	</div>
+	
+
+	<script type="text/javascript">
+		
+		function disableScrolling(){
+		   $('body').bind("mousewheel", function() { return false; }); }
+	
+		function enableScrolling(){
+		  $('body').unbind("mousewheel"); }
+		
+	</script>
+	<script type="text/javascript">
+		
+		function resetall(){
+			competition.classList.remove("topfullpage");
+			competition.classList.add("hide");
+			map.classList.remove("topfullpage");
+			map.classList.add("hide");			
+		}
+		function load(){
+			location.href = "#home/countdown";
+		    history.replaceState(null,null,"#home/countdown");
+		    window.setTimeout(function fun(){ return true;}, 500);
+
+		    loader.classList.add('hide');
+		}
+
+		function callabt(){
+			location.href = "#home/about";
+
+		}
+		
+
+		function callhome(){
+			resetall();
+		    location.href = "#home";
+		    history.replaceState(null,null,"#home");
+			enableScrolling();
+		}
+		function callcomp(){
+			resetall();
+			window.open("php/competition.php","_self");
+		}
+		function callwork(){
+			resetall();
+			window.open("php/workshop.php","_self");
+		}
+		function calleve(){
+			resetall();
+		}
+		function callgame(){
+			resetall();
+			window.open("php/gaming.php","_self");
+		}
+		function signup(){
+			resetall();
+			window.open("php/home.php","_self");
+		}
+		function callcal(){
+			resetall();
+			location.href = "#cal";
+			history.replaceState(null,null,"#cal");
+			enableScrolling();
+		}
+		function callmap(){
+			resetall();
+			map.classList.remove("hide");
+			map.classList.add("topfullpage");
+			disableScrolling();
+		}
+		function callacc(){
+			resetall();
+			window.open("php/accomodation.php","_self");
+		}
+
+
+		function shifter(){
+			if(homemenu.classList.contains("btnrest")){
+				homemenu.classList.remove("btnrest");
+				homemenu.classList.add("menu");
+				menu.classList.add("mblk");
+				menu.classList.remove("mtrp");
+				disableScrolling();
+			}
+			else{
+				homemenu.classList.remove("menu");
+				homemenu.classList.add("btnrest")
+				menu.classList.remove("mblk");
+				menu.classList.add("mtrp");
+				enableScrolling();
+			}
+		}
+
+		function getRootUrl() {
+	return window.location.origin?window.location.origin+'/':window.location.protocol+'/'+window.location.host+'/';
+}
+		
+
+	</script>
+	<script>
+		
+		window.setInterval(bounceArrow, 1400);
+		window.setInterval(chkstatus,10);
+
+  function bounceArrow() {
+    $('#explore').removeClass('animated bounce').delay(3000).queue(function(next) {
+      $(this).addClass('animated bounce');
+      
+      next();
+    });
+  }
+
+  function chkstatus(){
+
+    var pth = window.location.pathname;
+  	var n = pth.includes("#home/about");
+
+    if(n == 'true')
+    {
+    	window.alert("HELLO");
+    	fullpage_api.setAllowScrolling(false);
+    	fullpage_api.setKeyboardScrolling(false, 'down');
+    }
+    else{
+    	fullpage_api.setAllowScrolling(true);
+    	fullpage_api.setKeyboardScrolling(true);
+    }
+  }
+		
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			$('#wrapper').fullpage({
+				anchors: ['home', 'sec1', 'sec2', 'sec3', 'sec4', 'cal'],
+			});
+				
+		});
+
+		
+		
+	</script>
+</body>
