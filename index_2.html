@@ -18,17 +18,38 @@
     <script src="js/custom.js"></script>
     <script src="js/particles.min.js"></script>
     <script src="js/flipclock.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0VDi4gzrxc0JMcrsd7-usKi995yGGP08&callback=myMap"></script>
+    
     <script>
        $(document).ready(function(){
         var date = new Date(2018, 8, 20);
         var now = new Date();
         var diff = (date.getTime()/1000) - (now.getTime()/1000);
 
-    var clock = $('.clock').FlipClock(diff,{
-        clockFace: 'DailyCounter',
-        countdown: true
-    });  
+        var clock = $('.clock').FlipClock(diff,{
+          clockFace: 'DailyCounter',
+          countdown: true
+        });  
         
+    // Map Function Starts here   
+    function myMap() {
+    var location = new google.maps.LatLng(10.824022, 76.642588);
+    var mapOptions = {
+        center: location,
+        zoom: 17,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    var marker = new google.maps.Marker({
+       position:location,
+       map:map
+    });
+    
+    } // Google Map Function Ends Here
+
+    // Call the map functions
+    myMap();
+
     var itemsMainDiv = ('.MultiCarousel');
     var itemsDiv = ('.MultiCarousel-inner');
     var itemWidth = "";
@@ -596,6 +617,9 @@ a {
       <div class="bg-image" id="cover" >
           <div class="bg-overlay"></div>   
       </div>
+      <div class="college-logo">
+        <img src="images/college_logo.png" style="opacity: 0.8;"width="150px"></img>
+      </div>
       
       <div class="para-gram">  
       </div>
@@ -723,313 +747,76 @@ a {
     </div>  
 </div>        
 
-<div class="cd-fixed-bg-dummy cd-fixed-bg--x" style="position:relative; text-align:center; padding: 0px;">
-        
+<div class="cd-fixed-bg-dummy cd-fixed-bg--x" style="position:relative; text-align:center; padding: 0px;">    
     <div align="center" style="position: absolute;left: 50%;top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);width:100%;">
       <div class="clock" style="display:inline-block; width:auto;">
       </div>
-
-
     </div>
-   
-
-
-  </div> 
+</div> 
           
-<div id="section1" class="container-fluid" style="width:100%; margin:0px; padding:0px;">
-  <div class="row" style="width:100%; margin:0px; padding:50px;">
-    <div class="headline" align="center">
-        <h3>
-            Events
-        </h3>
-    </div>
-    <div class="MultiCarousel" style="width: 100%"data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
-            <div class="MultiCarousel-inner">
-                <div class="item">
-                    <div class="pad15">
-                        <p class="lead">Multi Item Carousel</p>
-                        <p>₹ 1</p>
-                        <p>₹ 6000</p>
-                        <p>50% off</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15">
-                        <p class="lead">Multi Item Carousel</p>
-                        <p>₹ 1</p>
-                        <p>₹ 6000</p>
-                        <p>50% off</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15">
-                        <p class="lead">Multi Item Carousel</p>
-                        <p>₹ 1</p>
-                        <p>₹ 6000</p>
-                        <p>50% off</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15">
-                        <p class="lead">Multi Item Carousel</p>
-                        <p>₹ 1</p>
-                        <p>₹ 6000</p>
-                        <p>50% off</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15">
-                        <p class="lead">Multi Item Carousel</p>
-                        <p>₹ 1</p>
-                        <p>₹ 6000</p>
-                        <p>50% off</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15">
-                        <p class="lead">Multi Item Carousel</p>
-                        <p>₹ 1</p>
-                        <p>₹ 6000</p>
-                        <p>50% off</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15">
-                        <p class="lead">Multi Item Carousel</p>
-                        <p>₹ 1</p>
-                        <p>₹ 6000</p>
-                        <p>50% off</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15">
-                        <p class="lead">Multi Item Carousel</p>
-                        <p>₹ 1</p>
-                        <p>₹ 6000</p>
-                        <p>50% off</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15">
-                        <p class="lead">Multi Item Carousel</p>
-                        <p>₹ 1</p>
-                        <p>₹ 6000</p>
-                        <p>50% off</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15">
-                        <p class="lead">Multi Item Carousel</p>
-                        <p>₹ 1</p>
-                        <p>₹ 6000</p>
-                        <p>50% off</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15">
-                        <p class="lead">Multi Item Carousel</p>
-                        <p>₹ 1</p>
-                        <p>₹ 6000</p>
-                        <p>50% off</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15">
-                        <p class="lead">Multi Item Carousel</p>
-                        <p>₹ 1</p>
-                        <p>₹ 6000</p>
-                        <p>50% off</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15">
-                        <p class="lead">Multi Item Carousel</p>
-                        <p>₹ 1</p>
-                        <p>₹ 6000</p>
-                        <p>50% off</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15">
-                        <p class="lead">Multi Item Carousel</p>
-                        <p>₹ 1</p>
-                        <p>₹ 6000</p>
-                        <p>50% off</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15">
-                        <p class="lead">Multi Item Carousel</p>
-                        <p>₹ 1</p>
-                        <p>₹ 6000</p>
-                        <p>50% off</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15">
-                        <p class="lead">Multi Item Carousel</p>
-                        <p>₹ 1</p>
-                        <p>₹ 6000</p>
-                        <p>50% off</p>
-                    </div>
-                </div>
-            </div>
-            <button class="btn btn-primary leftLst"><i class="fa fa-chevron-left"></i></button>
-            <button class="btn btn-primary rightLst"><i class="fa fa-chevron-right"></i></button>
-        </div>
-	</div>
-</div>
 
 
 <div id="section2" class="container-fluid" style="width:100%; margin:0px; padding:0px;">
-    <div class="row" style="width: 100%;margin:0px; padding:50px;">
-      <div class="headline" align="center">
-          <h3>
-              Workshops
-          </h3>
+    <div class="row" style="width:100%; margin:0px; padding:0px; ">
+      <div class="col-md-4" align="center">
+            <div class="box">
+                    <div class="overlay">
+                      <h2>45+</h2>
+                     </div>
+                    <img src="images/events.png" width="64px"/>
+                    <h4>Events</h4>
+            </div>
       </div>
-      <div class="MultiCarousel" style="width: 100%"data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
-              <div class="MultiCarousel-inner">
-                  <div class="item">
-                      <div class="pad15">
-                          <p class="lead">Multi Item Carousel</p>
-                          <p>₹ 1</p>
-                          <p>₹ 6000</p>
-                          <p>50% off</p>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="pad15">
-                          <p class="lead">Multi Item Carousel</p>
-                          <p>₹ 1</p>
-                          <p>₹ 6000</p>
-                          <p>50% off</p>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="pad15">
-                          <p class="lead">Multi Item Carousel</p>
-                          <p>₹ 1</p>
-                          <p>₹ 6000</p>
-                          <p>50% off</p>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="pad15">
-                          <p class="lead">Multi Item Carousel</p>
-                          <p>₹ 1</p>
-                          <p>₹ 6000</p>
-                          <p>50% off</p>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="pad15">
-                          <p class="lead">Multi Item Carousel</p>
-                          <p>₹ 1</p>
-                          <p>₹ 6000</p>
-                          <p>50% off</p>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="pad15">
-                          <p class="lead">Multi Item Carousel</p>
-                          <p>₹ 1</p>
-                          <p>₹ 6000</p>
-                          <p>50% off</p>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="pad15">
-                          <p class="lead">Multi Item Carousel</p>
-                          <p>₹ 1</p>
-                          <p>₹ 6000</p>
-                          <p>50% off</p>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="pad15">
-                          <p class="lead">Multi Item Carousel</p>
-                          <p>₹ 1</p>
-                          <p>₹ 6000</p>
-                          <p>50% off</p>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="pad15">
-                          <p class="lead">Multi Item Carousel</p>
-                          <p>₹ 1</p>
-                          <p>₹ 6000</p>
-                          <p>50% off</p>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="pad15">
-                          <p class="lead">Multi Item Carousel</p>
-                          <p>₹ 1</p>
-                          <p>₹ 6000</p>
-                          <p>50% off</p>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="pad15">
-                          <p class="lead">Multi Item Carousel</p>
-                          <p>₹ 1</p>
-                          <p>₹ 6000</p>
-                          <p>50% off</p>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="pad15">
-                          <p class="lead">Multi Item Carousel</p>
-                          <p>₹ 1</p>
-                          <p>₹ 6000</p>
-                          <p>50% off</p>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="pad15">
-                          <p class="lead">Multi Item Carousel</p>
-                          <p>₹ 1</p>
-                          <p>₹ 6000</p>
-                          <p>50% off</p>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="pad15">
-                          <p class="lead">Multi Item Carousel</p>
-                          <p>₹ 1</p>
-                          <p>₹ 6000</p>
-                          <p>50% off</p>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="pad15">
-                          <p class="lead">Multi Item Carousel</p>
-                          <p>₹ 1</p>
-                          <p>₹ 6000</p>
-                          <p>50% off</p>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="pad15">
-                          <p class="lead">Multi Item Carousel</p>
-                          <p>₹ 1</p>
-                          <p>₹ 6000</p>
-                          <p>50% off</p>
-                      </div>
-                  </div>
-              </div>
-              <button class="btn btn-primary leftLst"><i class="fa fa-chevron-left"></i></button>
-              <button class="btn btn-primary rightLst"><i class="fa fa-chevron-right"></i></button>
-          </div>
-    </div>
-  </div>
+      <div class="col-md-4" align="center">
+            <div class="box">
+                    <div class="overlay">
+                      <h2>60+</h2>
+                     </div>
+                    <img src="images/workshop.png" width="64px"/>
+                    <h4>Workshops</h4>
+                    
+            </div>
+      </div>
+      <div class="col-md-4" align="center">
+            <div class="box">
+                    <div class="overlay">
+                      <h2>60+</h2>
+                     </div>
+                    <img src="images/informals.png" width="64px"/>
+                    <h4>informals</h4>
+            </div>
+      </div>
+    </div>     
+</div>
 
+  
+          
   <div class="container-fluid" align="center">
    <h3>Our Sponsors</h3>
 
   </div>
   
+  <div id="section4" class="container-fluid" style="width:100%; margin:0px; padding:0px;">
+        <div class="row" style="width:100%; margin:0px; padding:0px; ">
+            <div class="col-md-6" id="map" style="height: 500px">
+                     
+            </div>
+            <div class="col-md-6">
+                <div class="">
+                   <h3>Contact</h3>
+                    Feel Free to write to us. We Will get in touch with you as soon as possible.
+                        <form action="contact" method="post" algin="center" class="contact-form">
+                                <input type="text" class="textbox" placeholder="Name"><br/>
+                                <input type="email" class="textbox" placeholder="Email Id"><br/>
+                                <input type="text" class="textbox" placeholder="Subject"><br/>
+                                <textarea placeholder="Message" class="textarea" ></textarea><br/>
+                                <input type="submit" class="send-button" value="Send Now">
+                        </form>     
+                </div>
+            </div>
+        </div>
+  </div>
+       
   <div class="footer" align="center">
       <div>
           <a href=""><img src="images/fb.png" width="32px"></img></a>

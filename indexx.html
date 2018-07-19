@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dyuksha 18</title>
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/mystyle.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/fullpage.min.css" />
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/flipclock.css">
+    <link rel="stylesheet" href="css/fullpage.min.css">
+    
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/particle_exex.js"></script>
+    <script src="js/flipclock.min.js"></script>   
+    <script type="text/javascript" src="js/fullpage.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0VDi4gzrxc0JMcrsd7-usKi995yGGP08&callback=myMap"></script>
+    
+
+    <script>
+    function load(){
+        location.href="#home/slide3";
+    } 
+    
+     // Map Function Starts here   
+    function myMap() {
+        var location = new google.maps.LatLng(10.824022, 76.642588);
+        var mapOptions = {
+            center: location,
+            zoom: 17,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+         var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        var marker = new google.maps.Marker({
+            position:location,
+            map:map
+         });
+    } // Google Map Function Ends Here
+
+    // Call the map functions
+    
+    $(document).ready(function() {
+    $('#fullpage').fullpage({
+        anchors:['home','events','workshops','informals','sponsors'],
+	});
+
+    myMap();
+
+	//methods
+    //$.fn.fullpage.setAllowScrolling(true);
+
+        
+    var date = new Date(2018, 8, 20);
+        var now = new Date();
+        var diff = (date.getTime()/1000) - (now.getTime()/1000);
+        var clock = $('.clock').FlipClock(diff,{
+          clockFace: 'DailyCounter',
+          countdown: true
+    });  
+    
+});
+
+
+    </script>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .section{
+            background-color:grey;
+        }
+        .col-bg-tomato{
+            background-color:tomato;
+        }
+        .col-bg-blue{
+            background-color:DodgerBlue;
+        }
+        .col-bg-green{
+            background-color:MediumSeaGreen;
+        }
+        .col-bg-stateblue{
+            background-color:SlateBlue;
+        }
+        .col-bg-orange{
+            background-color:orange;
+        }
+        
+        .fp-viewing-home-slide1 .fp-controlArrow{
+            display: none;
+        }
+        .fp-viewing-home-slide2 .fp-controlArrow{
+            display: none;
+        }
+        .fp-viewing-home-slide3 .fp-controlArrow{
+            display: none;
+        }
+    </style>
+    
+</head>
+<body onload="load();">
+
+        <div id="fullpage">
+                <div class="section col-bg-blue" data-anchor="home">
+                    <div class="slide bg-image" data-anchor="slide1">
+                        <div class="my-bg-overlay" align="center">
+                            <div class="main-logo place-vertical-middle">
+                                <img src="images/main_logo.png" class="animated pulse 1s infinite" width="100px">
+                            </div>
+                        </div>
+                         
+                        <div class="arrow">
+                                <i class="arrow-image fa fa-chevron-down text-white animated bounce 20s infinite" style="font-size:16px;"></i>
+                        </div>
+                        
+                    </div>
+                    <div class="slide bg-image2" data-anchor="slide2">
+                            <div class="my-bg-overlay text-white">
+                                <div class="about" align="center">
+                                        <br/>
+                                        <h3>About</h3>
+                                        <p>
+                                         DYUKSHA is the national level techno-cultural fest organised by the College Union. This year, it is scehduled in the month of September for the dates 20 , 21 and 22. DYUKSHA consists of 60+ events in total,including 30+ cultural events and 10+ workshops of International standards. It gives you a platform to showcase your technical skills and above all, to have an experience of a lifetime. 
+                                        </p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="slide bg-image3" data-anchor="slide3">
+                            <div class="my-bg-overlay" align="center">
+                                <div class="my-clock place-vertical-middle">
+                                    <img src="images/word.png" class="animated pulse 1s infinite">
+                                    <br/><br/>
+                                    <h3 style="color:white">Great Things Are Coming</h3>
+                                    <br/>
+                                    <div class="clock" style="width:auto">
+
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                
+                <div class="section col-bg-orange" id="events" style="padding:0px;" data-anchor="events">
+                    <div class="mid">
+                        <div><i class="fas fa-people-carry" style="font-size:70px; color:white;"></i></div>
+                        <br/>
+                        <div><span style="font-size:30px; color:white;">EVENTS</span></div>
+                    </div>
+                </div>
+                <div class="section col-bg-green" data-anchor="workshops">
+                    <div class="mid">
+                        <div><i class="fas fa-toolbox" style="font-size:70px; color:white;"></i></div>
+                        <br/>
+                        <div><span style="font-size:30px; color:white;">WORKSHOPS</span></div>
+                    </div>
+                </div>
+                <div class="section col-bg-tomato" data-anchor="informals">
+                    <div class="mid">
+                        <div><i class="fas fa-dice" style="font-size:70px; color:white;"></i></div>
+                        <br/>
+                        <div><span style="font-size:30px; color:white;">INFORMALS</span></div>
+                    </div>
+                </div>
+                <div class="section col-bg-stateblue" data-anchor="sponsors">
+                    <div class="mid">
+                        <div><i class="fas fa-dice" style="font-size:70px; color:white;"></i></div>
+                        <br/>
+                        <div><span style="font-size:30px; color:white;">SPONSOR</span></div>
+                    </div>
+                </div>
+
+                <div class="section col-bg-stateblue" data-anchor="maps" >
+                            <div class="row col-bg-tomato" style="height:100%; width:100%; margin: 0;" >
+                                    <div class="col-md-6 col-bg-green"  id="map" >
+                                     
+                                     </div>
+                                     <div class="col-md-6 bg-light" id="contact">
+                                       
+                                     </div>
+                            </div>
+                    </div>
+                
+        </div>
+</body>
+
+<script>
+   
+</script>
+</html>
+

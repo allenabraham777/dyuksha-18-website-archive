@@ -93,11 +93,62 @@ body,html{ height: 100%; width: 100%;}
     margin-top: 10px;
 }
 
+.college-logo{
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+
 h4{
     display: block !important;
     font-size: 16px !important;
     margin-top:10px;
     font-family: titlefont !important; 
+}
+.contact-form{
+    
+    text-align:center;
+    padding: 30px;
+    
+}
+.contact-form .textbox{
+    font-family: textfont;
+    font-size: 14px;
+    color:black;
+    padding:10px;
+    margin: 5px;
+    background-color:white;
+    text-align:center;
+    border:none;
+    border: 1px solid rgba(153, 149, 149, 0.637);
+    box-shadow:inset 0px 0px 5px 5px white;
+    width: 238px;
+    height: 40px;
+    border-radius:3px;
+}
+.contact-form .textarea{
+    font-family: textfont;
+    font-size: 14px;
+    color:black;
+    padding:10px;
+    margin: 5px;
+    background-color:white;
+    text-align:center;
+    border:none;
+    border: 1px solid rgba(153, 149, 149, 0.637);
+    box-shadow:inset 0px 0px 5px 5px white;
+    width: 238px;
+    height: 80px;
+    border-radius:3px;
+}
+.contact-form .send-button{
+    border:none;
+    background-color:tomato;
+    color:white;
+    width:200px;
+    height: 45px;
+    cursor:pointer;
 }
 
 .bg-image{
@@ -284,6 +335,16 @@ h4{
 }
 
 @media screen and (max-width:600px) and (min-width:563px){
+   .college-logo{
+        padding: 10px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        margin: auto;
+        top:0;
+  }
+  
  .my_white_box{
     padding: 10%;
     font-size: 16px;
@@ -321,6 +382,16 @@ h4{
         box-shadow: 0px 0px 10px 5px whitesmoke;
         background-color:white; 
     }
+
+    .college-logo{
+        padding: 10px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top:0;
+    }
+    
 
     .para-gram{
         position: absolute;

@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+.mid{
+    width: 100vw;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0px;
+}
+.bg-image{
+    position: relative;
+    background-image: url("main.jpg");
+    background-position: center;
+    width:100%;
+    height:100%;
+    background-size:cover;
+}
+.bg-image2{
+    position: relative;
+    background-image: url("fixbg1.jpg");
+    background-position: center;
+    width:100%;
+    height:100%;
+    background-size:cover;
+}
+.bg-image3{
+    position: relative;
+    background-image: url("fixbg3.jpg");
+    background-position: center;
+    width:100%;
+    height:100%;
+    background-size:cover;
+}
+.my-bg-overlay{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:rgba(25,25,25,0.8);
+}
+.place-vertical-middle{
+    position: absolute; height: 240px; top:0; bottom:0; left:0; right: 0; margin: auto;
+    
+}
+
+.text-blue{
+    color:dodgerblue;
+}
+.text-white{
+    color:white;
+}
+
+
+
+.about{
+    padding-left:70px;
+    padding-right:70px;
+}
+.about p{
+    text-align: justify;
+    font-size:22px;
+}
+
+.arrow {
+    position: absolute;
+    height: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 30px;
+    border-radius: 40px;
+    bottom:10%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+.clock{
+    display:inline-block; width:auto; zoom: 0.8;
+}
+.my-clock{
+    text-align: center;
+}
+.my-clock img{
+   
+    width:400px;
+}
+
+@media screen and (max-height:400px){
+    .about p{
+        text-align: justify;
+        font-size:16px;
+    }   
+}
+@media screen and (max-width:560px){
+    .about p{
+        text-align: justify;
+        font-size:16px;
+    }   
+    .my-clock h2{
+        font-size:14px;
+    }
+    .my-clock img{
+        width: 220px;
+    }
+    .clock{
+        display:inline-block; 
+        width:auto; 
+        zoom: 0.5;
+    }
+}
