@@ -9,17 +9,18 @@ class EventsInCart{
   public $name="";
   public $status=404; // NO USER 
   public $events_in_cart=array();
-
-  function set($n,$s,$e)
+  public $events_purchased =array();
+  function set($n,$s,$e,$p)
   {
     $this->name=$n;
     $this->status=$s;
     $this->events_in_cart=$e;
+    $this->events_purchased=$p;
   }
 }
 
 $events_in_cart=array();
-
+$events_purchased=array();
 // Checks Whether User is Logged In
 if(isset($_SESSION["user"])){
     $user=unserialize($_SESSION["user"]);
@@ -27,14 +28,24 @@ if(isset($_SESSION["user"])){
     $name=$user->name;
 
     $query="SELECT * FROM dcart WHERE email='$email'";
+    $queryPurchased="SELECT * FROM purchases WHERE email='$email'";
+
     $res=mysqli_query($con,$query);
     if(mysqli_num_rows($res)>0){
         while($row=mysqli_fetch_array($res)){
             array_push($events_in_cart,$row[1]);
         }
     }
+
+    $res=mysqli_query($con,$queryPurchased);
+    if(mysqli_num_rows($res)>0){
+        while($row=mysqli_fetch_array($res)){
+            array_push($events_purchased,$row[1]);
+        }
+    }
+
     $obj = new EventsInCart();
-    $obj->set($name,200,$events_in_cart);
+    $obj->set($name,200,$events_in_cart,$events_purchased);
     echo json_encode($obj);
 
 }

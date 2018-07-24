@@ -1,61 +1,288 @@
-.events_card{
+
+body{
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    background-image: url("../images/bk_event.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    line-height: 70px;
+    background-color: #fff;
+    z-index: 1000;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.filter{
+    float: right;
+    color: blue;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.user_id{
+    cursor: pointer;
+    margin-top: 10px;
+    vertical-align: middle;
+    padding: 5px;
+    float: right;
+    border: solid 1px #000;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: auto;
+}
+
+.user_menu{
+    transition: all 0.2s linear 0s;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    position: absolute;
+    top: 60px;
+    line-height: 25px;
+    font-size: 20px;
+    overflow: hidden;
+    text-align: center;
+    right: 2%;
+    height: auto;
+}
+
+.user_menu ul{
+    padding:0;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+}
+
+.user_menu ul li{
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: black;
+    border-bottom: solid 1px #fff;
+    margin: 0;
+}
+
+.user_menu ul li:hover{
+    background-color: #333;
+}
+
+.user_menu ul li:last-child{
+    border-bottom: none;
+}
+.user_menu ul li a{
+    margin: 0;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+.menu-collapse{
+    transition: all 0.2s linear 0s;
+    height: 0px;
+}
+.menu-open{
+    transition: all 0.2s linear 0s;
+    height: auto;
+}
+
+
+
+.events-card-1{
+    padding: 0;
+    border-radius: 1.1%;
     font-family: 'Fira Sans Extra Condensed', Arial, sans-serif;
     position: relative;
     display: inline-block;
     overflow: hidden;
     margin: 8px;
-    min-width: 230px;
+    min-width: 240px;
     max-width: 315px;
+    min-height: 320px;
+    max-height: 420px;
     width: 100%;
+    height: auto;
+    padding-top: 5%;
     font-size: 16px;
     background-color: #fff;
     color: #111;
-    line-height: 1.2em;
     text-align: left;
     box-shadow: 0px 0px 5px 1px grey;
     text-align: center;
-    padding:0px;
     background: green;
+    transition: all 0.2s linear 0s;
 }
-.events_card p{
+.events-card-1 p{
     visibility: hidden;
     position: absolute;
     color:white;
-    top:0px;
+    padding: 20px;
+    margin: 0;
     left:0px;
     right: 0px;
     text-align:center;
-    padding: 4px;
+    cursor: pointer;
+    transition: all 0.01s linear 0s;
 }
-.events_card:hover img{
+.events-card-1 p>span{
+    padding-top: 30px;
+}
+.events-card-1 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+.events-card-1:hover img{
+
     filter: grayscale();
 }
-.events_card:hover p{
+.events-card-1:hover p{
+    background: rgb(52,124,180,0.5);
+    padding-top: 30%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     visibility: visible;
+    text-align: justify;
+    transition: all 0.1s linear 0s;
 }
-.events_card button{
-    width: 100px;
-    border: none;
-    border-radius: 50px;
-    border: 1px solid white;
-    padding:5px;
+.events-card-1 p button{
+    bottom: 5%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 2px solid white;
     text-align: center;
     color:white;
-    margin: 4px;
-    outline: none;
+    font-size: 20px;
     cursor: pointer;;
-    background: rgba(38, 38, 206, 0.678);
+    background: transparent;
+    transition: all 0.2s linear 0s;
 }
 
-.events_card:hover h4{
+
+
+.events-card-1 button:hover{
+    background: #fff;
+    color: #000;
+}
+
+.events-card-1:hover h4{
     visibility: hidden;
 }
-.events_card h4{
+.events-card-1 h4{
+    font-family: 'Chela One';
+    font-weight: normal;
+    text-transform: uppercase;
     position: absolute;
-    bottom:0;
+    top:0;
     left:0;
     right: 0;
-    background-color:white;
-    margin:0px; 
-    padding:10px;
+    margin: 0;
+    color: white;
+    letter-spacing: 10px;
+    font-size: 150%;
+    padding-top:20px;
+}
+
+@media screen and (max-width: 960px){
+    body{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0;
+        margin: 0;
+    }
+    header{
+        margin: 0;
+        width: 100%;
+    }
+
+    .evrnt-card-1{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .user_id{
+        display: none;
+        position: absolute;
+    }
+    .menu-button{
+        position: relative;
+        margin-top: 10px;
+        margin-right: 20px;
+        padding: 5px;
+        height: 40px;
+        width: 40px;
+        background-color: #000;
+        border: solid 1px #fff;
+        color: #fff;
+        float: right;
+        visibility: visible;
+
+    }
+    .menu-collapse{
+        transition: all 0.2s linear 0s;
+        height: 0px; 
+    }
+    .menu-open{
+        transition: all 0.2s linear 0s;
+        padding-top: 70px;
+        height: 100vh !important;
+        width: 105vw;
+        top: 0;
+        z-index: -2;
+        background-color: #000;
+    }
+    .user_menu ul li{
+        cursor: pointer;
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+        line-height: 50px;
+        text-align: center;
+        background-color: black;
+        border-bottom: solid 1px #fff;
+        margin: 0;
+    }
+
+    .user_menu ul li:hover{
+        background-color: #333;
+    }
+
+    .user_menu ul li:first-child{
+        border-top: solid 1px #fff;
+    }
+
+    .user_menu ul li:last-child{
+        border-bottom: solid 1px #fff;
+    }
+}
+
+
+@media screen and (min-width: 960px){
+    .menu-button{
+        position: absolute;
+        visibility: hidden; 
+    }
 }
