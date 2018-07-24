@@ -1,0 +1,61 @@
+.events_card{
+    font-family: 'Fira Sans Extra Condensed', Arial, sans-serif;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 8px;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    font-size: 16px;
+    background-color: #fff;
+    color: #111;
+    line-height: 1.2em;
+    text-align: left;
+    box-shadow: 0px 0px 5px 1px grey;
+    text-align: center;
+    padding:0px;
+    background: green;
+}
+.events_card p{
+    visibility: hidden;
+    position: absolute;
+    color:white;
+    top:0px;
+    left:0px;
+    right: 0px;
+    text-align:center;
+    padding: 4px;
+}
+.events_card:hover img{
+    filter: grayscale();
+}
+.events_card:hover p{
+    visibility: visible;
+}
+.events_card button{
+    width: 100px;
+    border: none;
+    border-radius: 50px;
+    border: 1px solid white;
+    padding:5px;
+    text-align: center;
+    color:white;
+    margin: 4px;
+    outline: none;
+    cursor: pointer;;
+    background: rgba(38, 38, 206, 0.678);
+}
+
+.events_card:hover h4{
+    visibility: hidden;
+}
+.events_card h4{
+    position: absolute;
+    bottom:0;
+    left:0;
+    right: 0;
+    background-color:white;
+    margin:0px; 
+    padding:10px;
+}

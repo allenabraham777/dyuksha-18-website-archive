@@ -1,3 +1,27 @@
+ <div class="our-menu">
+		<div class="btnrest" id="homemenu">
+		  <label id="show-menu " for="toggle" >  
+		    <div class="btn" onclick="callgame()">
+		      <i class="material-icons md-36 fas fa-gamepad"></i>
+            </div>
+		    <div class="btn" onclick="callcal()">
+		      <i class="material-icons md-36 far fa-calendar-alt"></i>
+            </div>
+            <div class="btn" onclick="callhome()">
+                <i class="material-icons md-36 fas fa-home"></i>
+              </div>   
+		    <div class="btn" onclick="callmap()">
+		      <i class="material-icons md-36 fas fa-map-marker-alt"></i>
+		    </div>
+		    <div class="btn" onclick="callacc()">
+		      <i class="material-icons md-36 fas fa-bed"></i>
+		    </div>
+		  </label>
+        </div>
+    </div>
+
+
+
 <div id="section1" class="container-fluid" style="width:100%;height:500px; margin:0px; padding:0px;background: green;">
   <div class="row" style="width: 90%;margin:0px; padding:0px;">
 		<div class="MultiCarousel" style="width: 100%"data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">

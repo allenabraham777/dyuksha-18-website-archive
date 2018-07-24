@@ -61,8 +61,14 @@
 
 
 .about{
-    padding-left:70px;
-    padding-right:70px;
+    padding-left:20%;
+    padding-right:20%;
+    position: absolute;
+    max-height: 300px;
+    top:0;
+    bottom:0;
+    margin: auto;
+    
 }
 .about p{
     text-align: justify;
@@ -84,6 +90,7 @@
 }
 .clock{
     display:inline-block; width:auto; zoom: 0.8;
+    -moz-transform: scale(0.8);
 }
 .my-clock{
     text-align: center;
@@ -93,13 +100,64 @@
     width:400px;
 }
 
+.fp-slidesNav ul li a span{
+    background:white !important;
+}
+#fp-nav ul li a span{
+    opacity: 0;
+}
+
+.our-menu{
+   visibility: hidden;
+   position: absolute;
+}
+
+
+
 @media screen and (max-height:400px){
+    .about{
+        padding-left:20px;
+        padding-right:20px;
+        position: absolute;
+        max-height: 300px;
+        top:0;
+        bottom:0;
+        margin: auto;
+        
+    }
+
     .about p{
         text-align: justify;
         font-size:16px;
     }   
+   
 }
-@media screen and (max-width:560px){
+@media screen and (max-width:960px) and (min-width:561px){
+    .about{
+        padding-left:20px;
+        padding-right:20px;
+        position: absolute;
+        max-height: 300px;
+        top:0;
+        bottom:0;
+        margin: auto;
+    }
+    .about p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:560px) and (min-width:330px){
+    
+    .about{
+        padding-left:20px;
+        padding-right:20px;
+        position: absolute;
+        max-height: 300px;
+        top:0;
+        bottom:0;
+        margin: auto;
+        
+    }
     .about p{
         text-align: justify;
         font-size:16px;
@@ -114,5 +172,37 @@
         display:inline-block; 
         width:auto; 
         zoom: 0.5;
+        -moz-transform: scale(0.5);
     }
+
+}
+@media screen and (max-width:329px){
+    .about{
+        padding-left:20px;
+        padding-right:20px;
+        position: absolute;
+        max-height: 300px;
+        top:0;
+        bottom:0;
+        margin: auto;
+        
+    }
+
+    .about p{
+        text-align: justify;
+        font-size:16px;
+    }   
+    .my-clock h2{
+        font-size:14px;
+    }
+    .my-clock img{
+        width: 220px;
+    }
+    .clock{
+        display:inline-block; 
+        width:auto; 
+        zoom: 0.48;
+        -moz-transform: scale(0.48);
+    }
+
 }

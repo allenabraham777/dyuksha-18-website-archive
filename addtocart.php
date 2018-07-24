@@ -24,6 +24,6 @@ if(isset($_GET["itemId"]) && isset($_SESSION["user"])){
     mysqli_close($con);
 }
 else{
-    echo "test";
+    echo "Some Error Occured";
 }
 ?>
