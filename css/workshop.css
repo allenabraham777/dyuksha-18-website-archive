@@ -3,7 +3,8 @@ body{
     margin: 0;
     position: absolute;
     width: 100%;
-    background-image: url("../images/bk_event.jpeg");
+    background: linear-gradient(rgb(52,124,180,0.5),rgb(52,124,180,0.5)),
+                url("../images/bk_workshop.jpeg");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -11,7 +12,7 @@ body{
     overflow-x: hidden;
 }
 
-.events-card-1{
+.workshop-card-1{
     padding: 0;
     border-radius: 1.1%;
     font-family: 'Fira Sans Extra Condensed', Arial, sans-serif;
@@ -35,7 +36,7 @@ body{
     background: green;
     transition: all 0.2s linear 0s;
 }
-.events-card-1 p{
+.workshop-card-1 p{
     visibility: hidden;
     position: absolute;
     color:white;
@@ -47,21 +48,21 @@ body{
     cursor: pointer;
     transition: all 0.01s linear 0s;
 }
-.events-card-1 p>span{
+.workshop-card-1 p>span{
     padding-top: 30px;
 }
-.events-card-1 img{
+.workshop-card-1 img{
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
 }
-.events-card-1:hover img{
+.workshop-card-1:hover img{
 
     filter: grayscale();
 }
-.events-card-1:hover p{
-    background: rgb(52,124,180,0.5);
+.workshop-card-1:hover p{
+    background: rgb(225,30,10,0.5);
     padding-top: 30%;
     position: absolute;
     top: 0;
@@ -72,7 +73,8 @@ body{
     text-align: justify;
     transition: all 0.1s linear 0s;
 }
-.events-card-1 p button{
+.workshop-card-1:hover p button{
+    visibility: visible;
     bottom: 5%;
     width: 40px;
     height: 40px;
@@ -85,18 +87,20 @@ body{
     background: transparent;
     transition: all 0.2s linear 0s;
 }
+.workshop-card-1 p button{
+    visibility: hidden;
+}
 
 
-
-.events-card-1 button:hover{
+.workshop-card-1:hover button:hover{
     background: #fff;
     color: #000;
 }
 
-.events-card-1:hover h4{
+.workshop-card-1:hover h4{
     visibility: hidden;
 }
-.events-card-1 h4{
+.workshop-card-1 h4{
     font-family: 'Chela One';
     font-weight: normal;
     text-transform: uppercase;
@@ -112,10 +116,12 @@ body{
 }
 
 @media screen and (max-width: 960px){
-    
+
     .evrnt-card-1{
         margin-left: 0;
         margin-right: 0;
     }
 
 }
+
+

@@ -7,6 +7,7 @@
     <title>Events</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/cards.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/menuitems.css" />
     <link href="https://fonts.googleapis.com/css?family=Chela+One" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
 </head>
@@ -150,21 +151,25 @@
 <div align="center" style="margin-top: 70px;">
 
     <?php
-        include("connect.php");
-        $query="SELECT eventId,ename,price FROM eprices";
-        $res = mysqli_query($con,$query);
-        while($row=mysqli_fetch_array($res)){
-   
-            echo "<div class='events-card-1 {$row[0]}'>";
-            echo "<img src=\"https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample68.jpg\" style=\"height: all;\">";
-            echo "<h4>{$row[1]}</h4>";
-            echo "<p> Some Event Decription Will Be Shown Here as a paragraph of text. this is a sample <br/><br/>";
-            echo "<span>Price : Rs.{$row[2]}</span>";
-            echo "<br/><br/>";
-            echo "<button onclick=\"addToCart('{$row[0]}');\" style=\"position: absolute; left: 10%;\"><i class=\"fas fa-cart-plus\"> </i></button>"; 
-            echo "<button onclick=\"readMore('{$row[0]}');\" style=\"position: absolute; right: 10%;\"><i class=\"fas fa-eye\"></i></button>";
-            echo "</p></div>";
-      }
+            include("connect.php");
+        
+         //   $query="SELECT eventId,ename,price FROM eprices WHERE eventId NOT IN (SELECT itemID FROM dcart WHERE email='$email') AND eventId  NOT IN (SELECT itemID FROM purchases WHERE email='$email')  ";
+            $query="SELECT eventId,ename,price FROM eprices";
+            $res = mysqli_query($con,$query);
+            while($row=mysqli_fetch_array($res)){
+       
+                echo "<div class='events-card-1 {$row[0]}'>";
+                echo "<img src=\"https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample68.jpg\" style=\"height: all;\">";
+                echo "<h4>{$row[1]}</h4>";
+                echo "<p> Some Event Decription Will Be Shown Here as a paragraph of text. this is a sample <br/><br/>";
+                echo "<span>Price : Rs.{$row[2]}</span>";
+                echo "<br/><br/>";
+                echo "<button onclick=\"addToCart('{$row[0]}');\" style=\"position: absolute; left: 10%;\"><i class=\"fas fa-cart-plus\"> </i></button>"; 
+                echo "<button onclick=\"readMore('{$row[0]}');\" style=\"position: absolute; right: 10%;\"><i class=\"fas fa-eye\"></i></button>";
+                echo "</p></div>";
+          }
+
+          mysqli_close($con);
 
     ?>
    

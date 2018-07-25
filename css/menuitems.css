@@ -1,0 +1,168 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    line-height: 70px;
+    background-color: #fff;
+    z-index: 1000;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.filter{
+    float: right;
+    color: blue;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.user_id{
+    cursor: pointer;
+    margin-top: 10px;
+    vertical-align: middle;
+    padding: 5px;
+    float: right;
+    border: solid 1px #000;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: auto;
+}
+
+.user_menu{
+    transition: all 0.2s linear 0s;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    position: absolute;
+    top: 60px;
+    line-height: 25px;
+    font-size: 20px;
+    overflow: hidden;
+    text-align: center;
+    right: 2%;
+    height: auto;
+}
+
+.user_menu ul{
+    padding:0;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+}
+
+.user_menu ul li{
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: black;
+    border-bottom: solid 1px #fff;
+    margin: 0;
+}
+
+.user_menu ul li:hover{
+    background-color: #333;
+}
+
+.user_menu ul li:last-child{
+    border-bottom: none;
+}
+.user_menu ul li a{
+    margin: 0;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+.menu-collapse{
+    transition: all 0.2s linear 0s;
+    height: 0px;
+}
+.menu-open{
+    transition: all 0.2s linear 0s;
+    height: auto;
+}
+
+
+@media screen and (max-width: 960px){
+    body{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0;
+        margin: 0;
+    }
+    header{
+        margin: 0;
+        width: 100%;
+    }
+
+    .user_id{
+        display: none;
+        position: absolute;
+    }
+    .menu-button{
+        position: relative;
+        margin-top: 10px;
+        margin-right: 20px;
+        padding: 5px;
+        height: 40px;
+        width: 40px;
+        background-color: #000;
+        border: solid 1px #fff;
+        color: #fff;
+        float: right;
+        visibility: visible;
+
+    }
+    .menu-collapse{
+        transition: all 0.2s linear 0s;
+        height: 0px; 
+    }
+    .menu-open{
+        transition: all 0.2s linear 0s;
+        padding-top: 70px;
+        height: 100vh !important;
+        width: 105vw;
+        top: 0;
+        z-index: -2;
+        background-color: #000;
+    }
+    .user_menu ul li{
+        cursor: pointer;
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+        line-height: 50px;
+        text-align: center;
+        background-color: black;
+        border-bottom: solid 1px #fff;
+        margin: 0;
+    }
+
+    .user_menu ul li:hover{
+        background-color: #333;
+    }
+
+    .user_menu ul li:first-child{
+        border-top: solid 1px #fff;
+    }
+
+    .user_menu ul li:last-child{
+        border-bottom: solid 1px #fff;
+    }
+}
+
+
+@media screen and (min-width: 960px){
+    .menu-button{
+        position: absolute;
+        visibility: hidden; 
+    }
+}

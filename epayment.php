@@ -21,7 +21,11 @@
             array_push($items_purchased,$row[1]);
             }
         }
-        
+        else
+        {
+            // no items in the cart for that user means to redirect the user to profile or login page
+            header("Location:login");
+        }
         
         // Calculate the cost of all items that is present in users cart and store it in cost
         $cost_res= mysqli_query($con,$costQuery);
