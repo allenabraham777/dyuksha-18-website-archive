@@ -37,7 +37,7 @@
                         "purpose" => "Dyuksha Workshop Payment",
                         "amount" => "$cost",
                         "send_email" => true,
-                        "email" => "paulpjoby@gmail.com",
+                        "email" => "$email",
                         "redirect_url" => "http://localhost/dyuksha.org/wpurchased.php"
                         // "webhook" => "http://localhost/dyuksha.org/webhook.php"
                     ));

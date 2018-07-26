@@ -8,9 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/cards.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/menuitems.css" />
+    
     <link href="https://fonts.googleapis.com/css?family=Chela+One" rel="stylesheet">
+    <link href="css/dialog.css" rel="stylesheet"/>
     <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
 </head>
+
 <script>
  
     //  0 1 2 3 4 5 6-all dept 
@@ -22,82 +25,7 @@
     var ec_events=["ETEC22","ETEC23","ETEC24","ETEC25"];
     var ee_events=["ETEE26","ETEE27","ETEE28","ETEE29","ETEE30"];
 
-
-    /*------------------------------------ Filter Method --------------------------------------------
-    | 0 ->CE 1->IC 2->CS 3->ME 4->EC 5->EE OTHER -> ALL
-    ------------------------------------------------------------------------------------------------*/
-    function filter(cat){
-        switch(cat){
-            case 0:
-                var len = all_events.length;
-                for(var i=0;i<len;i++){
-                    document.getElementsByClassName(all_events[i])[0].style.display="none";
-                }
-                len = ce_events.length;
-                for(var i=0;i<len;i++){
-                    document.getElementsByClassName(ce_events[i])[0].style.display="inline-block";
-                }
-                break;
-            case 1:
-            var len = all_events.length;
-                for(var i=0;i<len;i++){
-                    document.getElementsByClassName(all_events[i])[0].style.display="none";
-                }
-                len = ce_events.length;
-                for(var i=0;i<len;i++){
-                    document.getElementsByClassName(ic_events[i])[0].style.display="inline-block";
-                }
-                break;
-            case 2:
-            var len = all_events.length;
-                for(var i=0;i<len;i++){
-                    document.getElementsByClassName(all_events[i])[0].style.display="none";
-                }
-                len = ce_events.length;
-                for(var i=0;i<len;i++){
-                    document.getElementsByClassName(cs_events[i])[0].style.display="inline-block";
-                }
-                break;
-            case 3:
-            var len = all_events.length;
-                for(var i=0;i<len;i++){
-                    document.getElementsByClassName(all_events[i])[0].style.display="none";
-                }
-                len = ce_events.length;
-                for(var i=0;i<len;i++){
-                    document.getElementsByClassName(me_events[i])[0].style.display="inline-block";
-                }
-                break;
-            case 4:
-            var len = all_events.length;
-                for(var i=0;i<len;i++){
-                    document.getElementsByClassName(all_events[i])[0].style.display="none";
-                }
-                len = ce_events.length;
-                for(var i=0;i<len;i++){
-                    document.getElementsByClassName(ec_events[i])[0].style.display="inline-block";
-                }
-                break;
-            case 5:
-            var len = all_events.length;
-                for(var i=0;i<len;i++){
-                    document.getElementsByClassName(all_events[i])[0].style.display="none";
-                }
-                len = ce_events.length;
-                for(var i=0;i<len;i++){
-                    document.getElementsByClassName(ee_events[i])[0].style.display="inline-block";
-                }
-                break;
-            default:
-            var len = all_events.length;
-                for(var i=0;i<len;i++){
-                    document.getElementsByClassName(all_events[i])[0].style.display="inline-block";
-                }
-                
-
-        }
-    }
-
+   
     var username="<?php if(isset($_SESSION['user'])){ echo 'logged';}else{echo ' ';} ?>";
     <?php 
 
@@ -134,13 +62,29 @@
     
 </script>
 <body onload="">
+
+<div class="dialog" align="center">
+	<p>Display Events</p> 
+    <br/>
+    <div class="options">
+    <input type="radio" name="opt" value="6" checked/>All Departments<br/>
+    <input type="radio" name="opt" value="0" />Civil Engineering<br/>
+    <input type="radio" name="opt" value="2" />Computer Science<br/>
+    <input type="radio" name="opt" value="1" />Intrumentation <br/>
+    <input type="radio" name="opt" value="3" />Mechanical<br/>
+    <input type="radio" name="opt" value="4" />Electronics <br/>
+    <input type="radio" name="opt" value="5" />Electrical<br/>
+    </div>
+    <button onclick="s()" value="Filter">Filter</button>
+</div>
+
 <header>
     <span class="user_id" id="user_id" onclick="open_menu()">
         <?php echo $name ?> <i class="fas fa-sort-down"></i>
         <!-- PHP SCRIPT -->
     </span>
     <button class="menu-button" onclick="open_menu()"><i class="fas fa-bars"></i></button>
-    <span class="filter">Filter <i class="fas fa-filter"></i></span>
+    <span class="filter" onclick="openOrCloseDialog()">Filter <i class="fas fa-filter"></i></span>
     <div class="user_menu menu-collapse" id="user_menu">
         <ul>
             <li><a href="profile"><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Profile</a></li>
@@ -188,6 +132,103 @@
            document.getElementById("user_menu").classList.add("menu-collapse");
            document.getElementById("user_menu").classList.remove("menu-open");
        }
+    }
+
+    var  show = false;
+    function openOrCloseDialog(){
+        if(show){
+        document.getElementsByClassName("dialog")[0].style.display="none";
+        show=false;
+        }
+        else{
+        document.getElementsByClassName("dialog")[0].style.display="block";
+        show=true;
+        }
+    }
+     /*------------------------------------ Filter Method --------------------------------------------
+    | 0 ->CE 1->IC 2->CS 3->ME 4->EC 5->EE OTHER -> ALL
+    ------------------------------------------------------------------------------------------------*/
+    function filter(cat){
+        var x = parseInt(cat);
+        switch(x){
+            case 0:
+                var len = all_events.length;
+                for(var i=0;i<len;i++){
+                    document.getElementsByClassName(all_events[i])[0].style.display="none";
+                }
+                len = ce_events.length;
+                for(var i=0;i<len;i++){
+                    document.getElementsByClassName(ce_events[i])[0].style.display="inline-block";
+                }
+                break;
+            case 1:
+                var len = all_events.length;
+                for(var i=0;i<len;i++){
+                    document.getElementsByClassName(all_events[i])[0].style.display="none";
+                }
+                len = ic_events.length;
+                for(var i=0;i<len;i++){
+                    document.getElementsByClassName(ic_events[i])[0].style.display="inline-block";
+                }
+                break;
+            case 2:
+            var len = all_events.length;
+                for(var i=0;i<len;i++){
+                    document.getElementsByClassName(all_events[i])[0].style.display="none";
+                }
+                len = cs_events.length;
+                for(var i=0;i<len;i++){
+                    document.getElementsByClassName(cs_events[i])[0].style.display="inline-block";
+                }
+                break;
+            case 3:
+            var len = all_events.length;
+                for(var i=0;i<len;i++){
+                    document.getElementsByClassName(all_events[i])[0].style.display="none";
+                }
+                len = me_events.length;
+                for(var i=0;i<len;i++){
+                    document.getElementsByClassName(me_events[i])[0].style.display="inline-block";
+                }
+                break;
+            case 4:
+            var len = all_events.length;
+                for(var i=0;i<len;i++){
+                    document.getElementsByClassName(all_events[i])[0].style.display="none";
+                }
+                len = ec_events.length;
+                for(var i=0;i<len;i++){
+                    document.getElementsByClassName(ec_events[i])[0].style.display="inline-block";
+                }
+                break;
+            case 5:
+            var len = all_events.length;
+                for(var i=0;i<len;i++){
+                    document.getElementsByClassName(all_events[i])[0].style.display="none";
+                }
+                len = ee_events.length;
+                for(var i=0;i<len;i++){
+                    document.getElementsByClassName(ee_events[i])[0].style.display="inline-block";
+                }
+                break;
+            default:
+            var len = all_events.length;
+                for(var i=0;i<len;i++){
+                    document.getElementsByClassName(all_events[i])[0].style.display="inline-block";
+                }
+                
+
+        }
+    }
+
+    function s(){
+        var x = document.getElementsByName("opt");
+        for(var i=0;i<x.length;i++){
+            if(x[i].checked){
+            filter(x[i].value);
+            }
+        }
+        openOrCloseDialog();
     }
 </script>
 </body>

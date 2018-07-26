@@ -1,0 +1,33 @@
+.dialog{
+    display: none;
+	position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    width:300px;
+    height:240px;
+    border-radius:3px;
+    box-shadow:0px 0px 1px 1px grey;
+    background-color:white;
+    z-index: 99;
+}
+
+.dialog p{
+ text-align:center;
+ padding:0px;
+ margin-top:10px;
+ margin-bottom:0px;
+}
+.dialog .options{
+	text-align:left;
+    margin-bottom:10px;
+    padding-left:80px;
+}
+.dialog button{
+	border-radius:3px;
+    padding:10px;
+    border:none;
+    cursor:pointer;
+}
