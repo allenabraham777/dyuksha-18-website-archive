@@ -78,7 +78,7 @@ body{
     bottom: 5%;
     width: 40px;
     height: 40px;
-    line-height: 40px;
+    line-height: 20px;
     border: 2px solid white;
     text-align: center;
     color:white;
@@ -86,6 +86,15 @@ body{
     cursor: pointer;;
     background: transparent;
     transition: all 0.2s linear 0s;
+}
+
+.workshop-card-1:hover p .registered{
+    line-height:20px;
+
+    background: rgb(0,100,0) !important;
+}
+.workshop-card-1:hover p .registered:hover{
+    color: #fff;
 }
 .workshop-card-1 p button{
     visibility: hidden;
@@ -116,12 +125,19 @@ body{
 }
 
 @media screen and (max-width: 960px){
-
-    .evrnt-card-1{
+    body{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0;
+        margin: 0;
+    }
+    .workshop-card-1{
         margin-left: 0;
         margin-right: 0;
     }
 
 }
-
 

@@ -55,10 +55,10 @@ if(isset($_SESSION["user"])){
     $email=$user->email;
     $name=$user->name;
 
-    // Workshop in Cart
-    $query1="SELECT wname,wprice FROM wprices WHERE workshopid IN (SELECT itemID FROM dcart WHERE email='$email')";
+    // Workshop in Cart No Need Workshops wont be added to Cart
+    // $query1="SELECT wname,wprice FROM wprices WHERE workshopid IN (SELECT itemID FROM dcart WHERE email='$email')";
     // Events in Cart
-    $query2="SELECT ename,price FROM eprices WHERE eventId IN (SELECT itemID FROM dcart WHERE email='$email')";
+    $query2="SELECT ename,price,eventId FROM eprices WHERE eventId IN (SELECT itemID FROM dcart WHERE email='$email')";
     
     // Events in Purchases
     $queryPurchased1="SELECT ename FROM eprices WHERE eventId IN (SELECT itemID FROM purchases WHERE email='$email')";
@@ -72,23 +72,13 @@ if(isset($_SESSION["user"])){
 
             <?php
             if(isset($_SESSION['user'])){
-               // Fetches the Names of Events and Workshops In The Cart 
-                $res=mysqli_query($con,$query1);
-                if(mysqli_num_rows($res)>0){
-                    $isItemsPresentInCart=true;
-                    while($row=mysqli_fetch_array($res)){
-                        echo "<div class='item'>";
-                        echo "<p class='left'>{$row[0]}</p> <p class='right'> Rs.{$row[1]} <a onclick='remove()'> <i class='fa fa-times'></i> </a> </p>";
-                        echo "</div>";
-                        
-                    }
-                }
+               // Fetches the Names of Events In The Cart and Workshops wont be added to Cart 
                 $res=mysqli_query($con,$query2);
                 if(mysqli_num_rows($res)>0){
                     $isItemsPresentInCart=true;
                     while($row=mysqli_fetch_array($res)){
                         echo "<div class='item'>";
-                        echo "<p class='left'>{$row[0]}</p> <p class='right'> Rs.{$row[1]} <a onclick='remove()'> <i class='fa fa-times'></i> </a> </p>";
+                        echo "<p class='left'>{$row[0]}</p> <p class='right'> Rs.{$row[1]} <a onclick=\"removeFromCart('{$row[2]}')\"> <i class='fa fa-times'></i> </a> </p>";
                         echo "</div>";
                     }
                 }
@@ -164,5 +154,20 @@ if(isset($_SESSION["user"])){
     function openCart(){
         document.getElementById("cart").style.display="block";
     }
+    function removeFromCart(itemId){
+        var link = "removeFromCart.php?itemId="+itemId;
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange=function(){
+            if(this.status==200 && this.readyState == 4){
+                alert(this.responseText);
+                location.reload(true);
+            }
+        };
+        xhttp.open("GET",link,true);
+        xhttp.send();
+    }
+
+    // By Default Display Cart
+    openCart();
 </script>
 </html>

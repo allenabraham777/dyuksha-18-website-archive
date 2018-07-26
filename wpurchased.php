@@ -49,13 +49,15 @@
                 // Unset all Session Variable
                 unset($_SESSION["purchased_workshop_id"]);
                 // Display Success Message
-                echo "Purchase Successful";
+                //echo "Purchase Successful";
+                header("Location:success.html");
             }
             else{
                   // Unset all Session Variable
                   unset($_SESSION["purchased_workshop_id"]);
                   // Display Failed Message
-                  echo "Purchase Failed";
+                  //echo "Purchase Failed";
+                  header("Location:failed.html");
               }
             
         
@@ -65,12 +67,14 @@
         catch (Exception $e) {
             // Unset All Session Variable
             unset($_SESSION["purchased_workshop_id"]);
-            echo "Purchase Failed";
+            //echo "Purchase Failed";
+             header("Location:failed.html");
             //print('Error: ' . $e->getMessage());
         }
 
     }
     else{
-        echo "Oops ! Unknown Error";
+        //echo "Oops ! Unknown Error";
+        header("Location:login");
     }
 ?>

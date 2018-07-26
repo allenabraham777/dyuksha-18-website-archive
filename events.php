@@ -63,35 +63,71 @@
 </script>
 <body onload="">
 
-<div class="dialog" align="center">
-	<p>Display Events</p> 
-    <br/>
-    <div class="options">
-    <input type="radio" name="opt" value="6" checked/>All Departments<br/>
-    <input type="radio" name="opt" value="0" />Civil Engineering<br/>
-    <input type="radio" name="opt" value="2" />Computer Science<br/>
-    <input type="radio" name="opt" value="1" />Intrumentation <br/>
-    <input type="radio" name="opt" value="3" />Mechanical<br/>
-    <input type="radio" name="opt" value="4" />Electronics <br/>
-    <input type="radio" name="opt" value="5" />Electrical<br/>
+
+
+<div class="dialog-container">
+        <div class="dialog">
+            <button class="dialog-close-button" onclick="openOrCloseDialog();"><i class="fas fa-times"></i></button>
+            <div class="dialog-radio-container-parent">
+                <label class="dialog-radio-container">All
+                        <input type="radio" value="6" name="dialog-radio" checked="checked" id="all" class="dialog-radio">
+                        <span class="dialog-radio-checkmark"></span>
+                    </label>
+                    
+                    <label class="dialog-radio-container">Computer Science
+                        <input type="radio" value="2" name="dialog-radio" id="cse" class="dialog-radio">
+                        <span class="dialog-radio-checkmark"></span>
+                    </label>
+                    
+                    <label class="dialog-radio-container">Mechanical
+                        <input type="radio" value="3" name="dialog-radio" id="me" class="dialog-radio">
+                        <span class="dialog-radio-checkmark"></span>
+                    </label>
+                    
+                    <label class="dialog-radio-container">Electrical
+                        <input type="radio" value="5" name="dialog-radio" id="eee" class="dialog-radio">
+                        <span class="dialog-radio-checkmark"></span>
+                    </label>
+                    
+                    <label class="dialog-radio-container">Electronics
+                        <input type="radio" value="4" name="dialog-radio" id="ece" class="dialog-radio">
+                        <span class="dialog-radio-checkmark"></span>
+                    </label>
+                    
+                    <label class="dialog-radio-container">Civil
+                        <input type="radio" value="0" name="dialog-radio" id="ce" class="dialog-radio">
+                        <span class="dialog-radio-checkmark"></span>
+                    </label>
+                    
+                    <label class="dialog-radio-container">Instrumentation Control
+                        <input type="radio" value="1" name="dialog-radio" id="ic" class="dialog-radio">
+                        <span class="dialog-radio-checkmark"></span>
+                    </label>
+                    <button class="dialog-filter-button" onclick="s();">Filter</button>
+            </div>      
+        </div>
     </div>
-    <button onclick="s()" value="Filter">Filter</button>
-</div>
 
 <header>
+    <img class="logo" src="images/navbar_logo.png">
     <span class="user_id" id="user_id" onclick="open_menu()">
-        <?php echo $name ?> <i class="fas fa-sort-down"></i>
+        <i class="fas fa-user"></i> <?php echo $name ?> <i class="fas fa-sort-down"></i>
         <!-- PHP SCRIPT -->
     </span>
     <button class="menu-button" onclick="open_menu()"><i class="fas fa-bars"></i></button>
-    <span class="filter" onclick="openOrCloseDialog()">Filter <i class="fas fa-filter"></i></span>
+    <span class="filter" onclick="openOrCloseDialog();">Filter <i class="fas fa-filter"></i></span>
     <div class="user_menu menu-collapse" id="user_menu">
         <ul>
+            <li><a href="index"><i class="fas fa-home"></i>&nbsp;&nbsp;Home</a></li>
             <li><a href="profile"><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Profile</a></li>
+            <li><a href="events"><i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;Events</a></li>
+            <li><a href=""><i class="fas fa-briefcase"></i>&nbsp;&nbsp;Workshops</a></li>
+            <li><a href="informals"><i class="fas fa-gamepad"></i>&nbsp;&nbsp;Informals</a></li>
             <li><a href="logout"><i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp;Logout</a></li>
         </ul>
     </div>
-</header> 
+</header>
+
 <div align="center" style="margin-top: 70px;">
 
     <?php
@@ -137,11 +173,11 @@
     var  show = false;
     function openOrCloseDialog(){
         if(show){
-        document.getElementsByClassName("dialog")[0].style.display="none";
+        document.getElementsByClassName("dialog-container")[0].style.display="none";
         show=false;
         }
         else{
-        document.getElementsByClassName("dialog")[0].style.display="block";
+        document.getElementsByClassName("dialog-container")[0].style.display="block";
         show=true;
         }
     }
@@ -222,7 +258,7 @@
     }
 
     function s(){
-        var x = document.getElementsByName("opt");
+        var x = document.getElementsByName("dialog-radio");
         for(var i=0;i<x.length;i++){
             if(x[i].checked){
             filter(x[i].value);

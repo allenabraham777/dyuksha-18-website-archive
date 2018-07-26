@@ -62,13 +62,15 @@
                 // Unset all Session Variable
                 unset($_SESSION["ITEMS_IN_CART"]);
                 // Display Success Message
-                echo "Purchase Successful";
+                //echo "Purchase Successful";
+                header("Location:success.html");
             }
             else{
                   // Unset all Session Variable
                   unset($_SESSION["ITEMS_IN_CART"]);
                   // Display Failed Message
-                  echo "Purchase Failed";
+                  //echo "Purchase Failed";
+                  header("Location:failed.html");
               }
             
         
@@ -79,6 +81,7 @@
             // Unset All Session Variable
             unset($_SESSION["ITEMS_IN_CART"]);
             echo "Purchase Failed";
+            header("Location:failed.html");
             //print('Error: ' . $e->getMessage());
         }
  

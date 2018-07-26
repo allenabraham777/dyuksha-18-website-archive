@@ -43,29 +43,40 @@
 
 </script>
 <body>
+
 <header>
+    <img class="logo" src="images/navbar_logo.png">
     <span class="user_id" id="user_id" onclick="open_menu()">
-      <?php echo $name ?> <i class="fas fa-sort-down"></i>
+        <i class="fas fa-user"></i> <?php echo $name ?> <i class="fas fa-sort-down"></i>
         <!-- PHP SCRIPT -->
     </span>
     <button class="menu-button" onclick="open_menu()"><i class="fas fa-bars"></i></button>
     <span class="filter">Filter <i class="fas fa-filter"></i></span>
     <div class="user_menu menu-collapse" id="user_menu">
         <ul>
-            <li><a href=""><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Cart</a></li>
-            <li><a href=""><i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp;Logout</a></li>
+            <li><a href="index"><i class="fas fa-home"></i>&nbsp;&nbsp;Home</a></li>
+            <li><a href="profile"><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Profile</a></li>
+            <li><a href="events"><i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;Events</a></li>
+            <li><a href=""><i class="fas fa-briefcase"></i>&nbsp;&nbsp;Workshops</a></li>
+            <li><a href="informals"><i class="fas fa-gamepad"></i>&nbsp;&nbsp;Informals</a></li>
+            <li><a href="logout"><i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp;Logout</a></li>
         </ul>
     </div>
-</header> 
+</header>
+
+
 <div align="center" style="margin-top: 70px;">
-     
-     
+         
 <?php
         include("connect.php");
         if(isset($_SESSION['user'])){
             
             $email = $userObj->email;
+            // Fetches All the Workshops user did not purchase
             $query="SELECT workshopid,wname,wprice FROM wprices WHERE workshopid NOT IN (SELECT itemId FROM purchases WHERE email='$email')" ;
+            // Fetches All The workshops that user Registerd
+            $query2="SELECT workshopid,wname,wprice FROM wprices WHERE workshopid IN (SELECT itemId FROM purchases WHERE email='$email')" ;
+            
             $res = mysqli_query($con,$query);
             while($row=mysqli_fetch_array($res)){
                 echo  "<div class='workshop-card-1'>";
@@ -74,12 +85,25 @@
                 echo "<p>";
                 echo "Some Event Decription Will Be Shown Here as a paragraph of text. this is a sample";       
                 echo "<br/><br/>";
-                echo "<span>Price : {$row[2]}</span>";
+                echo "<span>Price : Rs.{$row[2]}</span>";
                 echo "<br/><br/>";       
                 echo "<button onclick=\"getTicketWorkshop('{$row[0]}')\" style='width: 70%; margin: 0; position: absolute; left: 50%; transform: translateX(-50%);'><i class='fas fa-file-signature'></i>&nbsp;&nbsp;Register Now</button>";   
                 echo "</p>";
                 echo "</div>";
             }
+
+            // Now Print the Workshops that user has already registered for
+            $res2= mysqli_query($con,$query2);
+            while($row=mysqli_fetch_array($res2)){
+                echo "<div class=\"workshop-card-1\">";
+                echo "<img src=\"https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample68.jpg\" style=\"height: all;\">";
+                echo "<h4>{$row[1]}</h4>";
+                echo "<p> Some Event Decription Will Be Shown Here as a paragraph of text. this is a sample";
+                echo "<br/><br/><span>Price : Rs.{$row[2]}</span><br/> <br/>";
+                echo "<button class=\"registered\" style=\"width: 70%; margin: 0; position: absolute; left: 50%; transform: translateX(-50%);\"><i class=\"fas fa-file-contract\"></i>&nbsp;Registered</button>"; 
+                echo "</p></div>";                
+            }
+
         }
         else{
             $query="SELECT workshopid,wname,wprice FROM wprices";
