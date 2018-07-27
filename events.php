@@ -139,7 +139,7 @@
             while($row=mysqli_fetch_array($res)){
        
                 echo "<div class='events-card-1 {$row[0]}'>";
-                echo "<img src=\"https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample68.jpg\" style=\"height: all;\">";
+                echo "<img src=\"https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample68.jpg\" style=\"width:100%; margin-bottom:0px;\">";
                 echo "<h4>{$row[1]}</h4>";
                 echo "<p> Some Event Decription Will Be Shown Here as a paragraph of text. this is a sample <br/><br/>";
                 echo "<span>Price : Rs.{$row[2]}</span>";

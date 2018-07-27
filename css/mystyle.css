@@ -152,10 +152,11 @@
         padding-left:20px;
         padding-right:20px;
         position: absolute;
-        max-height: 300px;
+        max-height: 240px;
         top:0;
         bottom:0;
         margin: auto;
+        
         
     }
     .about p{

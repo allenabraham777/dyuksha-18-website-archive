@@ -80,7 +80,7 @@
             $res = mysqli_query($con,$query);
             while($row=mysqli_fetch_array($res)){
                 echo  "<div class='workshop-card-1'>";
-                echo  "<img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample68.jpg' style='height: all;'>";
+                echo  "<img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample68.jpg' style='width:100%; margin-bottom:0px;'>";
                 echo "<h4>{$row[1]}</h4>";
                 echo "<p>";
                 echo "Some Event Decription Will Be Shown Here as a paragraph of text. this is a sample";       
@@ -96,7 +96,7 @@
             $res2= mysqli_query($con,$query2);
             while($row=mysqli_fetch_array($res2)){
                 echo "<div class=\"workshop-card-1\">";
-                echo "<img src=\"https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample68.jpg\" style=\"height: all;\">";
+                echo "<img src=\"https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample68.jpg\" style=\"width:100%; margin-bottom:0px;\">";
                 echo "<h4>{$row[1]}</h4>";
                 echo "<p> Some Event Decription Will Be Shown Here as a paragraph of text. this is a sample";
                 echo "<br/><br/><span>Price : Rs.{$row[2]}</span><br/> <br/>";
@@ -110,7 +110,7 @@
             $res = mysqli_query($con,$query);
             while($row=mysqli_fetch_array($res)){
                 echo "<div class='workshop-card-1'>";
-                echo "<img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample68.jpg' style='height: all;'>";
+                echo "<img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample68.jpg' style='width:100%; margin-bottom:0px;'>";
                 echo "<h4>{$row[1]}</h4>";
                 echo "<p>";
                 echo "Some Event Decription Will Be Shown Here as a paragraph of text. this is a sample";       
