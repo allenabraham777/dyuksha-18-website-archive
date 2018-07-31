@@ -119,8 +119,8 @@ src:url("fonts/text.ttf");
     width:315px;
   }
   .menu-items a, .menu-items img{
-    margin-left:10px;
-    margin-right:10px;
+    margin-left:6px;
+    margin-right:6px;
   }   
   .cart_items{
       width: 315px;

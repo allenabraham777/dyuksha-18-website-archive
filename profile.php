@@ -21,6 +21,9 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/profile.css" />
     <link rel="shortcut icon" type="image/png" href="images/tag.png" />
     <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
 </head>
 
 <body>
@@ -34,13 +37,15 @@
             <br/>
             <div class="menu-items">
             <a href="index.html"><i class="fa fa-home"></i></a>
-            <a href="javascript:void(0)" onclick="openPurchases(); closeCart();"><i class="fa fa-ticket"></i></a>
+            <a href="events"><i class="fas fa-calendar-alt"></i></a>
+            <a href="javascript:void(0)" onclick="openPurchases(); closeCart();"><i class="fas fa-receipt"></i></a>
             <?php
                  $code=md5($user->email);
                  echo "<img src='https://api.qrserver.com/v1/create-qr-code/?size=150x150&data={$code}' width='52px'></img>";
             ?>
+            <a href="workshop"><i class="fa fa-briefcase"></i></a>
             <a href="javascript:void(0)" onclick="openCart(); closePurchases();"><i class="fa fa-shopping-cart"></i></a>
-            <a href="logout.php"><i class="fa fa-sign-out"></i></a>
+            <a href="logout.php"><i class="fas fa-sign-out-alt"></i></a>
             </div>    
         </div>
 <?php
@@ -85,7 +90,7 @@ if(isset($_SESSION["user"])){
 
                 if(!$isItemsPresentInCart){
                     // means its empty
-                    echo "<div><br/><i class='fa fa-inbox' style='font-size:22px; color:tomato;'></i><p>Empty<p></div>";
+                    echo "<div><br/><i class='fas fa-box-open' style='font-size:22px; color:tomato;'></i><p>Empty<p></div>";
                 }
                 else{
                    echo "<button onclick='paynow();'>Pay Now</button>";
@@ -99,7 +104,7 @@ if(isset($_SESSION["user"])){
         </div>
 
         <div class="cart_items" id="purchases" style="display:none" align="center">
-           <i class="fa fa-money" style="font-size:22px; color:slateblue;"></i>
+           <i class="fas fa-receipt" style="font-size:22px; color:slateblue;"></i>
             <h4 style="color:grey;"> Your Purchases </h4>
 
             <?php
@@ -125,7 +130,7 @@ if(isset($_SESSION["user"])){
                 }
                 if(!$isItemsPurchased){
                     // means empty
-                    echo "<div><br/><i class='fa fa-inbox' style='font-size:22px; color:tomato;'></i><p>Empty<p></div>";
+                    echo "<div><br/><i class='fas fa-box-open' style='font-size:22px; color:tomato;'></i><p>Empty<p></div>";
                 }
             }
             ?>
