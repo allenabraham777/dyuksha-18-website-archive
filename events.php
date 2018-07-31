@@ -17,13 +17,13 @@
 <script>
  
     //  0 1 2 3 4 5 6-all dept 
-    var all_events=["ETCE01","ETCE02","ETCE03","ETCE04","ETCE05","ETIC06","ETIC07","ETIC08","ETIC09","ETIC10","ETCS11","ETCS12","ETCS13","ETCS14","ETCS15","ETME16","ETME17","ETME18","ETME19","ETME20","ETME21","ETEC22","ETEC23","ETEC24","ETEC25","ETEE26","ETEE27","ETEE28","ETEE29","ETEE30"];
-    var ce_events=["ETCE01","ETCE02","ETCE03","ETCE04","ETCE05"];
-    var ic_events=["ETIC06","ETIC07","ETIC08","ETIC09","ETIC10"];
-    var cs_events=["ETCS11","ETCS12","ETCS13","ETCS14","ETCS15"];
-    var me_events=["ETME16","ETME17","ETME18","ETME19","ETME20","ETME21"];
-    var ec_events=["ETEC22","ETEC23","ETEC24","ETEC25"];
-    var ee_events=["ETEE26","ETEE27","ETEE28","ETEE29","ETEE30"];
+    var all_events=["ETCE01","ETCE02","ETCE03","ETCE04","ETIC05","ETIC06","ETIC07","ETIC08","ETIC09","ETCS10","ETCS11","ETCS12","ETCS13","ETCS14","ETME15","ETME16","ETME17","ETME18","ETME19","ETEC20","ETEC21","ETEC22","ETEC23","ETEE24","ETEE25","ETEE26","ETEE27","ETEE28"];
+    var ce_events=["ETCE01","ETCE02","ETCE03","ETCE04"];
+    var ic_events=["ETIC05","ETIC06","ETIC07","ETIC08","ETIC09"];
+    var cs_events=["ETCS10","ETCS11","ETCS12","ETCS13","ETCS14"];
+    var me_events=["ETME15","ETME16","ETME17","ETME18","ETME19"];
+    var ec_events=["ETEC20","ETEC21","ETEC22","ETEC23"];
+    var ee_events=["ETEE24","ETEE25","ETEE26","ETEE27","ETEE28"];
 
    
     var username="<?php if(isset($_SESSION['user'])){ echo 'logged';}else{echo ' ';} ?>";
@@ -134,14 +134,14 @@
             include("connect.php");
         
          //   $query="SELECT eventId,ename,price FROM eprices WHERE eventId NOT IN (SELECT itemID FROM dcart WHERE email='$email') AND eventId  NOT IN (SELECT itemID FROM purchases WHERE email='$email')  ";
-            $query="SELECT eventId,ename,price FROM eprices";
+            $query="SELECT eventId,ename,price,desp FROM eprices";
             $res = mysqli_query($con,$query);
             while($row=mysqli_fetch_array($res)){
        
                 echo "<div class='events-card-1 {$row[0]}'>";
                 echo "<img src=\"https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample68.jpg\" style=\"width:100%; margin-bottom:0px;\">";
                 echo "<h4>{$row[1]}</h4>";
-                echo "<p> Some Event Decription Will Be Shown Here as a paragraph of text. this is a sample <br/><br/>";
+                echo "<p>{$row[3]} <br/><br/>";
                 echo "<span>Price : Rs.{$row[2]}</span>";
                 echo "<br/><br/>";
                 echo "<button onclick=\"addToCart('{$row[0]}');\" style=\"position: absolute; left: 10%;\"><i class=\"fas fa-cart-plus\"> </i></button>"; 

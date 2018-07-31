@@ -83,7 +83,7 @@ if(isset($_SESSION["user"])){
                     $isItemsPresentInCart=true;
                     while($row=mysqli_fetch_array($res)){
                         echo "<div class='item'>";
-                        echo "<p class='left'>{$row[0]}</p> <p class='right'> Rs.{$row[1]} <a onclick=\"removeFromCart('{$row[2]}')\"> <i class='fa fa-times'></i> </a> </p>";
+                        echo "<p class='left'>{$row[0]}</p> <p class='right'> Rs.{$row[1]} <a onclick=\"removeFromCart('{$row[2]}')\"> <i class='fa fa-times' style='margin-left:5px;color:red;'></i> </a> </p>";
                         echo "</div>";
                     }
                 }
@@ -93,7 +93,7 @@ if(isset($_SESSION["user"])){
                     echo "<div><br/><i class='fas fa-box-open' style='font-size:22px; color:tomato;'></i><p>Empty<p></div>";
                 }
                 else{
-                   echo "<button onclick='paynow();'>Pay Now</button>";
+                   echo "<button onclick='paynow();'> <i class='far fa-credit-card' style='color:white;'></i> Pay Now</button>";
                 }
             }
             
@@ -134,7 +134,8 @@ if(isset($_SESSION["user"])){
                 }
             }
             ?>
-            <button onclick='closePurchases();'>Close</button>
+            
+            <button style="margin-top:6px;" onclick='closePurchases();'><i class='fas fa-times'></i> Close</button>
         </div>
     </div>
  
