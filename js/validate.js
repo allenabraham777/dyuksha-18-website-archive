@@ -29,6 +29,9 @@ $(document).ready(function(){
             passwordconfirm:{
               required:true,
               equalTo: password
+            },
+            college:{
+              required:true,
             }
           },
           // Error Messages
@@ -50,7 +53,7 @@ $(document).ready(function(){
               required: "<div class='field_errors'><p><i class='fa fa-times'></i>This Field is Required</p></div>",
                 equalTo:"<div class='field_errors'><p><i class='fa fa-times'></i>Passwords Doesnt Match</p></div>"
             },
-        
+            college:"<div class='field_errors'><p><i class='fa fa-times'></i>This Field is Required</p></div>",
             email: "<div class='field_errors'><p><i class='fa fa-times'></i>Not a valid Email Id</p></div>"
             
           },

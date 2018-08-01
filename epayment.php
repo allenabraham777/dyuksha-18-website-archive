@@ -67,7 +67,8 @@
             exit();
         }
         catch (Exception $e) {
-            print('Error: ' . $e->getMessage());
+           // print('Error: ' . $e->getMessage());
+           print("Error Occured");
         }
 
    }

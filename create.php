@@ -34,10 +34,15 @@
                 </div>
                 
                 <div class="custom-input">
+                        <input type="text" class="inputbox" id="college" name="college" placeholder="College Name" required/><br/>
+                        <img src="icons/password.png" width="20px" />
+                </div>
+
+                <div class="custom-input">
                         <input type="password" class="inputbox" id="password" name="password" placeholder="New Password" required/><br/>
                         <img src="icons/password.png" width="20px" />
                 </div>
-               
+
                 <div class="custom-input">
                         <input type="password" class="inputbox" id="password-confirm" name="passwordconfirm" placeholder="Re-Enter Password" required/><br/>
                         <img src="icons/password.png" width="20px" />
@@ -53,8 +58,10 @@
         $phone=mysqli_real_escape_string($con,$_POST["phone"]);
         $email=mysqli_real_escape_string($con,$_POST["email"]);
         $password=md5(mysqli_real_escape_string($con,$_POST["password"]));
+        // This is a  New Line 
+        $college = mysqli_real_escape_string($con,$_POST["college"]);
         $exist_query="SELECT email FROM dusers WHERE email='$email' or phone='$phone'";
-        $query="INSERT INTO dusers VALUES('$name','$email','$phone','$password','NO')";
+        $query="INSERT INTO dusers VALUES('$name','$email','$phone','$password','NO','$college')";
 
         // Creating Auth Key
         $auth_key = create_auth_key($email);
