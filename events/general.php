@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Events</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/cards.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/menuitems.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/cards.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/menuitems.css" />
     
     <link href="https://fonts.googleapis.com/css?family=Chela+One" rel="stylesheet">
-    <link href="css/dialog.css" rel="stylesheet"/>
+    <link href="../css/dialog.css" rel="stylesheet"/>
     <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
 </head>
 
@@ -29,7 +29,7 @@
     var username="<?php if(isset($_SESSION['user'])){ echo 'logged';}else{echo ' ';} ?>";
     <?php 
 
-        include("lib/UserClass.php");
+        include("../lib/UserClass.php");
         if(isset($_SESSION['user'])){
             $userObj = unserialize($_SESSION["user"]);
             $name = $userObj->name;
@@ -44,7 +44,7 @@
         location.href="http://localhost/dyuksha.org/login.php";
     }
     function addToCart(itemId){
-        var link="addtocart.php?itemId="+itemId;
+        var link="http://localhost/dyuksha.org/addtocart.php?itemId="+itemId;
         if(username.localeCompare("logged") == 0){
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange=function(){
@@ -109,7 +109,7 @@
     </div>
 
 <header>
-    <img class="logo" src="images/navbar_logo.png">
+    <img class="logo" src="http://localhost/dyuksha.org/images/navbar_logo.png">
     <span class="user_id" id="user_id" onclick="open_menu()">
         <i class="fas fa-user"></i> <?php echo $name ?> <i class="fas fa-sort-down"></i>
         <!-- PHP SCRIPT -->
@@ -131,10 +131,10 @@
 <div align="center" style="margin-top: 70px;">
 
     <?php
-            include("connect.php");
+            include("../connect.php");
         
          //   $query="SELECT eventId,ename,price FROM eprices WHERE eventId NOT IN (SELECT itemID FROM dcart WHERE email='$email') AND eventId  NOT IN (SELECT itemID FROM purchases WHERE email='$email')  ";
-            $query="SELECT eventId,ename,price,desp FROM eprices";
+            $query="SELECT eventId,ename,price,desp FROM eprices where eventId like '%ETGE%'";
             $res = mysqli_query($con,$query);
             while($row=mysqli_fetch_array($res)){
        

@@ -7,6 +7,92 @@
     vertical-align:baseline;
     background:transparent;
 }
+
+.know-more-button{
+    border: solid 2px #fff;
+    color: #fff;
+    font-size: 15px;
+    background: transparent;
+    padding-right: 5px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+.tooltip1 {
+    text-align: center;
+    width: 150px;
+    background: #000;
+    padding: 10px;
+    color: white;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+}
+#fullpage{
+    margin-left: 70px;
+ }
+@media screen and (max-width:640px){
+    .tooltip1{
+        visibility: hidden;
+    }
+    #fullpage{
+       margin: 0;
+    }
+}
+
+
+.dyuksha-social{
+	position: absolute;
+    z-index: 120;
+    margin-right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    padding: auto;
+    text-align: center;
+}
+.dyuksha-social span{
+    width: 50px;
+    cursor: pointer;
+	height: 50px;
+	margin: 10px;
+	background: #fff;
+	border-radius: 50%;
+    line-height: 50px;
+    display: inline-block;
+    box-shadow: #000 3px 3px 10px;
+    font-size: 20px;
+    overflow: hidden;
+}
+.dyuksha-social span:hover{
+    background: #ccc;
+    font-size: 30px;    
+    transition: all 0.1s linear 0s;
+}
+.fa-facebook-f{
+    color: #3B5998;
+}
+.fa-instagram{
+    color: #8a3ab9;
+}
+.fa-youtube{
+    color: red;
+}
+
+@media screen and (max-width:720px){
+    .dyuksha-social{
+        margin: 0;
+        margin-top: 20px;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100vw;
+        height: 50px;
+        text-align: center;
+    }
+}
+
 .mid{
     width: 100vw;
     text-align: center;

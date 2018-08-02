@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Departments</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap.css" />
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.js"></script>
+</head>
+<script>
+        function gotoLocation(page){
+            location.href=page;
+        }
+</script>
+<style>
+    .menu_bar{
+        display: block;
+        background-color:white;
+        position: fixed;
+        top:0;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        height:60px;
+        box-shadow:0px 0px 1px 3px rgba(128, 128, 128, 0.404);
+    }
+    .basic{
+        margin-top:60px;
+    }
+    .row div  img{
+        padding:50px;
+      
+    }
+    .row div p{
+        font-weight: bold;
+        color:white;
+        font-size:22px;
+    }
+    .row div{
+        border:1px solid rgba(0, 0, 0, 0.418);
+        cursor: pointer;
+    }
+    .cs{
+       background-color:cadetblue;
+    }
+    .ce{
+       background-color:bisque;
+    }
+    .me{
+       background-color:royalblue;
+    }
+    
+    .ic{
+       background-color:orange;
+    }
+    .ee{
+       background-color:dodgerblue;
+    }
+    .ec{
+       background-color:turquoise;
+    }
+</style>
+<body>
+    <div class="menu_bar">
+        alsjdfl
+    </div>
+    <div class="container-fluid basic">
+        <div class="row" >
+                    <div class="col-md-6 cs" align="center" onclick="gotoLocation('cs');">
+                        <img src="images/dept/cs.png">
+                        <p>Computer Science</p>
+                    </div>
+
+                    <div class="col-md-6 ce" align="center" onclick="gotoLocation('ce');">
+                            <img src="images/dept/ce.png">
+                            <p>Civil Engineering</p>
+                    </div>
+        </div>
+        <div class="row">
+                    <div class="col-md-6 me" align="center" onclick="gotoLocation('me');">
+                            <img src="images/dept/me.png">
+                            <p>Mechanical</p>
+                    </div>
+                    <div class="col-md-6 ic" align="center" onclick="gotoLocation('ic');">
+                            <img src="images/dept/ic.png">
+                            <p>Instrumentation Control</p>
+                    </div>
+        </div>
+        <div class="row">
+                    <div class="col-md-6 ec" align="center" onclick="gotoLocation('ec');">
+                            <img src="images/dept/ec.png">
+                            <p>Electronics</p>
+                    </div>
+                    <div class="col-md-6 ee" align="center" onclick="gotoLocation('ee');">
+                            <img src="images/dept/ee.png">
+                            <p>Electrical</p>
+                    </div>
+        </div>
+        
+
+    </div>
+</body>
+</html>
