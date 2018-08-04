@@ -110,9 +110,9 @@ else{
                     </div>
         </div>
         <div class="row">
-            <div class="col-sm-12 ec" align="center" onclick="gotoLocation('ec');">
+            <div class="col-sm-12 ec" align="center" onclick="gotoLocation('general');">
                     <img src="images/dept/ec.png">
-                    <p>Electronics</p>
+                    <p>General Events</p>
             </div>
             
   </div>
