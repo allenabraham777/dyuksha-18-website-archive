@@ -54,10 +54,10 @@ else{
         cursor: pointer;
     }
     .cs{
-       background-color:cadetblue;
+       background-color:#ab47bc;
     }
     .ce{
-       background-color:bisque;
+       background-color:#ffc663;
     }
     .me{
        background-color:royalblue;
@@ -71,6 +71,9 @@ else{
     }
     .ec{
        background-color:turquoise;
+    }
+    .general{
+       background-color:#ffd740;
     }
 </style>
 <body>
@@ -110,8 +113,8 @@ else{
                     </div>
         </div>
         <div class="row">
-            <div class="col-sm-12 ec" align="center" onclick="gotoLocation('general');">
-                    <img src="images/dept/ec.png">
+            <div class="col-sm-12 general" align="center" onclick="gotoLocation('general');">
+                    <img src="images/dept/event.png">
                     <p>General Events</p>
             </div>
             
