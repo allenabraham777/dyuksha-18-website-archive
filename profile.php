@@ -40,7 +40,7 @@
             <a href="events"><i class="fas fa-calendar-alt"></i></a>
             <a href="javascript:void(0)" onclick="openPurchases(); closeCart();"><i class="fas fa-receipt"></i></a>
             <?php
-                 $code=md5($user->email);
+                 $code=$user->email;//md5($user->email);
                  echo "<img src='https://api.qrserver.com/v1/create-qr-code/?size=150x150&data={$code}' width='52px'></img>";
             ?>
             <a href="workshop"><i class="fa fa-briefcase"></i></a>
