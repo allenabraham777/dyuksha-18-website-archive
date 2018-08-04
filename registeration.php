@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Events</title>
+    <title>Events Registration</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/cards.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/menuitems.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/cards.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/menuitems.css" />
     
     <link href="https://fonts.googleapis.com/css?family=Chela+One" rel="stylesheet">
-    <link href="../css/dialog.css" rel="stylesheet"/>
+    <link href="css/dialog.css" rel="stylesheet"/>
     <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
 </head>
 
@@ -29,7 +29,7 @@
     var username="<?php if(isset($_SESSION['user'])){ echo 'logged';}else{echo ' ';} ?>";
     <?php 
 
-        include("../lib/UserClass.php");
+        include("lib/UserClass.php");
         if(isset($_SESSION['user'])){
             $userObj = unserialize($_SESSION["user"]);
             $name = $userObj->name;
@@ -108,33 +108,18 @@
         </div>
     </div>
 
-<header>
-    <img class="logo" src="http://localhost/dyuksha.org/images/navbar_logo.png">
-    <span class="user_id" id="user_id" onclick="open_menu()">
-        <i class="fas fa-user"></i> <?php echo $name ?> <i class="fas fa-sort-down"></i>
-        <!-- PHP SCRIPT -->
-    </span>
-    <button class="menu-button" onclick="open_menu()"><i class="fas fa-bars"></i></button>
-    <span class="filter" onclick="openOrCloseDialog();">Filter <i class="fas fa-filter"></i></span>
-    <div class="user_menu menu-collapse" id="user_menu">
-        <ul>
-            <li><a href="index"><i class="fas fa-home"></i>&nbsp;&nbsp;Home</a></li>
-            <li><a href="profile"><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Profile</a></li>
-            <li><a href="events"><i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;Events</a></li>
-            <li><a href="workshop"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;Workshops</a></li>
-            <li><a href="informals"><i class="fas fa-gamepad"></i>&nbsp;&nbsp;Informals</a></li>
-            <li><a href="logout"><i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp;Logout</a></li>
-        </ul>
-    </div>
-</header>
+<?php
+    // Menu as a Include File
+    include("menu.php");
+?>
 
 <div align="center" style="margin-top: 70px;">
 
     <?php
-            include("../connect.php");
+            include("connect.php");
         
          //   $query="SELECT eventId,ename,price FROM eprices WHERE eventId NOT IN (SELECT itemID FROM dcart WHERE email='$email') AND eventId  NOT IN (SELECT itemID FROM purchases WHERE email='$email')  ";
-            $query="SELECT eventId,ename,price,desp FROM eprices where eventId like '%ETGS%'";
+            $query="SELECT eventId,ename,price,desp FROM eprices";
             $res = mysqli_query($con,$query);
             while($row=mysqli_fetch_array($res)){
        
@@ -170,102 +155,8 @@
        }
     }
 
-    var  show = false;
-    function openOrCloseDialog(){
-        if(show){
-        document.getElementsByClassName("dialog-container")[0].style.display="none";
-        show=false;
-        }
-        else{
-        document.getElementsByClassName("dialog-container")[0].style.display="block";
-        show=true;
-        }
-    }
-     /*------------------------------------ Filter Method --------------------------------------------
-    | 0 ->CE 1->IC 2->CS 3->ME 4->EC 5->EE OTHER -> ALL
-    ------------------------------------------------------------------------------------------------*/
-    function filter(cat){
-        var x = parseInt(cat);
-        switch(x){
-            case 0:
-                var len = all_events.length;
-                for(var i=0;i<len;i++){
-                    document.getElementsByClassName(all_events[i])[0].style.display="none";
-                }
-                len = ce_events.length;
-                for(var i=0;i<len;i++){
-                    document.getElementsByClassName(ce_events[i])[0].style.display="inline-block";
-                }
-                break;
-            case 1:
-                var len = all_events.length;
-                for(var i=0;i<len;i++){
-                    document.getElementsByClassName(all_events[i])[0].style.display="none";
-                }
-                len = ic_events.length;
-                for(var i=0;i<len;i++){
-                    document.getElementsByClassName(ic_events[i])[0].style.display="inline-block";
-                }
-                break;
-            case 2:
-            var len = all_events.length;
-                for(var i=0;i<len;i++){
-                    document.getElementsByClassName(all_events[i])[0].style.display="none";
-                }
-                len = cs_events.length;
-                for(var i=0;i<len;i++){
-                    document.getElementsByClassName(cs_events[i])[0].style.display="inline-block";
-                }
-                break;
-            case 3:
-            var len = all_events.length;
-                for(var i=0;i<len;i++){
-                    document.getElementsByClassName(all_events[i])[0].style.display="none";
-                }
-                len = me_events.length;
-                for(var i=0;i<len;i++){
-                    document.getElementsByClassName(me_events[i])[0].style.display="inline-block";
-                }
-                break;
-            case 4:
-            var len = all_events.length;
-                for(var i=0;i<len;i++){
-                    document.getElementsByClassName(all_events[i])[0].style.display="none";
-                }
-                len = ec_events.length;
-                for(var i=0;i<len;i++){
-                    document.getElementsByClassName(ec_events[i])[0].style.display="inline-block";
-                }
-                break;
-            case 5:
-            var len = all_events.length;
-                for(var i=0;i<len;i++){
-                    document.getElementsByClassName(all_events[i])[0].style.display="none";
-                }
-                len = ee_events.length;
-                for(var i=0;i<len;i++){
-                    document.getElementsByClassName(ee_events[i])[0].style.display="inline-block";
-                }
-                break;
-            default:
-            var len = all_events.length;
-                for(var i=0;i<len;i++){
-                    document.getElementsByClassName(all_events[i])[0].style.display="inline-block";
-                }
-                
-
-        }
-    }
-
-    function s(){
-        var x = document.getElementsByName("dialog-radio");
-        for(var i=0;i<x.length;i++){
-            if(x[i].checked){
-            filter(x[i].value);
-            }
-        }
-        openOrCloseDialog();
-    }
+    // Filter Function No Longer Required
+    
 </script>
 </body>
 </html>
