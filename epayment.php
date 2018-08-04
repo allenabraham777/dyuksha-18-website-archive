@@ -49,9 +49,14 @@
         //* This contains the either the price of items in cart or cost of workshop*//
 
         require("lib/Instamojo.php");
-        $api = new Instamojo\Instamojo("2d91fc9f3cc6edd636a73ff69fe4d7ec","038026548903b5fa12d59aa06ff3e664"); //,"https://test.instamojo.com/api/1.1/");
+     
+     // ORIGINAL KEYS COMMENTED
+     //   $api = new Instamojo\Instamojo("2d91fc9f3cc6edd636a73ff69fe4d7ec","038026548903b5fa12d59aa06ff3e664"); //,"https://test.instamojo.com/api/1.1/");
 
-        try {
+     // TEST KEYS INSTALLED
+     $api = new Instamojo\Instamojo("test_660de698c90df23def44a6f660a","test_ac345a4fca86cc30fe9c4761feb","https://test.instamojo.com/api/1.1/");
+        
+       try {
             $response = $api->paymentRequestCreate(array(
                 "purpose" => "Dyuksha Events Payment",
                 "amount" => "$cost",
