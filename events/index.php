@@ -50,7 +50,7 @@ else{
         font-size:22px;
     }
     .row div{
-        border:1px solid rgba(0, 0, 0, 0.418);
+        border:0px solid rgba(0, 0, 0, 0.418);
         cursor: pointer;
     }
     .cs{

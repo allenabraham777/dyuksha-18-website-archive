@@ -66,7 +66,7 @@
 
 
 <header>
-    <img class="logo" src="http://localhost/dyuksha.org/images/navbar_logo.png">
+    <img class="logo" src="images/navbar_logo.png">
     <span class="user_id" id="user_id" onclick="open_menu()">
         <i class="fas fa-user"></i> <?php echo $name ?> <i class="fas fa-sort-down"></i>
         <!-- PHP SCRIPT -->

@@ -61,7 +61,7 @@ body{
     filter: grayscale();
 }
 .events-card-1:hover p{
-    background: rgb(52,124,180,0.5);
+    background: rgb(0,0,0,0.7); /* Change */
     padding-top: 30%;
     position: absolute;
     top: 0;
