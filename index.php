@@ -32,7 +32,6 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" href="css/loader.css">
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0VDi4gzrxc0JMcrsd7-usKi995yGGP08&callback=myMap"></script>
     
 
     <script>
@@ -41,7 +40,7 @@
         location.href="#home/countdown";
     } 
     
-     // Map Function Starts here   
+   /*  // Map Function Starts here   
     function myMap() {
         var location = new google.maps.LatLng(10.824022, 76.642588);
         var mapOptions = {
@@ -61,7 +60,7 @@
          });
     } // Google Map Function Ends Here
 
-    // Call the map functions
+    // Call the map functions */
     
     $(document).ready(function() {
         
@@ -73,7 +72,7 @@
         anchors:['home', 'events', 'workshops','informals','sponsors','maps']
 	});
 
-    myMap();
+    // myMap();
 
 	//methods
     //$.fn.fullpage.setAllowScrolling(true);
@@ -295,12 +294,12 @@
                 </div>
 
                 <div class="section col-bg-stateblue" data-anchor="maps" style="text-align: center;" >
-                        <div class="" style="height: 50%; top: 50%; transform: translateY(-50%); display: none;"  id="map1" >
-                                     
+                            <div class="" style="height: 50%; top: 50%; transform: translateY(-50%); display: none;"  id="map1" >
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.8339166795486!2d76.64040811480119!3d10.824018892289244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba86fd51d8e1faf%3A0x4e3d7915b3621961!2sN.S.S+Engineering+College%2C+Palakkad!5e0!3m2!1sen!2sin!4v1533568673383" frameborder="0" style="border:0; width:100%; height:100%;" allowfullscreen></iframe>          
                             </div>
                             <div class="row bg-light" style="height:100%; width:100%; margin: 0;" id="map2">
                                     <div class="col-md-6 col-bg-green"  id="map" >
-                                     
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.8339166795486!2d76.64040811480119!3d10.824018892289244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba86fd51d8e1faf%3A0x4e3d7915b3621961!2sN.S.S+Engineering+College%2C+Palakkad!5e0!3m2!1sen!2sin!4v1533568673383" frameborder="0" style="border:0; width:100%; height:100%;" allowfullscreen></iframe>
                                      </div>
                                      <div class="col-md-6 bg-light" id="contact" style="text-align: left; padding-left: 50px;">
                                            <div>

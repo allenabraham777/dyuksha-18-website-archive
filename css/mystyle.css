@@ -30,14 +30,7 @@
 #fullpage{
     margin-left: 70px;
 }
-@media screen and (max-width:640px){
-    .tooltip1{
-        visibility: hidden;
-    }
-    #fullpage{
-       margin: 0;
-    }
-}
+
 
 
 .dyuksha-social{
@@ -80,19 +73,7 @@
     color: red;
 }
 
-@media screen and (max-width:720px){
-    .dyuksha-social{
-        margin: 0;
-        margin-top: 20px;
-        top: 0;
-        right: 0;
-        left: 0;
-        width: 100vw;
-        height: 50px;
-        text-align: center;
-    }
-   
-}
+
 
 .mid{
     width: 100vw;
@@ -219,7 +200,49 @@
     }   
    
 }
-@media screen and (max-width:960px) and (min-width:561px){
+@media screen and (max-width:960px) and (min-width:721px){
+    .about{
+        padding-left:20px;
+        padding-right:20px;
+        position: absolute;
+        max-height: 300px;
+        top:0;
+        bottom:0;
+        margin: auto;
+    }
+    .about p{
+        font-size: 16px;
+    }
+
+}
+@media screen and (max-width:720px) and (min-width:671px){
+
+    .about{
+        padding-left:20px;
+        padding-right:20px;
+        position: absolute;
+        max-height: 300px;
+        top:0;
+        bottom:0;
+        margin: auto;
+    }
+    .about p{
+        font-size: 16px;
+    }
+
+    .dyuksha-social{
+        margin: 0;
+        margin-top: 20px;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100vw;
+        height: 50px;
+        text-align: center;
+    }
+   
+}
+@media screen and (max-width:670px) and (min-width:561px){
     .about{
         padding-left:20px;
         padding-right:20px;
@@ -233,9 +256,22 @@
         font-size: 16px;
     }
    
+    .tooltip1{
+        visibility: hidden;
+    }
+    #fullpage{
+       margin: 0;
+    }
 }
 @media screen and (max-width:560px) and (min-width:330px){
     
+    .tooltip1{
+        visibility: hidden;
+    }
+    #fullpage{
+       margin: 0;
+    }
+
     .about{
         padding-left:20px;
         padding-right:20px;
@@ -294,6 +330,13 @@
         width:auto; 
         zoom: 0.48;
         -moz-transform: scale(0.48);
+    }
+
+    .tooltip1{
+        visibility: hidden;
+    }
+    #fullpage{
+       margin: 0;
     }
 
 }
