@@ -40,26 +40,6 @@
        
     ?>
    
-    function gotoLoginPage(){
-        location.href="http://localhost/dyuksha.org/login.php";
-    }
-    function addToCart(itemId){
-        var link="http://localhost/dyuksha.org/addtocart.php?itemId="+itemId;
-        if(username.localeCompare("logged") == 0){
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange=function(){
-                if(this.status==200 && this.readyState==4){
-                    alert(this.responseText);
-                }
-            };
-            xhttp.open("GET",link,true);
-            xhttp.send();
-        }
-        else{
-            gotoLoginPage();
-        }
-    }
-    
 </script>
 <body onload="">
 
