@@ -253,9 +253,9 @@
                 </div>
                 <div class="section col-bg-stateblue" data-anchor="sponsors">
                     <div class="mid">
-                        <div><i class="fas fa-dice" style="font-size:70px; color:white;"></i></div>
+                        <div><i class="fas fa-dice" style="font-size:70px; color:white;" onclick='location.href="sponsor"'></i></div>
                         <br/>
-                        <div><span style="font-size:30px; color:white;">SPONSOR</span></div>
+                        <div><span style="font-size:30px; color:white;" onclick='location.href="sponsor"'>SPONSOR</span></div>
                     </div>
                 </div>
 
