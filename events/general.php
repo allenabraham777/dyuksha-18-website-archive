@@ -65,25 +65,7 @@
 
 
 
-<header>
-    <img class="logo" src="images/navbar_logo.png">
-    <span class="user_id" id="user_id" onclick="open_menu()">
-        <i class="fas fa-user"></i> <?php echo $name ?> <i class="fas fa-sort-down"></i>
-        <!-- PHP SCRIPT -->
-    </span>
-    <button class="menu-button" onclick="open_menu()"><i class="fas fa-bars"></i></button>
-    <span class="filter" onclick="openOrCloseDialog();">Filter <i class="fas fa-filter"></i></span>
-    <div class="user_menu menu-collapse" id="user_menu">
-        <ul>
-            <li><a href="index"><i class="fas fa-home"></i>&nbsp;&nbsp;Home</a></li>
-            <li><a href="profile"><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Profile</a></li>
-            <li><a href="events"><i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;Events</a></li>
-            <li><a href="workshop"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;Workshops</a></li>
-            <li><a href="informals"><i class="fas fa-gamepad"></i>&nbsp;&nbsp;Informals</a></li>
-            <li><a href="logout"><i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp;Logout</a></li>
-        </ul>
-    </div>
-</header>
+<?php include('menu.php'); ?>
 
 <div align="center" style="margin-top: 70px;">
 
@@ -101,8 +83,7 @@
                 echo "<p>{$row[3]} <br/><br/>";
                 echo "<span>Price : Rs.{$row[2]}</span>";
                 echo "<br/><br/>";
-                echo "<button onclick=\"addToCart('{$row[0]}');\" style=\"position: absolute; left: 10%;\"><i class=\"fas fa-cart-plus\"> </i></button>"; 
-                echo "<button onclick=\"readMore('{$row[0]}');\" style=\"position: absolute; right: 10%;\"><i class=\"fas fa-eye\"></i></button>";
+                echo "<button onclick=\"readMore('{$row[0]}');\" style=\"position: absolute; right: 50%; transform: translateX(50%);\"><i class=\"fas fa-eye\"></i></button>";
                 echo "</p></div>";
           }
 

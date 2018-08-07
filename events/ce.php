@@ -87,8 +87,7 @@
                 echo "<p>{$row[3]} <br/><br/>";
                 echo "<span><i class=\"far fa-clock\"></i> Day: {$row[2]}</span>";
                 echo "<br/><br/>";
-                echo "<button onclick=\"addToCart('{$row[0]}');\" style=\"position: absolute; left: 10%;\"><i class=\"fas fa-cart-plus\"> </i></button>"; 
-                echo "<button onclick=\"readMore('{$row[0]}');\" style=\"position: absolute; right: 10%;\"><i class=\"fas fa-eye\"></i></button>";
+                echo "<button onclick=\"readMore('{$row[0]}');\" style=\"position: absolute; right: 50%; transform: translateX(50%);\"><i class=\"fas fa-eye\"></i></button>";
                 echo "</p></div>";
           }
 
