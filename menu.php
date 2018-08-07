@@ -12,7 +12,7 @@
             <li><a href="events"><i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;Events</a></li>
             <li><a href="workshop"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;Workshops</a></li>
             <li><a href="informals"><i class="fas fa-gamepad"></i>&nbsp;&nbsp;Informals</a></li>
-            <li><a href="logout"><i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp;Logout</a></li>
+            <?php if($name != 'Guest'){echo '<li><a href="../logout"><i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp;Logout</a></li>';} ?>
         </ul>
     </div>
 </header>

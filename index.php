@@ -262,28 +262,11 @@
                     </div>
                 </div>
                 <div class="section col-bg-tomato" data-anchor="informals" style="text-align: center;">
-                    <div class="slide" data-anchor="slide1">
                             <div class="mid">
                                     <div><i class="fas fa-dice" style="font-size:70px; color:white;" onclick='location.href="informals";'></i></div>
                                     <br/>
                                     <div><span style="font-size:30px; color:white;" onclick='location.href="informals";'>INFORMALS</span></div>
                             </div>
-                    </div>
-                    <div class="slide" data-anchor="slide2">
-                            <div class="mid">
-                                    <div><i class="fas fa-dice" style="font-size:70px; color:white;"></i></div>
-                                    <br/>
-                                    <div><span style="font-size:30px; color:white;">Proshows</span></div>
-                            </div>
-                    </div>
-                    <div class="slide" data-anchor="slide3">
-                            <div class="mid">
-                                    <div><i class="fas fa-gamepad" style="font-size:70px; color:white;"></i></div>
-                                    <br/>
-                                    <div><span style="font-size:30px; color:white;">Gaming</span></div>
-                            </div>
-                    </div>
-                    
                 </div>
                 <div class="section col-bg-stateblue" data-anchor="sponsors">
                     <div class="mid">
