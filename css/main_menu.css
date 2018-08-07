@@ -36,7 +36,9 @@
         transform: translateY(-50%);
     }
     
-    
+    #dyukshamainmenubar > .dyukshamainmenus > ul > li{
+        list-style: none;
+    }
     #dyukshamainmenubar > .dyukshamainmenus > ul > li > a{
         color: #fff;
     }
