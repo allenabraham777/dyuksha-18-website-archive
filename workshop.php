@@ -29,7 +29,7 @@
     ?>
    
     function gotoLoginPage(){
-        location.href="http://localhost/dyuksha.org/login.php";
+        location.href="login";
     }
     function getTicketWorkshop(itemId){
         var link="wpayments.php?wid="+itemId+"&key=07989897958858";
