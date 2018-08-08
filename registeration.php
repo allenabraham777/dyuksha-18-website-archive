@@ -41,10 +41,10 @@
     ?>
    
     function gotoLoginPage(){
-        location.href="http://localhost/dyuksha.org/login.php";
+        location.href="login";
     }
     function addToCart(itemId){
-        var link="http://localhost/dyuksha.org/addtocart.php?itemId="+itemId;
+        var link="addtocart.php?itemId="+itemId;
         if(username.localeCompare("logged") == 0){
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange=function(){
