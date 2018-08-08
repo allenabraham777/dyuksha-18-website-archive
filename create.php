@@ -20,32 +20,32 @@
                 
                 <div class="custom-input">
                         <input type="text" class="inputbox" name="name" id="field1" placeholder="Full Name" required/><br/>
-                        <img src="icons/user.png" width="20px" />
+                        <img src="images/user.png" width="20px" />
                 </div>
 
                 <div class="custom-input">
                         <input type="email" class="inputbox" name="email" id="field2" placeholder="Email Id" required/><br/>
-                        <img src="icons/mail.png" width="20px" />
+                        <img src="images/mail.png" width="20px" />
                 </div>
 
                 <div class="custom-input">
                         <input type="text" class="inputbox" name="phone" id="field3" placeholder="Phone Number" required/><br/>
-                        <img src="icons/phone.png" width="20px" />
+                        <img src="images/phonex.png" width="20px" />
                 </div>
                 
                 <div class="custom-input">
                         <input type="text" class="inputbox" id="college" name="college" placeholder="College Name" required/><br/>
-                        <img src="icons/password.png" width="20px" />
+                        <img src="images/password.png" width="20px" />
                 </div>
 
                 <div class="custom-input">
                         <input type="password" class="inputbox" id="password" name="password" placeholder="New Password" required/><br/>
-                        <img src="icons/password.png" width="20px" />
+                        <img src="images/password.png" width="20px" />
                 </div>
 
                 <div class="custom-input">
                         <input type="password" class="inputbox" id="password-confirm" name="passwordconfirm" placeholder="Re-Enter Password" required/><br/>
-                        <img src="icons/password.png" width="20px" />
+                        <img src="images/password.png" width="20px" />
                 </div>
                 <input type="submit" class="button-yellow" value="Create Account" onclick="checkPasswordField();"/>
             </form>
