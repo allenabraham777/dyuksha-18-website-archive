@@ -62,7 +62,7 @@
                 "amount" => "$cost",
                 "send_email" => true,
                 "email" => "$email",
-                "redirect_url" => "http://localhost/dyuksha.org/epurchased.php"
+                "redirect_url" => "http://www.dyuksha.org/epurchased.php"
                 // "webhook" => "http://localhost/dyuksha.org/webhook.php"
             ));
 
