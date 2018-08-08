@@ -56,9 +56,9 @@
             
             $email = $userObj->email;
             // Fetches All the Workshops user did not purchase
-            $query="SELECT workshopid,wname,wprice FROM wprices WHERE workshopid NOT IN (SELECT itemId FROM purchases WHERE email='$email')" ;
+            $query="SELECT workshopid,wname,wprice,wdesp FROM wprices WHERE workshopid NOT IN (SELECT itemId FROM purchases WHERE email='$email')" ;
             // Fetches All The workshops that user Registerd
-            $query2="SELECT workshopid,wname,wprice FROM wprices WHERE workshopid IN (SELECT itemId FROM purchases WHERE email='$email')" ;
+            $query2="SELECT workshopid,wname,wprice,wdesp FROM wprices WHERE workshopid IN (SELECT itemId FROM purchases WHERE email='$email')" ;
             
             $res = mysqli_query($con,$query);
             while($row=mysqli_fetch_array($res)){
@@ -66,7 +66,7 @@
                 echo  "<img src=\"images/workshop/{$row[0]}.jpg\" style='width:100%; margin-bottom:0px;'>";
                 echo "<h4>{$row[1]}</h4>";
                 echo "<p>";
-                echo "Some Event Decription Will Be Shown Here as a paragraph of text. this is a sample";       
+                echo "{$row[3]}";       
                 echo "<br/><br/>";
                 echo "<span>Price : Rs.{$row[2]}</span>";
                 echo "<br/><br/>";       
@@ -81,7 +81,7 @@
                 echo "<div class=\"workshop-card-1\">";
                 echo "<img src=\"images/workshop/{$row[0]}.jpg\" style=\"width:100%; margin-bottom:0px;\">";
                 echo "<h4>{$row[1]}</h4>";
-                echo "<p> Some Event Decription Will Be Shown Here as a paragraph of text. this is a sample";
+                echo "<p> {$row[3]}";
                 echo "<br/><br/><span>Price : Rs.{$row[2]}</span><br/> <br/>";
                 echo "<button class=\"registered\" style=\"width: 70%; margin: 0; position: absolute; left: 50%; transform: translateX(-50%);\"><i class=\"fas fa-file-contract\"></i>&nbsp;Registered</button>"; 
                 echo "</p></div>";                
@@ -89,14 +89,14 @@
 
         }
         else{
-            $query="SELECT workshopid,wname,wprice FROM wprices";
+            $query="SELECT workshopid,wname,wprice,wdesp FROM wprices";
             $res = mysqli_query($con,$query);
             while($row=mysqli_fetch_array($res)){
                 echo "<div class='workshop-card-1'>";
                 echo "<img src=\"images/workshop/{$row[0]}.jpg\" style='width:100%; margin-bottom:0px;'>";
                 echo "<h4>{$row[1]}</h4>";
                 echo "<p>";
-                echo "Some Event Decription Will Be Shown Here as a paragraph of text. this is a sample";       
+                echo "{$row[3]}";       
                 echo "<br/><br/>";
                 echo "<span>Price : {$row[2]}</span>";
                 echo "<br/><br/>";       
