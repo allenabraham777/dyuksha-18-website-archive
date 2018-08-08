@@ -65,16 +65,54 @@
         <img src="images/logo2.png" style="margin-left: 10px; margin-top: 10px; height: 60px;">
     </div>
 
+    <?php 
+        $rules = array();
+        $desp = "";
+        $flag = false;
+        if(isset($_GET["i"])){
+            $id = $_GET["i"];
+            $id = trim($id);
+            $file = "event_rules_json/".$id.".json";
+           
+            try{
+                $data = file_get_contents($file);
+                 // Decoding the Json file
+                $obj = json_decode($data);
+                $desp = $obj->Descriptions;
+                $rules = $obj->Rules;
+                $flag=true;
+
+            }
+            catch(Exception $e){
+                $flag=false;
+            }
+           
+
+        }
+
+
+    ?>
     <h1 align="center"><u>Event Name</u></h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, cum tenetur, sapiente rerum expedita nostrum odio exercitationem fugit neque voluptatibus molestias tempora voluptatem. Distinctio, dolore nulla ipsam at assumenda ex.</p>
+
+    <p>
+        <?php 
+        if($flag){
+            echo $desp;
+        } 
+        ?>
+    </p>
+
     <h2><u>Rules and Regulations</u></h2>
     <p>
         <ul>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias porro error quibusdam aut? Consectetur quam rerum distinctio similique, dolor deleniti commodi, quis natus libero, temporibus esse aliquid quibusdam qui.</li>
-            <li>Quo modi, error in ut at quaerat facilis, aspernatur obcaecati impedit provident blanditiis! Nostrum, dolor. Laborum cumque officia iste non. Iste neque soluta sed, quidem sunt impedit quae cum porro.</li>
-            <li>Soluta fugit velit at ad consectetur, cupiditate obcaecati inventore, neque alias minus tenetur laborum quaerat! Explicabo illo excepturi quia ab aliquam. Eum incidunt nesciunt aspernatur modi illo temporibus veritatis dolores.</li>
-            <li>Reiciendis harum culpa facere nam temporibus sunt necessitatibus? Dolore facere minus asperiores repellat nobis ut recusandae officia libero quos tempore, ipsum reprehenderit, quam harum necessitatibus quas eaque eum perspiciatis! Accusantium.</li>
-            <li>Necessitatibus, dolorum! Eaque veritatis eos minima ipsam rem possimus? Debitis autem, nam ad est iusto corrupti! Laboriosam cum, laborum ut hic obcaecati voluptatem iusto nobis dignissimos animi magni dolore ad?</li>
+            <?php 
+                if($flag){
+                    $count = sizeof($rules);
+                    for($i = 0; $i < $count; $i++){
+                        echo "<li>{$rules[$i]}</li>";
+                    }
+                }
+            ?>
         </ul>
     </p>
 
