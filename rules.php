@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Event Details</title>
     <link rel="icon" href="images/logo.png" type="image/png" />
     <style>
         body{
@@ -70,6 +70,7 @@
         $rules = array();
         $desp = "";
         $flag = false;
+        $name = "";
         if(isset($_GET["i"])){
             $id = $_GET["i"];
             $id = trim($id);
@@ -79,6 +80,7 @@
                 $data = file_get_contents($file);
                  // Decoding the Json file
                 $obj = json_decode($data);
+                $name = $obj->Name;
                 $desp = $obj->Descriptions;
                 $rules = $obj->Rules;
                 $flag=true;
@@ -93,7 +95,13 @@
 
 
     ?>
-    <h1 align="center"><u>Event Name</u></h1>
+    <h1 align="center"><u>
+    <?php 
+        if($flag){
+            echo $name;
+        } 
+    ?>
+    </u></h1>
 
     <p>
         <?php 
