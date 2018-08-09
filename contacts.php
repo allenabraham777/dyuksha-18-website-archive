@@ -9,7 +9,7 @@
     <style>
     body{
         margin:0;
-        text-align:center;
+        text-align:left;
     }
     .contact_card{
         position: relative;
@@ -29,6 +29,9 @@
     h1{
         text-align:center;
     }
+    .contact_row{
+        text-align: center;
+    }
     </style>
 
 </head>
@@ -42,7 +45,7 @@
         <div class="contact_card">
             <div class="name">NAME</div>
             <div class="post">CHARGE</div>
-            <div class="phone">+919999999999</div>
+            <div class="phone">+91-9999999999</div>
             <div class="email">dyuksha@dyuksha.org</div>
         </div>
     <?php
