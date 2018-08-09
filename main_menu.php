@@ -12,7 +12,7 @@
     </div>
 </div>
 <div class="dyuksha-social">
-    <span><i class="fab fa-facebook-f"></i></span>
-    <span><i class="fab fa-instagram"></i></span>
-    <span><i class="fab fa-youtube"></i></span>
+    <a href="https://www.facebook.com/Dyuksha18"><span><i class="fab fa-facebook-f"></i></span></a>
+    <a href="https://www.instagram.com/dyuksha18"><span><i class="fab fa-instagram"></i></span></a>
+    <a href="https://www.youtube.com/channel/UCLMOER5VtwwO91qTlqgjrkg/about"><span><i class="fab fa-youtube"></i></span></a>
 </div>
