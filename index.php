@@ -267,29 +267,21 @@
                                     <div class="col-md-6 col-bg-green"  id="map" style="padding:0;" >
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.8339166795486!2d76.64040811480119!3d10.824018892289244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba86fd51d8e1faf%3A0x4e3d7915b3621961!2sN.S.S+Engineering+College%2C+Palakkad!5e0!3m2!1sen!2sin!4v1533568673383" frameborder="0" style="border:0; width:100%; height:100%;" allowfullscreen></iframe>
                                      </div>
-                                     <div class="col-md-6 bg-light" id="contact" style="text-align: left; padding-left: 50px;">
-                                           <div>
+                                     <div class="col-md-6 bg-light" id="contact" style="text-align: left; width: 100%;">
+                                        <div style="position: absolute; background: #fff; width: 50%; top:50%; left:50%; transform: translate(-50%,-50%);">
+                                            <div>
                                                 <i class="fa fa-map-signs" style="font-size:32px; margin-top:32px;"></i>
                                                 <p style="text-align:left;"> NSS College of Engineering<br/>
                                                 Akathethara P O , Palakkad , Kerala ,India - 678008<br/>
                                                 info@entreprenia.org</p>
-                                           </div>
+                                            </div>
                                             
                                             
-                                            <p><b>Prof. Kiron K R</b>
-                                            <br/>Convener<br/>
-                                            +91 94963 29746<br/>
-                                            kiron@entreprenia.org</p>
-                                           
-                                            <p><b>Sreehari</b><br/>
-                                            Public Relation Officer<br/>
-                                            +91 96058 71373<br/>
-                                            hari@entreprenia.org</p>
-
-                                           <p><b>Arun K</b>
-                                            <br/>Student Coordinator<br/>
-                                            <i class="fa fa-phone"></i> +91 89079 05554<br/>
-                                            <i class="fa fa-envelope"></i> febin@entreprenia.org</p>
+                                            <p>
+                                            <i class="fa fa-envelope"></i> www.nssce.ac.in</p>
+                                            <p><a href="" style="text-decoration:none;">Contact details</a></p>
+                                        
+                                        </div>
 
                                             
                                             
