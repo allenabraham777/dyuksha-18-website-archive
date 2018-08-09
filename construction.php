@@ -37,6 +37,6 @@
 <body>
     <img src="images/logo2.png">
     <div class="h404"><i class="fas fa-wrench" style="color:#333;"></i><br>Page Under Construction</div>
-    <div class="sh404">Will to available soon....</div>
+    <div class="sh404">Will be available soon....</div>
 </body>
 </html>
