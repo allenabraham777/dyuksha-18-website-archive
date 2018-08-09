@@ -34,6 +34,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Login</title>
+    <link rel="icon" href="images/logo.png" type="image/png" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/create.css" />
     <link rel="shortcut icon" type="image/png" media="screen" href="images/logo.png" />

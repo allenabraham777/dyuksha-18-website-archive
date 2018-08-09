@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Events Registration</title>
+    <link rel="icon" href="images/logo.png" type="image/png" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/cards.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/menuitems.css" />

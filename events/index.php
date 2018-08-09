@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Departments</title>
+    <link rel="icon" href="../images/logo.png" type="image/png" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap.css" />
     
@@ -79,6 +80,7 @@ else{
 <body>
     <?php 
         include("menu.php");
+        include("register_button.php");
     ?>
     <div class="container-fluid basic">
         <div class="row" >

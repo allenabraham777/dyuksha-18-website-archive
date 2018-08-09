@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Events</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/logo.png" type="image/png" />
     <link rel="stylesheet" type="text/css" media="screen" href="../css/cards.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../css/menuitems.css" />
     
@@ -46,6 +47,7 @@
 
 <?php
     // Menu as a Include File
+    include("register_button.php");
     include("menu.php");
 ?>
 
