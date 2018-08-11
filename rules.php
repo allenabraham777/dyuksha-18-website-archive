@@ -85,6 +85,7 @@
                 $desp = $obj->Descriptions;
                 $rules = $obj->Rules;
                 $prize = $obj->Prize;
+                $contact = $obj->Contact;
                 $flag=true;
 
             }
@@ -125,10 +126,10 @@
     <h3><u>Contacts</u></h3>
 
     <p>
-    <i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;p1 name <br><br>
-    <i class="fas fa-phone"></i>&nbsp;&nbsp;&nbsp;p1 phone <br><br><br><br>
-    <i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;p2 name <br><br>
-    <i class="fas fa-phone"></i>&nbsp;&nbsp;&nbsp;p2 phone
+    <i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp; <?php echo $contact[0]; ?> <br><br>
+    <i class="fas fa-phone"></i>&nbsp;&nbsp;&nbsp; <?php echo $contact[1]; ?> <br><br><br><br>
+    <i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp; <?php echo $contact[2]; ?> <br><br>
+    <i class="fas fa-phone"></i>&nbsp;&nbsp;&nbsp; <?php echo $contact[3]; ?>
     </p>
     <br><br>
     <h2><i class="fas fa-clipboard-list"></i> <u>Rules and Regulations</u></h2>
