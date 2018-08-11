@@ -114,7 +114,7 @@
     </p>
 
     <p>
-    Price: &#8377;
+    <i class="fas fa-money-bill-alt" style="color: darkgreen"></i> Price: &#8377;
     <?php 
         if($flag){
             echo $prize;
@@ -131,7 +131,7 @@
     <i class="fas fa-phone"></i>&nbsp;&nbsp;&nbsp;p2 phone
     </p>
     <br><br>
-    <h2><u>Rules and Regulations</u></h2>
+    <h2><i class="fas fa-clipboard-list"></i> <u>Rules and Regulations</u></h2>
     <p>
         <ul>
             <?php 
