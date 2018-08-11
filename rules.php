@@ -112,7 +112,10 @@
     </p>
 
     <p>
-    Price: Rs
+    Price: &#8377;
+    </p>
+    <p>
+    Contact: 
     </p>
 
     <h2><u>Rules and Regulations</u></h2>
