@@ -75,7 +75,7 @@
             $id = $_GET["i"];
             $id = trim($id);
             $file = "event_rules_json/".$id.".json";
-           
+           echo $file;
             try{
                 $data = file_get_contents($file);
                  // Decoding the Json file
@@ -83,6 +83,7 @@
                 $name = $obj->Name;
                 $desp = $obj->Descriptions;
                 $rules = $obj->Rules;
+                $prize = $obj->Prize;
                 $flag=true;
 
             }
@@ -113,9 +114,15 @@
 
     <p>
     Price: &#8377;
+    <?php 
+        if($flag){
+            echo $prize;
+        } 
+    ?>
     </p>
     <p>
-    Contact: 
+    Contact:
+     
     </p>
 
     <h2><u>Rules and Regulations</u></h2>
