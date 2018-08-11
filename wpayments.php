@@ -41,7 +41,7 @@
                     $response = $api->paymentRequestCreate(array(
                         "purpose" => "Dyuksha Workshop Payment",
                         "amount" => "$cost",
-                        "send_email" => true,
+                        "send_email" => false,
                         "email" => "$email",
                         "redirect_url" => "http://www.dyuksha.org/wpurchased.php"
                         // "webhook" => "http://localhost/dyuksha.org/webhook.php"
