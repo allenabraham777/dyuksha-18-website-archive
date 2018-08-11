@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Event Details</title>
     <link rel="icon" href="images/logo.png" type="image/png" />
+    <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
     <style>
         body{
             margin: 0;
@@ -14,7 +15,7 @@
             background: linear-gradient(rgba(255, 255, 255, 0.89),rgba(255, 255, 255, 0.911)),
                         url('images/bk_informal.jpg');
         }
-        p{
+        p,h3{
             text-align: justify;
             padding-right: 100px;
             padding-left: 100px;
@@ -37,7 +38,7 @@
             body{
                 padding: 5px;
             }
-            p{
+            p,h3{
                 padding-right: 20px;
                 padding-left: 20px;
             }
@@ -113,19 +114,24 @@
     </p>
 
     <p>
-    Price: &#8377;
+    <i class="fas fa-money-bill-alt" style="color: darkgreen"></i> Price: &#8377;
     <?php 
         if($flag){
             echo $prize;
         } 
     ?>
     </p>
-    <p>
-    Contact:
-     
-    </p>
+    <br>
+    <h3><u>Contacts</u></h3>
 
-    <h2><u>Rules and Regulations</u></h2>
+    <p>
+    <i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;p1 name <br><br>
+    <i class="fas fa-phone"></i>&nbsp;&nbsp;&nbsp;p1 phone <br><br><br><br>
+    <i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;p2 name <br><br>
+    <i class="fas fa-phone"></i>&nbsp;&nbsp;&nbsp;p2 phone
+    </p>
+    <br><br>
+    <h2><i class="fas fa-clipboard-list"></i> <u>Rules and Regulations</u></h2>
     <p>
         <ul>
             <?php 
