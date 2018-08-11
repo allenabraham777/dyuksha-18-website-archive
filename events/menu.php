@@ -7,7 +7,7 @@
         <!-- PHP SCRIPT -->
     </span>
     <button class="menu-button" onclick="open_menu()" style="line-height:100%;"><i class="fas fa-bars"></i></button>
-    <div class="user_menu menu-collapse" id="user_menu" <?php if((strpos($_SERVER['REQUEST_URI'], 'cs') || strpos($_SERVER['REQUEST_URI'], 'ic') || strpos($_SERVER['REQUEST_URI'], 'ce') || strpos($_SERVER['REQUEST_URI'], 'me') || strpos($_SERVER['REQUEST_URI'], 'ec') || strpos($_SERVER['REQUEST_URI'], 'ee') || strpos($_SERVER['REQUEST_URI'], 'general') )== false){echo 'style="margin-right:20px;';} echo '"';?>>
+    <div  <?php if((strpos($_SERVER['REQUEST_URI'], 'cs') || strpos($_SERVER['REQUEST_URI'], 'ic') || strpos($_SERVER['REQUEST_URI'], 'ce') || strpos($_SERVER['REQUEST_URI'], 'me') || strpos($_SERVER['REQUEST_URI'], 'ec') || strpos($_SERVER['REQUEST_URI'], 'ee') || strpos($_SERVER['REQUEST_URI'], 'general') )== false){echo 'class="user_menu menu-collapse mar_adj"';}else{echo 'class="user_menu menu-collapse"';}?> id="user_menu">
         <ul>
             <li><a href="../index"><i class="fas fa-home"></i>&nbsp;&nbsp;Home</a></li>
             <li><a href="../profile"><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Profile</a></li>
