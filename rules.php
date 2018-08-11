@@ -111,6 +111,10 @@
         ?>
     </p>
 
+    <p>
+    Price: Rs
+    </p>
+
     <h2><u>Rules and Regulations</u></h2>
     <p>
         <ul>
