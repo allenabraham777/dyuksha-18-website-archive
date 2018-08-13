@@ -1,5 +1,5 @@
 <?php
- $redir="login.php";
+ $redir="login";
  if(isset($_GET["redir"])){
      $redir=$_GET["redir"];
  }

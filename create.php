@@ -1,3 +1,11 @@
+<?php
+session_start();
+ //session_destroy();
+ if(isset($_SESSION["user"])){
+     header("Location:profile.php");
+     exit();
+ }
+ ?>
 <!DOCTYPE html>
 <html>
 <head>

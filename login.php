@@ -2,7 +2,7 @@
  session_start();
  //session_destroy();
  if(isset($_SESSION["user"])){
-     header("Location:profile.php");
+     header("Location:profile");
      exit();
  }
  if(isset($_POST["email"]) && isset($_POST["password"])){
@@ -22,7 +22,7 @@
             $userObj = new UserClass($name,$email,$phone);
             var_dump($userObj);      
             $_SESSION['user']=serialize($userObj);
-            header("Location:profile.php");
+            header("Location:profile");
             exit();
         }
     }

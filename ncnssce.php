@@ -7,11 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/ncnssce.css">
+    <link rel="icon shortcut" href="images/ncnssce.png" >
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-<!-- jQuery library -->
-<script src="js/jquery.js"></script>
-<!-- Latest compiled JavaScript -->
-<script src="js/bootstrap.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -51,7 +50,7 @@
 
           </div>
           <div class="banner">
-              <marquee>Last date of paper submission is September 5th</marquee>
+              <marquee>Welcome to NCNSSCE   &#8226; Last date of paper submission is September 5th  &#8226; Registration Starting Soon !</marquee>
           </div>
           <br/>
           <h4>About Institution</h4>
@@ -72,11 +71,12 @@
             The key intention of NCNSSCE'18 is to provide opportunity for the participants to express their ideas and experience in person with their peers expected to join from different parts of country. In addition, this gathering will help the delegates to establish research or business relations as well as to find national linkage for future collaborations in their career path. We hope that NCNSSCE’18 would deliver significant contribution to the advancing knowledge base of scientific fields in scope.
          </p>
          
-         <div align="center">
-             <img src="images/n1.png" width="64px">
+         <div align="center" class="parties">
+             <img src="images/n4.png" width="80px">
              <img src="images/n2.png" width="64px">
-             <img src="images/n3.png" width="64px">
-             <img src="images/n4.png" width="64px">
+             <img src="images/n3.png" width="60px">
+             
+             <img src="images/n1.png" width="64px">
              <img src="images/n5.png" width="64px">
          </div>
 

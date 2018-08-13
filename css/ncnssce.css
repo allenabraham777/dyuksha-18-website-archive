@@ -40,7 +40,12 @@ h6{
        opacity: 1;
     }
 }
-
+.parties img
+{
+    margin:10px;
+    vertical-align: middle;
+        
+}
 
 #contact{
     color:white;
