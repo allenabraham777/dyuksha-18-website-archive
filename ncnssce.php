@@ -28,16 +28,16 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Important Dates</a>
+              <a class="nav-link" href="#important_date">Important Dates</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Call For Paper</a>
+                <a class="nav-link" href="#call_for_paper">Call For Paper</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Registration</a>
+                <a class="nav-link" href="#registration">Registration</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Committees</a>
+                <a class="nav-link" href="#committee">Committees</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Speakers</a>
@@ -82,7 +82,7 @@
 
         <br/>
         <br/>
-         <div  id="important-date">
+         <div  id="important_date">
              <h4>Important Dates</h4>
             
              <table style="margin-top:30px;" class="table table-striped table-hover table-bordered">
@@ -124,7 +124,7 @@
              </table>
          </div>
 
-         <div class="" id="callforpaper">
+         <div class="" id="call_for_paper">
             <br/>
             <h4>Call For Paper</h4>
             <br/>
