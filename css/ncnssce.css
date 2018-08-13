@@ -1,0 +1,52 @@
+.bg{
+    background-image:url("nss.jpg");
+    background-size:cover;
+    height:320px;
+    background-position:top;
+}
+.banner{
+    font-weight: bold;
+    padding: 5px;
+    background-color:rgba(255, 166, 0, 0.438);
+}
+p{
+    text-align:justify;
+}
+h6{
+    color:rgb(88, 87, 87);
+    font-weight:normal;
+}
+#reg_button{
+    margin-top:20px;
+    display: block;
+    padding:15px;
+    text-align:center;
+    border-radius:3px;
+    width: 300px;
+    background: tomato;
+    color:white;
+    text-decoration:none;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    outline: none;
+}
+@keyframes blink{
+    from{
+        opacity: 0.6;
+    }
+    to{
+       opacity: 1;
+    }
+}
+
+
+#contact{
+    color:white;
+    padding:10px;
+    background-color: rgba(22, 21, 21, 0.89);
+}
+#contact .col-md-3{
+    margin-top:20px;
+}
