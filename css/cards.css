@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo');
-
+@font-face{
+    font-family: Archivo;
+    src: url("fonts/Archivo-Medium.ttf");
+}
 body{
     margin: 0;
     position: absolute;
@@ -64,8 +67,9 @@ body{
 }
 .events-card-1:hover p{
     background: rgb(0,0,0,0.7); /* Change */
-    padding-top: 30%;
+    padding-top: 15%;
     position: absolute;
+    line-height: 130%;
     top: 0;
     bottom: 0;
     left: 0;

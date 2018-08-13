@@ -11,13 +11,16 @@ include("members.php");
     <link rel="icon" href="images/logo.png" type="image/png" />
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
     <style>
+    @font-face{
+        font-family: 'Yatra One';
+        src: url("css/fonts/YatraOne-Regular.ttf");
+    }
     body{
         margin:0;
         text-align:left;
         padding: 10px;
     }
 
-    @import url('https://fonts.googleapis.com/css?family=Yatra+One');
 
     .contact_card{
         font-family: 'Yatra One', cursive;
@@ -37,6 +40,7 @@ include("members.php");
         line-height: 13px;
         padding-top: 5px;
         padding-bottom:5px;
+        padding-left:5px;
 
     }
     .contact_card img{
@@ -46,6 +50,7 @@ include("members.php");
     }
     h1{
         text-align:center;
+        margin-top:70px;
     }
     .contact_row{
         text-align: center;
@@ -54,6 +59,7 @@ include("members.php");
 
 </head>
 <body>
+    <div style="background:#fff; top:0; position:fixed; padding:10px;; width:100vw; z-index:100; margin:0 !important;"><a href="index"><img src="images/logo2.png" style="height:50px; z-index:100;"></a></div>
     <h1>Contacts</h1>
     <div class="contact_row">
     <?php
