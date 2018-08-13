@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo');
 
 body{
     margin: 0;
@@ -11,10 +12,11 @@ body{
     overflow-x: hidden;
 }
 
+
 .events-card-1{
     padding: 0;
     border-radius: 1.1%;
-    font-family: 'Fira Sans Extra Condensed', Arial, sans-serif;
+    font-family: 'Archivo', sans-serif;
     position: relative;
     display: inline-block;
     overflow: hidden;

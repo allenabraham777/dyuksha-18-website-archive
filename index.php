@@ -137,7 +137,7 @@
     </style>
     
 </head>
-<body onload="load();" >
+<body onload="load();" style="color:black; font-weight:bold;">
     <div class="loader-container">
         <div class="loader">
                 <img src="images/logoxx.png" class="logo">
@@ -279,7 +279,7 @@
                                             
                                             
                                             <p>
-                                            <i class="fas fa-file"></i> www.nssce.ac.in</p>
+                                            <i class="fas fa-globe"></i> <a href="http://www.nssce.ac.in/" style="color: black; text-decoration:none;">www.nssce.ac.in</a></p>
                                             <p><i class="fas fa-info-circle"></i> <a href="contacts" style="text-decoration:none;">Contact details</a></p>
                                         
                                         </div>
