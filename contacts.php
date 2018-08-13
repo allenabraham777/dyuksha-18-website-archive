@@ -17,10 +17,10 @@ include("members.php");
         padding: 10px;
     }
 
-    @import url('https://fonts.googleapis.com/css?family=Archivo:500');
+    @import url('https://fonts.googleapis.com/css?family=Yatra+One');
 
     .contact_card{
-        font-family: 'Archivo', sans-serif;
+        font-family: 'Yatra One', cursive;
         position: relative;
         width: 250px;
         font-size:18px;
@@ -63,8 +63,8 @@ include("members.php");
         <div class="contact_card">
             <img src="<?php echo $list[$i]->image;?>" alt="">
             <div class="name"><i class="fas fa-user-secret" style="width:25px;"></i> <?php echo $list[$i]->name;?></div>
-            <div class="post"><i class="fas fa-pen-nib" style="width:25px;"></i> <?php echo $list[$i]->post;?></div>
-            <div class="phone"><i class="fas fa-mobile" style="width:25px;"></i> <?php echo $list[$i]->phone;?></div>
+            <div class="post"><?php echo $list[$i]->post;?></div>
+            <div class="phone"><i class="fas fa-mobile" style="width:25px;"></i> +91 <?php echo $list[$i]->phone;?></div>
             <div class="email"><i class="fas fa-envelope" style="width:25px;"></i>  <?php echo $list[$i]->email;?></div>
         </div>
     <?php
