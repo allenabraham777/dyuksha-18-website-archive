@@ -140,157 +140,157 @@
 <body onload="load();" style="color:black; font-weight:bold;">
     <div class="loader-container">
         <div class="loader">
-                <img src="images/logoxx.png" class="logo">
-        
-                <!-- 
-                Our Dice's Faces
-                -->
-                <div class="dice" style="zoom: -1;">
-                
-                <div class="face first-face">
-                    <img src="images/logo/D.png" height="100%;" > 
+            <img src="images/logoxx.png" class="logo">
+    
+            <!-- 
+            Our Dice's Faces
+            -->
+            <div class="dice" style="zoom: -1;">
+            
+            <div class="face first-face">
+                <img src="images/logo/D.png" height="100%;" > 
+            </div>
+            
+            <div class="face second-face">
+                <img src="images/logo/Y.png" height="100%;" >  
+            </div>
+            
+            <div class="face third-face">
+                <img src="images/logo/U.png" height="100%;" >
+            </div>
+            
+            <div class="face fourth-face">
+                <img src="images/logo/K.png" height="100%;" > 
+            </div>
+            
+            <div class="face fifth-face">
+                <img src="images/logo/S.png" height="100%;" > 
+            </div>
+            
+            <div class="face sixth-face">
+                <img src="images/logo/H.png" height="100%;" >
+            </div>
+            <div class="face seventh-face">
+                <img src="images/logo/A.png" height="100%;" >
                 </div>
-                
-                <div class="face second-face">
-                    <img src="images/logo/Y.png" height="100%;" >  
+                <div class="face eighth-face">
+                    <img src="images/logo/co.png" height="100%;" >
                 </div>
-                
-                <div class="face third-face">
-                    <img src="images/logo/U.png" height="100%;" >
+                <div class="face nineth-face">
+                    <img src="images/logo/1.png" height="100%;" >
                 </div>
-                
-                <div class="face fourth-face">
-                    <img src="images/logo/K.png" height="100%;" > 
+                <div class="face tenth-face">
+                    <img src="images/logo/8.png" height="100%;" >
                 </div>
-                
-                <div class="face fifth-face">
-                    <img src="images/logo/S.png" height="100%;" > 
-                </div>
-                
-                <div class="face sixth-face">
-                    <img src="images/logo/H.png" height="100%;" >
-                </div>
-                <div class="face seventh-face">
-                    <img src="images/logo/A.png" height="100%;" >
-                    </div>
-                    <div class="face eighth-face">
-                        <img src="images/logo/co.png" height="100%;" >
-                    </div>
-                    <div class="face nineth-face">
-                        <img src="images/logo/1.png" height="100%;" >
-                    </div>
-                    <div class="face tenth-face">
-                        <img src="images/logo/8.png" height="100%;" >
-                    </div>
-                
-                </div>
+            
+            </div>
         </div>
     </div>
-        <?php include("main_menu.php"); ?>
+    <?php include("main_menu.php"); ?>
 
-        <div id="fullpage">
-                <div class="section col-bg-blue" data-anchor="home" style="text-align: center;">
-                    <div class="slide bg-image" data-anchor="dyuksha">
-                        <div class="my-bg-overlay" align="center">
-                            <div class="main-logo place-vertical-middle">
-                                <img src="images/main_logo.png" class="animated pulse 1s infinite" width="100px"><br><br>
-                                <button class="know-more-button" onclick='location.href="#home/about";'>Know More</button>
-                            </div>
-                            
-                        </div>
-                         
-                        <div class="arrow" style="top: 150px; cursor: pointer;" onclick='location.href="#events";'>
-                                <i class="arrow-image fa fa-chevron-down text-white animated bounce 20s infinite" style="font-size:16px;" ></i>
-                        </div>
-                        
-                        
+    <div id="fullpage">
+        <div class="section col-bg-blue" data-anchor="home" style="text-align: center;">
+            <div class="slide bg-image" data-anchor="dyuksha">
+                <div class="my-bg-overlay" align="center">
+                    <div class="main-logo place-vertical-middle">
+                        <img src="images/main_logo.png" class="animated pulse 1s infinite" width="100px"><br><br>
+                        <button class="know-more-button" onclick='location.href="#home/about";'>Know More</button>
                     </div>
-                    <div class="slide bg-image2" data-anchor="about">
-                            <div class="my-bg-overlay text-white">
-                                <div class="about" align="center">
-                                        <h3>About</h3>
-                                        <p>
-                                         DYUKSHA is the national level techno-cultural fest organised by the College Union. This year, it is scehduled in the month of September for the dates 20 , 21 and 22. DYUKSHA consists of 60+ events in total,including 30+ cultural events and 10+ workshops of International standards. It gives you a platform to showcase your technical skills and above all, to have an experience of a lifetime. 
-                                        </p>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="slide bg-image3" data-anchor="countdown">
-                            <div class="my-bg-overlay" align="center">
-                                <div class="my-clock place-vertical-middle">
-                                    <img src="images/word.png" class="animated pulse 1s infinite">
-                                    <br/><br/>
-                                    <h3 style="color:white">Great Things Are Coming</h3>
-                                    <br/>
-                                    <div class="clock" style="width:auto">
-
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
+                    
+                </div>
+                    
+                <div class="arrow" style="top: 150px; cursor: pointer;" onclick='location.href="#events";'>
+                        <i class="arrow-image fa fa-chevron-down text-white animated bounce 20s infinite" style="font-size:16px;" ></i>
                 </div>
                 
-                <div class="section col-bg-orange" style="padding:0px;" data-anchor="events">
-                    <div class="mid">
-                        <div><img src="images/events.png" width="110px" onclick='location.href="events";'></div>
-                        <br/>
-                        <div><span style="font-size:30px; color:white;" onclick='location.href="events";'>EVENTS</span></div>
-                    </div>
-                </div>
-                <div class="section col-bg-green" data-anchor="workshops">
-                    <div class="mid">
-                        <div><img src="images/workshops.png" width="110px" onclick='location.href="workshop";'></div>
-                        <br/>
-                        <div><span style="font-size:30px; color:white;" onclick='location.href="workshop";'>WORKSHOPS</span></div>
-                    </div>
-                </div>
-                <div class="section col-bg-tomato" data-anchor="informals" style="text-align: center;">
-                            <div class="mid">
-                                    <div><i class="fas fa-dice" style="font-size:70px; color:white;" onclick='location.href="informals";'></i></div>
-                                    <br/>
-                                    <div><span style="font-size:30px; color:white;" onclick='location.href="informals";'>INFORMALS</span></div>
-                            </div>
-                </div>
-                <div class="section col-bg-stateblue" data-anchor="sponsors">
-                    <div class="mid">
-                        <div><i class="fas fa-dice" style="font-size:70px; color:white;" onclick='location.href="sponsor"'></i></div>
-                        <br/>
-                        <div><span style="font-size:30px; color:white;" onclick='location.href="sponsor"'>SPONSOR</span></div>
-                    </div>
-                </div>
-
-                <div class="section col-bg-stateblue" data-anchor="maps" style="text-align: center;" >
-                            <div class="" style=" padding:0; display: none;"  id="map1" >
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.8339166795486!2d76.64040811480119!3d10.824018892289244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba86fd51d8e1faf%3A0x4e3d7915b3621961!2sN.S.S+Engineering+College%2C+Palakkad!5e0!3m2!1sen!2sin!4v1533568673383" frameborder="0" style="border:0; height: 50%; width:100vw; margin:0;" allowfullscreen></iframe>          
-                            </div>
-                            <div class="row bg-light" style="height:100%; width:100%; margin: 0;background: #fff;" id="map2">
-                                    <div class="col-md-6 col-bg-green"  id="map" style="padding:0;" >
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.8339166795486!2d76.64040811480119!3d10.824018892289244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba86fd51d8e1faf%3A0x4e3d7915b3621961!2sN.S.S+Engineering+College%2C+Palakkad!5e0!3m2!1sen!2sin!4v1533568673383" frameborder="0" style="border:0; width:100%; height:100%;" allowfullscreen></iframe>
-                                     </div>
-                                     <div class="col-md-6 bg-light" id="contact" style="text-align: left; width: 100%;background: #fff !important;">
-                                        <div style="position: absolute; background: #fff; width: 50%; top:50%; left:50px; transform: translateY(-50%);">
-                                            <div>
-                                                <i class="fa fa-map-signs" style="font-size:32px; margin-top:32px;"></i>
-                                                <p style="text-align:left;"> NSS College of Engineering<br/>
-                                                Akathethara P O , Palakkad<br/>Kerala ,India<br/>Pin - 678008
-                                                <br/><br/><br/>
-                                                <i class="fa fa-envelope"></i> info@dyuksha.org</p>
-                                            </div>
-                                            
-                                            
-                                            <p>
-                                            <i class="fas fa-globe"></i> <a href="http://www.nssce.ac.in/" style="color: black; text-decoration:none;">www.nssce.ac.in</a></p>
-                                            <p><i class="fas fa-info-circle"></i> <a href="contacts" style="text-decoration:none;">Contact details</a></p>
-                                        
-                                        </div>
-
-                                            
-                                            
-                                     </div>
-                            </div>
-                    </div>
                 
+            </div>
+            <div class="slide bg-image2" data-anchor="about">
+                    <div class="my-bg-overlay text-white">
+                        <div class="about" align="center">
+                                <h3>About</h3>
+                                <p>
+                                    DYUKSHA is the national level techno-cultural fest organised by NSS College of Engineering, Palakkad. This year, it is scehduled in the month of September for the dates 20 , 21 and 22. DYUKSHA consists of 60+ events in total,including 30+ cultural events and 10+ workshops of International standards. It gives you a platform to showcase your technical skills and above all, to have an experience of a lifetime. 
+                                </p>
+                        </div>
+                    </div>
+            </div>
+            <div class="slide bg-image3" data-anchor="countdown">
+                    <div class="my-bg-overlay" align="center">
+                        <div class="my-clock place-vertical-middle">
+                            <img src="images/word.png" class="animated pulse 1s infinite">
+                            <br/><br/>
+                            <h3 style="color:white">Great Things Are Coming</h3>
+                            <br/>
+                            <div class="clock" style="width:auto">
+
+                            </div>
+                        </div>
+                    </div>
+            </div>
         </div>
+        
+        <div class="section col-bg-orange" style="padding:0px;" data-anchor="events">
+            <div class="mid">
+                <div><img src="images/events.png" width="110px" onclick='location.href="events";'></div>
+                <br/>
+                <div><span style="font-size:30px; color:white;" onclick='location.href="events";'>EVENTS</span></div>
+            </div>
+        </div>
+        <div class="section col-bg-green" data-anchor="workshops">
+            <div class="mid">
+                <div><img src="images/workshops.png" width="110px" onclick='location.href="workshop";'></div>
+                <br/>
+                <div><span style="font-size:30px; color:white;" onclick='location.href="workshop";'>WORKSHOPS</span></div>
+            </div>
+        </div>
+        <div class="section col-bg-tomato" data-anchor="informals" style="text-align: center;">
+                    <div class="mid">
+                            <div><i class="fas fa-dice" style="font-size:70px; color:white;" onclick='location.href="informals";'></i></div>
+                            <br/>
+                            <div><span style="font-size:30px; color:white;" onclick='location.href="informals";'>INFORMALS</span></div>
+                    </div>
+        </div>
+        <div class="section col-bg-stateblue" data-anchor="sponsors">
+            <div class="mid">
+                <div><i class="fas fa-dice" style="font-size:70px; color:white;" onclick='location.href="sponsor"'></i></div>
+                <br/>
+                <div><span style="font-size:30px; color:white;" onclick='location.href="sponsor"'>SPONSOR</span></div>
+            </div>
+        </div>
+
+        <div class="section col-bg-stateblue" data-anchor="maps" style="text-align: center;" >
+                    <div class="" style=" padding:0; display: none;"  id="map1" >
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.8339166795486!2d76.64040811480119!3d10.824018892289244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba86fd51d8e1faf%3A0x4e3d7915b3621961!2sN.S.S+Engineering+College%2C+Palakkad!5e0!3m2!1sen!2sin!4v1533568673383" frameborder="0" style="border:0; height: 50%; width:100vw; margin:0;" allowfullscreen></iframe>          
+                    </div>
+                    <div class="row bg-light" style="height:100%; width:100%; margin: 0;background: #fff;" id="map2">
+                            <div class="col-md-6 col-bg-green"  id="map" style="padding:0;" >
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.8339166795486!2d76.64040811480119!3d10.824018892289244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba86fd51d8e1faf%3A0x4e3d7915b3621961!2sN.S.S+Engineering+College%2C+Palakkad!5e0!3m2!1sen!2sin!4v1533568673383" frameborder="0" style="border:0; width:100%; height:100%;" allowfullscreen></iframe>
+                                </div>
+                                <div class="col-md-6 bg-light" id="contact" style="text-align: left; width: 100%;background: #fff !important;">
+                                <div style="position: absolute; background: #fff; width: 50%; top:50%; left:50px; transform: translateY(-50%);">
+                                    <div>
+                                        <i class="fa fa-map-signs" style="font-size:32px; margin-top:32px;"></i>
+                                        <p style="text-align:left;"> NSS College of Engineering<br/>
+                                        Akathethara P O , Palakkad<br/>Kerala ,India<br/>Pin - 678008
+                                        <br/><br/><br/>
+                                        <i class="fa fa-envelope"></i> info@dyuksha.org</p>
+                                    </div>
+                                    
+                                    
+                                    <p>
+                                    <i class="fas fa-globe"></i> <a href="http://www.nssce.ac.in/" style="color: black; text-decoration:none;">www.nssce.ac.in</a></p>
+                                    <p><i class="fas fa-info-circle"></i> <a href="contacts" style="text-decoration:none;">Contact details</a></p>
+                                
+                                </div>
+
+                                    
+                                    
+                                </div>
+                    </div>
+            </div>
+            
+    </div>
 </body>
 <script>
    
