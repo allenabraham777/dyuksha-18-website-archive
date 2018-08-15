@@ -23,6 +23,12 @@ h3{
     font-size: 12px;
     font-family: titlefont;
 }
+h5{
+    display: block;
+    font-size: 15px;
+    font-weight:normal;
+    font-family: textfont;
+}
 .bg-create-page{
     padding-top: 110px;
 }
@@ -70,6 +76,24 @@ h3{
     height: 20px;
     border-radius:3px;
 
+}
+.selectbox{
+    font-family: textfont;
+    font-size: 14px;
+    color:black;
+    margin: 5px;
+    background-color:white;
+    text-align:center;
+    border:none;
+    border: 1px solid rgba(153, 149, 149, 0.637);
+    box-shadow:inset 0px 0px 5px 5px white;
+    width: 260px;
+    height: 42px;
+    border-radius:3px;
+}
+.selectbox option{
+    text-align: center;
+    background-color: white;
 }
 /* This label is modified with style sheet just for the label created by jquery validation */
 label{

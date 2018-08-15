@@ -11,9 +11,24 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/ncnssce.js"></script>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+<body onload="openOrCloseDialog();" >
+
+   <div class="outter_form" align="center">
+            <div class="form" id="part1">
+                    <h5>REGISTRATION</h5>
+                    <div class="options" >
+                            <img src="images/n_present.png" width="54px"><br/>
+                            <button onclick="participationRegistration()" >Paper Presentation</button> 
+                    </div>
+                    <div class="options" >
+                            <img src="images/n_audi.png" width="64px"><br/>
+                            <button onclick="attendee_registration()">Attendee</button>
+                    </div>
+                </div>
+    </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"  >
         <a class="navbar-brand" href="#">
                 <img src="images/ncnssce.png" width="30" height="30" class="d-inline-block align-top" alt="">
                 NCNSSCE
@@ -45,6 +60,7 @@
          </ul>
         </div>
       </nav>
+      
       <div class="container">
           <div class="bg">
 
@@ -282,7 +298,7 @@
                         
                     </table>
                 <div align="center" id="">
-                        <a id="reg_button" href="reg_open_soon.php">
+                        <a id="reg_button" href="javascript:void(0)" onclick="openOrCloseDialog();">
                             Register Now !
                         </a>
                 </div>
@@ -294,7 +310,7 @@
             <h5>Committees</h5><br/>
             <b>Chief Patron</b><br/>
             Sri G . Sukumaran Nair, Chairman, Governing Body, NSSCE
-
+            <br/><br/>
             <b>Patron</b><br/>
             Prof. R. Prasanna Kumar, Secretary, NSS College’s Central Committee<br/><br/>
 
