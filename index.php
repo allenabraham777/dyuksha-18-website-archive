@@ -246,17 +246,17 @@
         </div>
         <div class="section col-bg-tomato" data-anchor="informals" style="text-align: center;">
                     <div class="mid">
-                            <div><i class="fas fa-dice" style="font-size:70px; color:white;" onclick='location.href="informals";'></i></div>
-                            <br/>
-                            <div><span style="font-size:30px; color:white;" onclick='location.href="informals";'>INFORMALS</span></div>
+                        <div><img src="images/informals.png" width="110px" onclick='location.href="workshop";'></div>
+                        <br/>
+                        <div><span style="font-size:30px; color:white;" onclick='location.href="workshop";'>INFORMALS</span></div>
                     </div>
         </div>
         <div class="section col-bg-stateblue" data-anchor="sponsors">
-            <div class="mid">
-                <div><i class="fas fa-dice" style="font-size:70px; color:white;" onclick='location.href="sponsor"'></i></div>
-                <br/>
-                <div><span style="font-size:30px; color:white;" onclick='location.href="sponsor"'>SPONSOR</span></div>
-            </div>
+                <div class="mid">
+                    <div><img src="images/sponsors.png" width="110px" onclick='location.href="workshop";'></div>
+                    <br/>
+                    <div><span style="font-size:30px; color:white;" onclick='location.href="workshop";'>SPONSORS</span></div>
+                </div>
         </div>
 
         <div class="section col-bg-stateblue" data-anchor="maps" style="text-align: center;" >
