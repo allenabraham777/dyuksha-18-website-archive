@@ -1,8 +1,8 @@
 {
-    "Name":"Event Name Here",
-    "Descriptions":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias porro error quibusdam aut? Consectetur quam rerum distinctio similique, dolor deleniti commodi, quis natus libero, temporibus esse aliquid quibusdam qui.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias porro error quibusdam aut? Consectetur quam rerum distinctio similique, dolor deleniti commodi, quis natus libero, temporibus esse aliquid quibusdam qui.",
+    "Name":"Gravitas",
+    "Descriptions":"It’s not the beauty of the building you should look at; it’s the construction of the foundations that will stand the test of time. So bring out the building skills in you and construct a bridge and prove your mettle as a civil engineer.",
     "Schedule":"Day: 1 Time: 10:00 AM",
-    "Prize":"15K",
+    "Prize":"8K",
     "Rules":[
         "Rule One",
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias porro error quibusdam aut? Consectetur quam rerum distinctio similique, dolor deleniti commodi, quis natus libero, temporibus esse aliquid quibusdam qui.",
@@ -12,6 +12,6 @@
         "Upto Rule N"
     ],
     "Contact":[
-        "","","",""
+        "Fizza","8075941230","Mohammed Riyas U","8593903502"
     ]
 }

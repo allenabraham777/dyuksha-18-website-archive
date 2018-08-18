@@ -1,8 +1,8 @@
 {
-    "Name":"Event Name Here",
-    "Descriptions":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias porro error quibusdam aut? Consectetur quam rerum distinctio similique, dolor deleniti commodi, quis natus libero, temporibus esse aliquid quibusdam qui.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias porro error quibusdam aut? Consectetur quam rerum distinctio similique, dolor deleniti commodi, quis natus libero, temporibus esse aliquid quibusdam qui.",
+    "Name":"Spot Design",
+    "Descriptions":"Creativity is intelligence having fun! Hey, out of the box thinkers. We got a problem. You got a solution? Come up with a creative solution for a faulty product design before the clock dies out. Be innovative. Be spontaneous. SPOT DESIGN",
     "Schedule":"Day: 1 Time: 10:00 AM",
-    "Prize":"15K",
+    "Prize":"8K",
     "Rules":[
         "Rule One",
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias porro error quibusdam aut? Consectetur quam rerum distinctio similique, dolor deleniti commodi, quis natus libero, temporibus esse aliquid quibusdam qui.",
@@ -12,6 +12,6 @@
         "Upto Rule N"
     ],
     "Contact":[
-        "","","",""
+        "Maya","9745987396","Shahana","7736343825"
     ]
 }

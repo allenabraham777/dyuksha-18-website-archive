@@ -1,8 +1,8 @@
 {
-    "Name":"Event Name Here",
-    "Descriptions":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias porro error quibusdam aut? Consectetur quam rerum distinctio similique, dolor deleniti commodi, quis natus libero, temporibus esse aliquid quibusdam qui.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias porro error quibusdam aut? Consectetur quam rerum distinctio similique, dolor deleniti commodi, quis natus libero, temporibus esse aliquid quibusdam qui.",
+    "Name":"Chain Reaction",
+    "Descriptions":"Why try touching your nose around the head, when you can touch it from the front? In this contest, the former might just win you the prize. Execute a simple mechanism in the most complicated way possible, and you might just walk away with the prize.",
     "Schedule":"Day: 1 Time: 10:00 AM",
-    "Prize":"15K",
+    "Prize":"10K",
     "Rules":[
         "Rule One",
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias porro error quibusdam aut? Consectetur quam rerum distinctio similique, dolor deleniti commodi, quis natus libero, temporibus esse aliquid quibusdam qui.",
@@ -12,6 +12,6 @@
         "Upto Rule N"
     ],
     "Contact":[
-        "","","",""
+        "Maneesha","9567250557","Rahul M Nair","8078293032"
     ]
 }

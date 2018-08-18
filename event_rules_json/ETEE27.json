@@ -1,8 +1,8 @@
 {
-    "Name":"Event Name Here",
-    "Descriptions":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias porro error quibusdam aut? Consectetur quam rerum distinctio similique, dolor deleniti commodi, quis natus libero, temporibus esse aliquid quibusdam qui.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias porro error quibusdam aut? Consectetur quam rerum distinctio similique, dolor deleniti commodi, quis natus libero, temporibus esse aliquid quibusdam qui.",
+    "Name":"Bomb Squad",
+    "Descriptions":"There's a bomb rigged to explode and cause destruction on an unprecedented scale. Do you have what it takes to diffuse the bomb, and save the day? One wrong click though, and it could be your end. You've been warned.",
     "Schedule":"Day: 1 Time: 10:00 AM",
-    "Prize":"15K",
+    "Prize":"6K",
     "Rules":[
         "Rule One",
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias porro error quibusdam aut? Consectetur quam rerum distinctio similique, dolor deleniti commodi, quis natus libero, temporibus esse aliquid quibusdam qui.",
@@ -12,6 +12,6 @@
         "Upto Rule N"
     ],
     "Contact":[
-        "","","",""
+        "Rakhi R","9074825022"," Yedhukrishnan M","9495005860"
     ]
 }

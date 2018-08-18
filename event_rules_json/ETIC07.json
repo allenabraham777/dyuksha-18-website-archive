@@ -1,8 +1,8 @@
 {
-    "Name":"Event Name Here",
-    "Descriptions":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias porro error quibusdam aut? Consectetur quam rerum distinctio similique, dolor deleniti commodi, quis natus libero, temporibus esse aliquid quibusdam qui.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias porro error quibusdam aut? Consectetur quam rerum distinctio similique, dolor deleniti commodi, quis natus libero, temporibus esse aliquid quibusdam qui.",
+    "Name":"Matlab Master",
+    "Descriptions":"There are problems all around. Are you a master in MATLAB?? Put those problems into a matrix and show your coding skills in MATLAB. Solve the problems, code it and run it. MATLAB MASTER.",
     "Schedule":"Day: 1 Time: 10:00 AM",
-    "Prize":"15K",
+    "Prize":"10K",
     "Rules":[
         "Rule One",
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias porro error quibusdam aut? Consectetur quam rerum distinctio similique, dolor deleniti commodi, quis natus libero, temporibus esse aliquid quibusdam qui.",
@@ -12,6 +12,6 @@
         "Upto Rule N"
     ],
     "Contact":[
-        "","","",""
+        "Arjun","8606897998","Sruthi M P","6282444672"
     ]
 }

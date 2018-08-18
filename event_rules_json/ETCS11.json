@@ -1,6 +1,6 @@
 {
-    "Name":"Event Name Here",
-    "Descriptions":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias porro error quibusdam aut? Consectetur quam rerum distinctio similique, dolor deleniti commodi, quis natus libero, temporibus esse aliquid quibusdam qui.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias porro error quibusdam aut? Consectetur quam rerum distinctio similique, dolor deleniti commodi, quis natus libero, temporibus esse aliquid quibusdam qui.",
+    "Name":"Hackathon",
+    "Descriptions":"Put on your thinking caps for a day and code away. Find an executable solution for the given problem and the best one wins the prize.",
     "Schedule":"Day: 1 Time: 10:00 AM",
     "Prize":"15K",
     "Rules":[
@@ -12,6 +12,6 @@
         "Upto Rule N"
     ],
     "Contact":[
-        "","","",""
+        "Mubashira M K","8891216895","Sachin","8089144967"
     ]
 }

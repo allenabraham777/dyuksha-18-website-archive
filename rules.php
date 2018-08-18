@@ -20,6 +20,7 @@
             padding-right: 100px;
             padding-left: 100px;
         }
+        
         ul{
             margin-left: 60px; margin-right: 100px;
         }
@@ -106,7 +107,7 @@
     ?>
     </u></h1>
 
-    <p>
+    <p style="font-size:18px; line-height:25px;">
         <?php 
         if($flag){
             echo $desp;
@@ -115,7 +116,7 @@
     </p>
 
     <p>
-    <i class="fas fa-money-bill-alt" style="color: darkgreen"></i> Price: &#8377;
+    <i class="fas fa-trophy" style="color: orange"></i> Prize: &#8377;
     <?php 
         if($flag){
             echo $prize;
@@ -139,7 +140,7 @@
                 if($flag){
                     $count = sizeof($rules);
                     for($i = 0; $i < $count; $i++){
-                        echo "<li>{$rules[$i]}</li>";
+                        echo "<li style='font-size:16px; line-height:20px;'>{$rules[$i]}</li>";
                     }
                 }
             ?>
