@@ -65,7 +65,7 @@
 </head>
 <body>
     <div class="title">
-        <img src="images/logo2.png" style="margin-left: 10px; margin-top: 10px; height: 60px;">
+        <a href="index"><img src="images/logo2.png" style="margin-left: 10px; margin-top: 10px; height: 60px;"></a>
     </div>
 
     <?php 
