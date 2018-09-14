@@ -16,5 +16,5 @@ function participationRegistration(){
 }
 
 function attendee_registration(){
-    location.href="reg_open_soon";
+    location.href="ncnssce_attendee_reg.html";
 }

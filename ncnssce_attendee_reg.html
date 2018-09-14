@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registration Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ncnssce.css" />
+    <link rel="stylesheet" type="text/css" href="css/create.css">
+</head>
+
+<body>
+   
+    <div class="" align="center" style="margin-top:10px;" >
+    <form action="ncnssce_attendee.php" class="create-box" method="POST">
+        <h5>Attendee Registration</h5><br/>               
+        <div class="author_outter_field">
+        <div class="author_field">
+        <select name="title" class="selectbox2">
+            <option value="Mr">Mr</option>
+            <option value="Ms">Ms</option>
+            <option value="Dr">Dr</option>
+            <option value="Prof">Prof</option>
+        </select>
+          <input type="text" name="name" class="inputbox2" placeholder="Name of Attendee" required>
+        </div>
+        <input type="text" name = "email" class="inputbox" placeholder="Email Id" required><br/>
+        <input type="text" name = "phone" class="inputbox" placeholder="Phone Number" required><br/>
+        <input type="text" name = "college" class="inputbox" placeholder="College Name" list="college" required><br/>
+        <datalist id="college">
+            <option value="NSS College of Engineering Palakkad"></option>
+        </datalist>
+        </div>
+        <br/>
+        
+        <div class="common_details">
+            <textarea class="textarea" name = "address" placeholder="Residence Address" required></textarea>
+            <input type="text" name = "city" class="inputbox" placeholder="City" required><br/>
+            <input type="text" name = "state" class="inputbox" placeholder="State" required><br/>
+            <input type="text" name = "pincode" class="inputbox" placeholder="Pincode" required><br/>
+        </div>
+        
+        <br/>
+        <input type="submit" value="Submit"class="button-tomato">
+    </form>
+    </div>
+</body>
+    <script>    
+    </script>
+</html>

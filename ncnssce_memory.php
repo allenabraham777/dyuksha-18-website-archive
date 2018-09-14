@@ -1,6 +1,8 @@
 <?php
-    
-    include("connect.php");
+    if(!isset($_POST["name1"])){
+	header("Location:ncnssce_reg.html");
+    }    
+    include("connect2.php");
     $teamid = "P". date("dmisy") . rand(111,9999);
     $title1 = mysqli_real_escape_string($con, $_POST["title1"]);
     $title2 = mysqli_real_escape_string($con, $_POST["title2"]);
@@ -74,7 +76,7 @@
             <h4>Successfully Registered</h4>
         </div>
         <div class="messageboxx">
-                <h4>Payment Link will be forwarded to you mail <?php echo $email ?> soon ! Last date of paper submission is September 5th, <br/>Kindly Submit Your ncnssce@dyuksha.org</h4>
+                <h4>Payment Link will be forwarded to your mail <?php echo $email1 ?> soon ! Last date of paper submission is September 5th <br/> Kindly mail you paper to ncnssce@dyuksha.org</h4>
         </div>
     </div>
     </body>
