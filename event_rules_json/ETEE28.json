@@ -4,12 +4,24 @@
     "Schedule":"Day: 1 Time: 10:00 AM",
     "Prize":"8K",
     "Rules":[
-        "Rule One",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias porro error quibusdam aut? Consectetur quam rerum distinctio similique, dolor deleniti commodi, quis natus libero, temporibus esse aliquid quibusdam qui.",
-        "Rule Two",
-        "Rule Three",
-        "Rule Four",
-        "Upto Rule N"
+        "Maximum of 3 members in a team",
+        "Team members can be from different colleges",
+        "All students with a valid identity card from their respective educational institution and a valid DYUKSHA ID are eligible to participate in the event",
+        "Participants are expected to have immense knowledge on coding and encryption",
+        "If number of groups is more, a prelim will be conducted for elimination",
+        "The problem statement and deﬁnition will be given at the spot of event",
+        "Team completing task successfully in least possible time will be the winners",
+        "The test cases of the problem statement can and will be changed dynamically in order to test the efﬁciency of solutions in case the leader board is cluttered",
+        "In case of any ties, more efﬁcient solutions and further more readable solutions will be given preference",
+        "Judges and event coordinators decisions are ﬁnal and binding on all participants",
+        "Members should have a laptop each",
+        "Basic electronic components required and Arduino will be provided",
+        "Use of components and library ﬁles other than provided are not allowed",
+        "Contestants should report at the venue on time else will lead to disqualiﬁcation",
+        "Use of mobile phone and internet at the time of event is not allowed",
+        "Any malpractices found will lead to disqualiﬁcation",
+        "The organizers have full rights to call off the event if the required number of entries is not met; if that is the case the registered participants will be informed at the earliest",
+        "Change in rules, if any will be highlighted on the website and notiﬁed to the registered teams"
     ],
     "Contact":[
         "Naima Shirin","9526618863","Sanoop","9446494610"

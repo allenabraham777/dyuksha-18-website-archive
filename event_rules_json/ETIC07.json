@@ -4,12 +4,19 @@
     "Schedule":"Day: 1 Time: 10:00 AM",
     "Prize":"10K",
     "Rules":[
-        "Rule One",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias porro error quibusdam aut? Consectetur quam rerum distinctio similique, dolor deleniti commodi, quis natus libero, temporibus esse aliquid quibusdam qui.",
-        "Rule Two",
-        "Rule Three",
-        "Rule Four",
-        "Upto Rule N"
+       "A team can consist of a minimum of 2 members and a maximum of 4 members",
+       "The participants should produce a valid identity card of their institute",
+       "Cross college teams are allowed",
+       "Any numbers of teams are allowed from one college and inter-college teams are also allowed",
+       "There are a total of 3 rounds. At the end of each round, specified number of teams will be eliminated; and the selected teams will move to the next round",
+       "Resources like the internet or reference books will not be allowed",
+       "Any malpractice would lead to disqualification",
+       "Event Managers will hold the right to settle any disputes and their decisions will be final and binding",
+       "Any change in rules will be disclosed 5 minutes before the actual event",
+       "<b>ROUND 1 – TICK TOCK</b>-This round is based on how fast you can code your problem into solution. Fastest teams to crack the solution qualify into net round",
+       "<b>ROUND 2 – ERROR MIN</b>-This round focuses on making the given problem error free. Contestants are required to debug the error code and compile the code successfully to present the output",
+       "<b>ROUND 3 – PROESSIONALISM</b>-Contestants are required to code their problem and provide an output which validates all the conditions / clauses given in the question",
+       "College ID is compulsory"
     ],
     "Contact":[
         "Arjun","8606897998","Sruthi M P","6282444672"

@@ -4,12 +4,19 @@
     "Schedule":"Day: 1 Time: 10:00 AM",
     "Prize":"6K",
     "Rules":[
-        "Rule One",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias porro error quibusdam aut? Consectetur quam rerum distinctio similique, dolor deleniti commodi, quis natus libero, temporibus esse aliquid quibusdam qui.",
-        "Rule Two",
-        "Rule Three",
-        "Rule Four",
-        "Upto Rule N"
+        "Individual Event",
+        "The compiler provided will be TURBO C",
+        "Decision of organizers will be ﬁnal and binding on all",
+        "The organizers have full rights to call off the event if the required number of entries is not met; if that is the case the registered participants will be informed at the earliest",
+        "Change in rules, if any will be highlighted on the website and notiﬁed to the registered teams",
+        "Consists of two rounds",
+        "A Simple code with syntax error will be given on paper",
+        "Participants have to correct the errors on paper and type the code with MONITOR SWITCHED OFF",
+        "Ten minutes will be given to type and correct the code",
+        "Based on the results of first round the participants will be selected for second round",
+        "Only problem statement will be provided",
+        "Participants need to type the code in TURBO C with MONITORS SWITCHED OFF",
+        "Winners will be announced based on the results of compilation and execution"
     ],
     "Contact":[
         "Nivedhitha Suresh","7994044674","Ajeesh","7034389628"

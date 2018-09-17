@@ -4,12 +4,21 @@
     "Schedule":"Day: 1 Time: 10:00 AM",
     "Prize":"10K",
     "Rules":[
-        "Rule One",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias porro error quibusdam aut? Consectetur quam rerum distinctio similique, dolor deleniti commodi, quis natus libero, temporibus esse aliquid quibusdam qui.",
-        "Rule Two",
-        "Rule Three",
-        "Rule Four",
-        "Upto Rule N"
+        "Teams will be given three chances to complete the system",
+        "Time for arrangement of the system is 3 hours",
+        "Participants will be provided with 230v power supply",
+        "System should contain minimum of 10 steps",
+        "The pillars should be made to fall only by direct physical contact",
+        "20 points for the middle pillar, 10 points for pillars next to the middle pillar on the either side of the middle pillar, 5 points for the pillars at both end",
+        "10 points for each step included in the system",
+        "10 additional points for parallel steps",
+        "Manual interactions are allowed at 3 checkpoints",
+        "No check points -15 points; 1 check point -10 points; 2 check points -5 points",
+        "Special points will be awarded for Moving mechanisms like robots, cars etc and Use of wind and water energy",
+        "All students with a valid identity card from their respective educational institution and a valid DYUKSHA ID are eligible to participate in the event",
+        "Decision of organizers will be ﬁnal and binding on all",
+        "The organizers have full rights to call off the event if the required number of entries are not met, if that is the case the registered participants will be informed at the earliest",
+        "Change in rules, if any will be highlighted on the website and notiﬁed to the registered teams"                
     ],
     "Contact":[
         "Maneesha","9567250557","Rahul M Nair","8078293032"

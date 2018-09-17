@@ -4,12 +4,22 @@
     "Schedule":"Day: 1 Time: 10:00 AM",
     "Prize":"15K",
     "Rules":[
-        "Rule One",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias porro error quibusdam aut? Consectetur quam rerum distinctio similique, dolor deleniti commodi, quis natus libero, temporibus esse aliquid quibusdam qui.",
-        "Rule Two",
-        "Rule Three",
-        "Rule Four",
-        "Upto Rule N"
+        "A team will consist of minimum of 1 and a maximum of 4 members",
+        "Cross college teams are allowed",
+        "Each team should bring their own laptops",
+        "Any number of teams from a single college will be allowed to enroll for this contest",
+        "The problem statement will be published on the website 3 weeks prior to the day of the contest",
+        "The drafts must be submitted to the email (will be provided later) a weeks prior to the day of the contest and the registration will close on the same day.(the more you wait the lesser time you get)",
+        "The best drafts will be selected and the groups will be notified 1 week prior to the contest",
+        "If you think youʼre confident enough about your draft you can start working on it even before the results are published",
+        "The teams will have to settle at the specified place at 8am and they have to continue their work or polish it. They must have a presentation(5min) ready",
+        "8am - 9.30am   :  Polish your work.                                            9.30am – 12pm :   Presentation",
+        "The teams are allowed to use any programming language that they wish",
+        "Judging Criteria: Technology Design Efficiency Completion",
+        "All students with a valid identity card from their respective educational institution and a valid DYUKSHA ID are eligible to participate in the event",
+        "Decision of organizers will be ﬁnal and binding on all",
+        "The organizers have full rights to call off the event if the required number of entries are not met, if that is the case the registered participants will be informed at the earliest",
+        "Change in rules, if any will be highlighted on the website and notiﬁed to the registered teams"
     ],
     "Contact":[
         "Mubashira M K","8891216895","Sachin","8089144967"

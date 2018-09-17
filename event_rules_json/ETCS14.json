@@ -4,12 +4,16 @@
     "Schedule":"Day: 1 Time: 10:00 AM",
     "Prize":"8K",
     "Rules":[
-        "Rule One",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias porro error quibusdam aut? Consectetur quam rerum distinctio similique, dolor deleniti commodi, quis natus libero, temporibus esse aliquid quibusdam qui.",
-        "Rule Two",
-        "Rule Three",
-        "Rule Four",
-        "Upto Rule N"
+        "A team will consist of 2 members",
+        "Each team will be given a set of questions",
+        "The team with maximum no of points wins",
+        "In case more than 1 team solves the same number of problems, then the team with  the most optimized code will be given priority",
+        "Programming languages allowed : C,C++,JAVA,Python",
+        "Malpractices lead to disqualification",
+        "All students with a valid identity card from their respective educational institution and a valid DYUKSHA ID are eligible to participate in the event",
+        "Decision of organizers will be ﬁnal and binding on all",
+        "The organizers have full rights to call off the event if the required number of entries is not met if that is the case the registered participants will be informed at the earliest",
+        "Change in rules, if any will be highlighted on the website and notiﬁed to the registered teams"
     ],
     "Contact":[
         "Dhanya","8907447841","Vishnu Hari","8289884365"

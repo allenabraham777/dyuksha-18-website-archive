@@ -4,12 +4,19 @@
     "Schedule":"Day: 1 Time: 10:00 AM",
     "Prize":"6K",
     "Rules":[
-        "Rule One",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias porro error quibusdam aut? Consectetur quam rerum distinctio similique, dolor deleniti commodi, quis natus libero, temporibus esse aliquid quibusdam qui.",
-        "Rule Two",
-        "Rule Three",
-        "Rule Four",
-        "Upto Rule N"
+        "Maximum of two members are allowed",
+        "Number of stages will be decided according to number of participants",
+        "Elimination will be done after each stage",
+        "Points will be based on result, speed, neatness and simplicity of the circuit",
+        "Mobile phones, calculators and other electronic gadgets are strictly prohibited inside the hall",
+        "External advices during the event are not permitted",
+        "The supply is to be given only after informing the event members",
+        "Contestants are only supposed to use the items provided to them but should carry screw drivers and testers, which will not be provided for the event",
+        "Maximum time for completing the connection for a group is 45 minutes",
+        "All students with a valid identity card from their respective educational institution and a valid DYUKSHA ID are eligible to participate in the event",
+        "Decision of organizers will be ﬁnal and binding on all", 
+        "The organizers have full rights to call off the event if the required number of entries are not met, if that is the case the registered participants will be informed at the earliest",
+        "Change in rules, if any will be highlighted on the website and notiﬁed to the registered teams"
     ],
     "Contact":[
         "Vijayakrishnan.K","9447376195","Manju","6282788043"

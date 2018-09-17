@@ -4,14 +4,34 @@
     "Schedule":"Day: 1 Time: 10:00 AM",
     "Prize":"10K",
     "Rules":[
-        "Rule One",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias porro error quibusdam aut? Consectetur quam rerum distinctio similique, dolor deleniti commodi, quis natus libero, temporibus esse aliquid quibusdam qui.",
-        "Rule Two",
-        "Rule Three",
-        "Rule Four",
-        "Upto Rule N"
+        "The competition accepts participation of team and not individuals",
+        "Each team can have a maximum of 5 members<br><br><b><u>RULES:</u></b><br><br><b>The Robot</b>",
+        "The bot must be self contained, and not externally operated by wire or by remote radio control during the race",
+        "Except for the battery pack, the handler shall not make any addition, removal, replacement or change to the hardware of a Line Follower during a contest. It is however permissible to make minor repairs",
+        "The bot shall not jump over, fly over, climb, scratch, cut, burn, mark, damage or destroy the maze",
+        "The bot shall not exceed 18 cm in overall length, 18 cm in overall width",
+        "Before commencement of normal racing, each racing team can test the racing environment on site",
+        "Within the given performance time, the handler is allowed to replace batteries and/or upload new program parameters to the bot",
+        "The bot shall have a specified maximum number of attempts to run the track within a stipulated time limit. If the performance time limit is reached and the bot is in the midst of a run, it will be allowed to complete the run and the lap time will be valid if the run is successful",
+        "If the bot leaves the line, and has not crossed the finishing line, it will be considered to have gone off the track, and that run shall be invalid.<br><br><b><u>Basic Parameters of the Racing Track:</u></b>",
+        "Surface of the racing track will use a base material suitable for racing",
+        "Surface of the racing track is white, with continuous black line drawn in the middle as the pilot line", 
+        "The minimum bending radius of the racing track will not be less than 30 cms",
+        "The racing track can intersect with a crossing angle of around 90,180 or 270 degrees",
+        "Imperfections in the track must be tolerated.<br><br><b><u>Timing of laps :</u></b>",
+        "The time it takes for a bot to make the circuit of a track shall be the recorded lap time",
+        "To determine the lap time of the bot, the period from the time the sensor at the starting line detects part of the bot body to the time the sensor at the finishing line detects part of the body of the same bot shall be clocked",
+        "The bot shall have a specified maximum number of attempts to run the track within a stipulated time limit. If the performance time limit is reached and the bot  is in the midst of a run, it will be allowed to complete the run and the lap time will be valid if the run is successful",
+        "If a bot leaves the black line, and has not crossed the finishing line, it will be considered to have gone off the track, and that run shall be invalid<br><br><b><u>EVENT STRUCTURE:</u><b><br><br><b>ROUND 1</b>",
+        "In the first round of play, each team has to race their bots through the given track and reach the end point",
+        "For final evaluation the time taken to solve the maze and the perfection will be taken into consideration and top 4 teams will qualify to Round 2.<br><br><b>ROUND 2</b>",
+        "In the final round, the top 4 teams will compete over a complicated maze simultaneously and the team which will race out the track in least time and with  maximum perfection will be declared as the winner.<br><br><b><u>Organiser’sDecision:</u></b>",
+        "The decisions regardingrules and regulations and the conduct of the event shall be final",
+        "The coordinators also reserve the right to stop a run, declare disqualification, or give instruction as appropriate",
+        "Any deviation from the above mentioned rules will disqualify the teams" 
+
     ],
     "Contact":[
-        "Athulya","6235551462","Sooraj","9400620688"
+        "Arun Chandran J","9995902307","Devikarthika A V","9400567351"
     ]
 }

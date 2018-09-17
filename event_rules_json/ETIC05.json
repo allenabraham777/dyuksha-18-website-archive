@@ -4,12 +4,18 @@
     "Schedule":"Day: 1 Time: 10:00 AM",
     "Prize":"8K",
     "Rules":[
-        "Rule One",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias porro error quibusdam aut? Consectetur quam rerum distinctio similique, dolor deleniti commodi, quis natus libero, temporibus esse aliquid quibusdam qui.",
-        "Rule Two",
-        "Rule Three",
-        "Rule Four",
-        "Upto Rule N"
+        "Only Given Software will be allowed (LT Spice)",
+        "Circuit designing using other resources like Internet or reference book will not be allowed",
+        "You can participate in this event solely or a team with maximum of 2 participants",
+        "Have an eye on the clock ticking",
+        "Any kind of malpractices will lead to disqualification",
+        "Any number of teams is allowed from one college and inter-college teams are also allowed. In case of inter-college teams, Points will be distrbuted equally among the two colleges",
+        "The Finalised rules will be disclosed just before each round",
+        "<b>ROUND 1</b>-A circuit will be given for you. It is your job to implement it and run .Also need to find the type of wave generated",
+        "<b>ROUND 2</b>-The given circuit will contain some errors. The candidate must rectify it and run the circuit to generate the required wave form",
+        "<b>ROUND 3</b>-Two different circuits will be provided for you. The contestant should produce the wave form which is expected from you",
+        "<b>ROUND 4</b>-A wave form will be given to you. You should now design the circuit for which the given wave form as the output",
+        "College ID is compulsory"
     ],
     "Contact":[
         "Sanooplal","8129376009","Dhanusree","8921965073"
