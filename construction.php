@@ -40,6 +40,6 @@
     </style>
 </head>
 <body>
-    <img src="images/con11">
+    <img src="images/con11.jpg">
 </body>
 </html>
