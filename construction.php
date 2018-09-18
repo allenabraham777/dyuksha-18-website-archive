@@ -13,10 +13,15 @@
             margin:0;
             text-align: center;
             width: 100vw;
+            background:#009A98;
         }
         img{
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            width: 300px;
+            transform: translate(-50%,-50%);
             margin-top:50px;
-            height: 100px;
         }
         .h404{
             color: #347cb4;
@@ -35,8 +40,6 @@
     </style>
 </head>
 <body>
-    <img src="images/logo2.png">
-    <div class="h404"><i class="fas fa-wrench" style="color:#333;"></i><br>Page Under Construction</div>
-    <div class="sh404">Will be available soon....</div>
+    <img src="images/con11">
 </body>
 </html>
