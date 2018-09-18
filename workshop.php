@@ -43,7 +43,7 @@
     }
 
 </script>
-<body>
+<body style="background:#000000 !important;">
 
 <?php
     include("menu.php"); // This menu php page is in Parent Directory
