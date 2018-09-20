@@ -8,7 +8,7 @@
 .loader{
     position: absolute;
     margin: auto;
-    top: 50%;
+    top: 60%;
     transform: translateY(-50%);
     bottom: 0;
     left: 0;
@@ -16,7 +16,7 @@
     text-align: center;
   }
   .loader .logo{
-      height: 100px;
+      height: 66.66px;
       -webkit-animation: blink 2.5s 0.9s linear infinite;
             animation: blink 2.5s 0.9s linear infinite;
   }
@@ -41,14 +41,14 @@
    ***************************** */
   .dice {
     display: flex;
-    margin-top: 4rem;
+    margin-top: 2rem;
     justify-content: center;
   }
   
   .face {
     display: flex;
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     opacity: 0;
   }
   .face:nth-child(1) {
@@ -65,23 +65,23 @@
             animation: waves 2.5s 0.2s linear infinite;
   }
   .face:nth-child(4) {
-      margin-left: -0.7em;
+      margin-left: -0.5em;
     -webkit-animation: waves 2.5s 0.3s linear infinite;
             animation: waves 2.5s 0.3s linear infinite;
   }
   .face:nth-child(5) {
-    margin-left: -1em;
+    margin-left: -0.7em;
 
     -webkit-animation: waves 2.5s 0.4s linear infinite;
             animation: waves 2.5s 0.4s linear infinite;
   }
   .face:nth-child(6) {
-    margin-left: -0.48em;
+    margin-left: -0.25em;
     -webkit-animation: waves 2.5s 0.5s linear infinite;
             animation: waves 2.5s 0.5s linear infinite;
   }
   .face:nth-child(7) {
-    margin-left: -0.5em;
+    margin-left: -0.3em;
     -webkit-animation: waves 2.5s .20.6s linear infinite;
             animation: waves 2.5s 0.6s linear infinite;
   }
@@ -91,12 +91,12 @@
             animation: waves 2.5s 0.7s linear infinite;
   }
   .face:nth-child(9) {
-      margin-left: -2em;
+      margin-left: -1.5em;
     -webkit-animation: waves 2.5s 0.8s linear infinite;
             animation: waves 2.5s 0.8s linear infinite;
   }
   .face:nth-child(10) {
-      margin-left: -2.1em;
+      margin-left: -1.3em;
       -webkit-animation: waves 2.5s 0.9s linear infinite;
             animation: waves 2.5s 0.9s linear infinite;
   }
