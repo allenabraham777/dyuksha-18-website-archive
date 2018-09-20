@@ -106,7 +106,7 @@ session_start();
         // This is a  New Line 
         $college = mysqli_real_escape_string($con,$_POST["college"]);
         $exist_query="SELECT email FROM dusers WHERE email='$email' or phone='$phone'";
-        $query="INSERT INTO dusers VALUES('$name','$email','$phone','$password','NO','$college')";
+        $query="INSERT INTO dusers VALUES('$name','$email','$phone','$password','YES','$college')";
 
         // Creating Auth Key
         $auth_key = create_auth_key($email);
