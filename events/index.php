@@ -83,7 +83,7 @@ else{
        background-color:#ffd740;
     }
 </style>
-<body style="background:#5DBCD2 !important;"> 
+<body > 
     <?php 
         include("menu.php");
         include("register_button.php");

@@ -1,12 +1,19 @@
 {
-    "Name":"Maze Runner",
+    "Name":"Transmitter Hunt",
     "Descriptions":"Guide your robot through ever-so-treacherous mazes and make it out the fastest to win the prize.",
     "Schedule":"Day: 1 Time: 10:00 AM",
     "Prize":"10K",
     "Rules":[
-        "Will be updated soon"
+        "Maximum of four members per team",
+        "Each team should bring atleast one smartphone with FM radio facilty and headphones",
+        "Each team should bring atleast one smartphone with Internet connectivity and any QR Code reader application",
+        "The decisions of all Officials regarding these rules and the conduct of the event shall be final",
+        "Any deviation from the mentioned rules will disqaulify the team<br><br><u><b>Event Structure :</b></u><br><br><b>Stage 1 : Written Test</b>",
+        "Rest your brawns and test your brains. Three lies covers a truth. The more you know, the better off will you be<br><br><b>Stage 2 : Circuit Assembly</b>",
+        "Traces of copper never fades in our minds. Gather the right parts. Breath life into what you just saw<br><br><b>Stage 3 : Find the fox</b>",
+        "Tune your radios, solve the puzzles, and hunt down the transmitter of transmitters. Be sure to bring back the fox."
     ],
     "Contact":[
-        "Savina","9072407533","Arun Chandra","995902307"
+        "Abel","9539649252","Nafih Ahammed ","9895426331"
     ]
 }
