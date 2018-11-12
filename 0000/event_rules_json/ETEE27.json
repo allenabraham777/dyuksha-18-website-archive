@@ -1,0 +1,28 @@
+{
+    "Name":"Bomb Squad",
+    "Descriptions":"There's a bomb rigged to explode and cause destruction on an unprecedented scale. Do you have what it takes to diffuse the bomb, and save the day? One wrong click though, and it could be your end. You've been warned.",
+    "Schedule":"Day: 1 Time: 10:00 AM",
+    "Prize":"6K",
+    "Rules":[
+        "Maximum of 2 members in a team. Team members can be from different colleges",
+        "Preliminary test will be conducted based on number of candidates",
+        "Preliminary test includes solving simple logic circuits",
+        "Candidates taking least time to complete circuit will be selected for final round",
+        "Candidates will be given a circuit in breadboard, the aim is to make the green LED glow",
+        "Maximum of seven wires can be removed from the board",
+        "Maximum time allotted to complete the task is seven minutes",
+        "Wires removed cannot be connected back",
+        "Team who manages to come with glowing green light for sufficient time, taking least possible time will be considered as winners",
+        "Contestants should report at the venue on time else will lead to disqualification",
+        "Use of mobile phone and internet at the time of event is not allowed",
+        "Any malpractices found will lead to disqualification",
+        "Use of any additional components is banned",
+        "Certificates won’t be provided in the absence of team or if disqualified.",
+        "Decision of organisers will be final and binding on all",
+        "The organisers have full rights to call off the event if the required number of entries is not met; if that is the case the registered participants will be informed at the earliest",
+        "Change in rules, if any will be highlighted on the website and notified to the registered teams" 
+    ],
+    "Contact":[
+        "Rakhi R","9074825022"," Yedhukrishnan M","9495005860"
+    ]
+}

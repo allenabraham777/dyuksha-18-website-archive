@@ -11,7 +11,7 @@
         <ul>
             <li><a href="../index"><i class="fas fa-home"></i>&nbsp;&nbsp;Home</a></li>
             <li><a href="../profile"><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Profile</a></li>
-            <li><a href=""><i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;Events</a></li>
+            <li style="color:#ffffff;"><a href="../events"><i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;Events</a></li>
             <li><a href="../workshop"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;Workshops</a></li>
             <li><a href="../informals"><i class="fas fa-gamepad"></i>&nbsp;&nbsp;Informals</a></li>
             <?php if($name != 'Guest'){echo '<li><a href="../logout"><i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp;Logout</a></li>';} ?>

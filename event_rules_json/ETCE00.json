@@ -1,8 +1,9 @@
 {
     "Name":"Hunting Squad",
-    "Descriptions":"The Tressure Hunt",
-    "Schedule":"Day: 1 Time: 10:00 AM",
+    "Descriptions":"If you’re a person who loves solving riddles, if the word “secret” makes adrenaline rush through your body, if you want to explore the campus with yourb brain then – treasure hunt is what might catch your fancy. Treasure hunt is a team game that is quite popular in colleges throughout the world . As the name suggests, in treasure hunt, you’re supposed to hunt down the “treasures”. The teams will be gifted by a clue, which when deciphered, divulges a location in the campus which has the next clue. This way, the team deciphering all the codes ands finding the treausure at the earliest is deemed the winner. Working out the mind, cycling as fast as you can to the next clue, deceptive discussions to lead other teams to the wrong locations, “overhearing” the other teams ( always huddle your team while discussing confidential stuff to save yourself from this) – the fun and drama is exhilarating.",
+    "Schedule":"3",
     "Prize":"8K",
+    "Fee":"150",
     "Rules":[
         "The students must be in a group of 2 members",
         "The members in a team must be from same institute",

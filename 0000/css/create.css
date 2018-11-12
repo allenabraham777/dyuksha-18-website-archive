@@ -1,0 +1,205 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body,html{
+    background-image: url("rback.png");
+    background-position: center;
+    background-repeat: repeat;
+    background-color:rgba(34, 33, 33, 0.9);
+    height:100%;
+}
+@font-face{
+    font-family: titlefont;
+    src:url("fonts/title.ttf");
+}
+
+@font-face{
+    font-family: textfont;
+    src:url("fonts/text.ttf");
+}
+h3{
+    display: block;
+    font-size: 12px;
+    font-family: titlefont;
+}
+h5{
+    display: block;
+    font-size: 15px;
+    font-weight:normal;
+    font-family: textfont;
+}
+.bg-create-page{
+    padding-top: 110px;
+}
+.create-box{
+    color:black;
+    background-color:white;
+    width:280px;
+    min-height: 320px;
+    border-radius:3px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:20px;
+    padding-bottom:16px;
+    box-shadow:0px 0px 2px 1px rgba(34, 33, 33, 0.9);
+}
+.login-box{
+    color:black;
+    background-color:white;
+    width:280px;
+    min-height: 220px;
+    border-radius:3px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:20px;
+    padding-bottom:16px;
+    box-shadow:0px 0px 2px 1px rgba(34, 33, 33, 0.9);
+}
+.create-form{
+    width:100%;
+    height: 100%;
+    text-align: center;
+}
+.inputbox{
+    font-family: textfont;
+    font-size: 14px;
+    color:black;
+    padding:10px;
+    margin: 5px;
+    background-color:white;
+    text-align:center;
+    border:none;
+    border: 1px solid rgba(153, 149, 149, 0.637);
+    box-shadow:inset 0px 0px 5px 5px white;
+    width: 238px;
+    height: 20px;
+    border-radius:3px;
+
+}
+.selectbox{
+    font-family: textfont;
+    font-size: 14px;
+    color:black;
+    margin: 5px;
+    background-color:white;
+    text-align:center;
+    border:none;
+    border: 1px solid rgba(153, 149, 149, 0.637);
+    box-shadow:inset 0px 0px 5px 5px white;
+    width: 260px;
+    height: 42px;
+    border-radius:3px;
+}
+.selectbox option{
+    text-align: center;
+    background-color: white;
+}
+/* This label is modified with style sheet just for the label created by jquery validation */
+label{
+   display: block;
+   max-height: 14px;   
+}
+.field_errors{
+    display: block;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    font-family: textfont;
+    font-size: 12px;
+    color:rgb(211, 88, 88);
+}
+.field_errors i{
+    color:rgb(211, 88, 88);
+    font-size: 14px;
+}
+
+/* Styling for error message in login page */
+
+.error_msg{
+    font-family: textfont;
+    position:fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    color:rgb(255, 255, 255);
+    background-color:rgba(241, 79, 79,0.8);
+    border-radius:3px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:15px;
+    padding-bottom:15px;
+    box-shadow:0px 0px 2px 1px rgba(34, 33, 33, 0.9);
+}
+
+.inputbox:active,.inputbox:focus{
+    border: 1px solid rgb(157, 187, 243);
+}
+.button-yellow{
+  font-family: textfont;
+  font-size: 14px;
+  color:white;
+  padding:10px;
+  margin: 5px;
+  background-color:rgba(255, 166, 0, 0.986);
+  text-align:center;
+  border:none;
+  cursor: pointer;
+  width: 260px;
+  height: 42px;
+  outline: none;
+  border-radius:4px;
+}
+
+.button-tomato{
+    font-family: textfont;
+    color:white;
+    font-size: 14px;
+    padding:10px;
+    margin: 5px;
+    cursor: pointer;
+    background-color:tomato;
+    text-align:center;
+    border:none;
+    width: 260px;
+    height: 42px;
+    outline: none;
+    border-radius:4px;
+  }
+
+  .login-image{
+    background-color: teal;
+    border: 2px solid rgb(104, 40, 223);
+    box-shadow: 0px 0px 1px 1px rgb(38, 230, 102);
+    border-radius: 65px;
+    margin-bottom:10px;
+    margin-top:-55px;
+    height: 65px;
+    width: 65px;
+  }
+  .login-box a{
+    display: inline-block;
+    margin-top:10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-family: textfont;
+    font-size: 12px;
+    outline: none;
+  }
+  .register-img{
+      border-radius:64px;
+      border:4px solid slateblue;
+      box-shadow: 0px 0px 1px 1px grey;
+      padding:4px; 
+      background-color: white;
+      margin-top: -68px;
+  }
+  i{
+      padding:10px;
+      font-size: 12px;
+      font-family:textfont;
+      color:grey;
+  }
+
+.custom-input { position: relative; width:240px;  margin: 5px; }
+.custom-input img { position: absolute; top: 14px; left: 16px; background-color:white;}

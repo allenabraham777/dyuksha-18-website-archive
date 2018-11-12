@@ -1,8 +1,9 @@
 {
     "Name":"Explorer",
     "Descriptions":"Showcase your awesome social media stalking skills by navigating your way through the Wikipedia pages and reaching the given article in the shortest amount of time, using the minimum number of clicks.",
-    "Schedule":"Day: 1 Time: 10:00 AM",
+    "Schedule":"1",
     "Prize":"6K",
+    "Fee":"150",
     "Rules":[
         "This game can only be played as an individual",
         "Each participant will be provided with individual system",

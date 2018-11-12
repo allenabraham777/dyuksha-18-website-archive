@@ -1,24 +1,27 @@
 {
-    "Name":"Robocup",
+    "Name":"Robowar",
     "Descriptions":"In a world where Robots are replacing humans, a first-of-its-kind robo-war seems like just the way to go. Does your robot have what it takes to survive? Let's find out.",
-    "Schedule":"Day: 1 Time: 10:00 AM",
+    "Schedule":"2",
     "Prize":"30K",
+    "Fee":"250",
     "Rules":[
         "A team may consist of a maximum of 5 participants, all from the same institute or may be from different institute. Participants graduated in 2018 are also eligible for the event",
         "The maximum duration of each round will be 5 minutes the competition will be played on a knock-out basis consisting of 2-3 players at a time",
-        "The bot should fit in a box of dimension 45cm x 45 cm x 45 cm",
+        "The bot should fit in a box of dimension 50cm x 50 cm x 50 cm",
         "Arena size 180*180 cm",
-        "Robot can have the weight up to 15kg (Excluding wires and controls)",
+        "Robot can have the weight up to 25kg (Excluding wires and controls)",
         "DC motors and stepper motors (12V-24V) can be used as per the design of bots",
         "Use of IC Engines in any form will not be allowed",
         "Robots can be built using wheels and tracks",
-        "No competitor will be allowed to touch or modify their respective bots until the duel is over. Change of battery will not be allowed during the match",
+        "No competitor will be allowed to touch or modify their respective bots until the duel is over. Change of battery will not be allowed during the match<br><br><u><b>HOW TO EARN POINTS</b></u>",
+        "A robot is declared victorious if its opponent is immobilized (if it cannot display linear motion of at least one inch in a timed period of 30 seconds) or out of the arena",
+        "If both robots survive the five minutes at that point, the robot with the higher hit points wins<br><br><u><b>DISQUALIFICATION CRITERIA</b></u>",
+        "Loose connections or improper wiring",
         "The machine would be discarded if found unsafe for other participants and spectators",
         "All efforts must be made to protect battery terminals from a direct short and causing a battery fire, failure to do so will cause direct disqualification",
         "Working voltages must not exceed 24V DC (mean voltage) at any point of time",
-        "Jumping, hopping and Flying is not allowed",
-        "Flying robots are not allowed",
-        "Judges decision shall be treated as the final"
+        "Jumping, hopping and Flying is not allowed<br><br>&nbsp;&nbsp;&nbsp;&nbsp;<b>Judges' decision shall be treated as the final</b>"
+
     ],
     "Contact":[
         "Rakhi R","9074825022","Renjith KP","9048660999"

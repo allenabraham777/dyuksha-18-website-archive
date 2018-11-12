@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo');
+@font-face{
+    font-family: Archivo;
+    src: url("fonts/Archivo-Medium.ttf");
+}
+body{
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    background-image: url("../images/bk_event.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+
+.events-card-1{
+    padding: 0;
+    border-radius: 1.1%;
+    font-family: 'Archivo', sans-serif;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 8px;
+    min-width: 240px;
+    max-width: 315px;
+    min-height: 320px;
+    max-height: 420px;
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+    font-size: 16px;
+    background-color: #fff;
+    color: #111;
+    text-align: left;
+    box-shadow: 0px 0px 5px 1px grey;
+    text-align: center;
+    background: green;
+    transition: all 0.2s linear 0s;
+}
+.events-card-1 p{
+    visibility: hidden;
+    position: absolute;
+    color:white;
+    padding: 20px;
+    margin: 0;
+    left:0px;
+    right: 0px;
+    text-align:center;
+    cursor: pointer;
+    transition: all 0.01s linear 0s;
+}
+.events-card-1 p>span{
+    padding-top: 30px;
+}
+.events-card-1 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+.events-card-1:hover img{
+
+    filter: grayscale();
+}
+.events-card-1:hover p{
+    background: rgb(0,0,0,0.7); /* Change */
+    padding-top: 15%;
+    position: absolute;
+    line-height: 130%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: visible;
+    text-align: justify;
+    transition: all 0.1s linear 0s;
+}
+.events-card-1 p button{
+    bottom: 5%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 2px solid white;
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    cursor: pointer;;
+    background: transparent;
+    transition: all 0.2s linear 0s;
+}
+
+
+
+.events-card-1 button:hover{
+    background: #fff;
+    color: #000;
+}
+
+.events-card-1:hover h4{
+    visibility: hidden;
+}
+.events-card-1 h4{
+    font-family: 'Chela One';
+    font-weight: normal;
+    text-transform: uppercase;
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    margin: 0;
+    color: white;
+    letter-spacing: 10px;
+    font-size: 150%;
+    padding-top:20px;
+}
+
+@media screen and (max-width: 960px){
+    
+    .evrnt-card-1{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}

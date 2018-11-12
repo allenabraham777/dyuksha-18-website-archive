@@ -13,8 +13,11 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Create Account</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/college.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/create.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/menuitems.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/menu7.css" />
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <script src="js/menu7.js" type="text/javascript"></script>
     <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
     <script src="js/jquery.js"></script>
@@ -36,22 +39,7 @@ session_start();
 </head>
 <body>
 
-<header>
-    <a href="index"><img class="logo" src="images/navbar_logo.png"></a>
-    <span class="user_id" id="user_id" onclick="open_menu()">
-        <i class="fas fa-user"></i> Guest <i class="fas fa-sort-down"></i>
-        <!-- PHP SCRIPT -->
-    </span>
-    <button class="menu-button" onclick="open_menu()"><i class="fas fa-bars"></i></button>
-    <div class="user_menu menu-collapse" id="user_menu">
-        <ul>
-            <li><a href="index"><i class="fas fa-home"></i>&nbsp;&nbsp;Home</a></li>
-            <li><a href="events"><i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;Events</a></li>
-            <li><a href="workshop"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;Workshops</a></li>
-            <li><a href="informals"><i class="fas fa-gamepad"></i>&nbsp;&nbsp;Informals</a></li>
-        </ul>
-    </div>
-</header>
+<?php include("menu7.php");?>
 
 
 
@@ -77,8 +65,13 @@ session_start();
                 </div>
                 
                 <div class="custom-input">
-                        <input type="text" class="inputbox" id="college" name="college" placeholder="College Name" required/><br/>
+                        <!--<input type="text" class="inputbox" id="college" name="college" placeholder="College Name" required/><br/>
+                        -->
+                        <textbox></textbox>
+                        <?php include("colleges.php"); ?>
+                        <br/>
                         <img src="images/password.png" width="20px" />
+
                 </div>
 
                 <div class="custom-input">
@@ -90,6 +83,12 @@ session_start();
                         <input type="password" class="inputbox" id="password-confirm" name="passwordconfirm" placeholder="Re-Enter Password" required/><br/>
                         <img src="images/password.png" width="20px" />
                 </div>
+		
+		  <div class="custom-input">
+                        <input type="text" class="inputbox" name="referral" id="code" placeholder="Referral Code (Optional)"/><br/>
+                        <img src="images/mail.png" width="20px" />
+                </div>
+
                 <input type="submit" class="button-yellow" value="Create Account" onclick="checkPasswordField();"/>
                 or <a href="login">Login</a> to Dyuksha          
 
@@ -102,6 +101,7 @@ session_start();
         $name=mysqli_real_escape_string($con,$_POST["name"]);
         $phone=mysqli_real_escape_string($con,$_POST["phone"]);
         $email=mysqli_real_escape_string($con,$_POST["email"]);
+        $referral=mysqli_real_escape_string($con,$_POST["referral"]);
         $password=md5(mysqli_real_escape_string($con,$_POST["password"]));
         // This is a  New Line 
         $college = mysqli_real_escape_string($con,$_POST["college"]);
@@ -116,6 +116,7 @@ session_start();
         // $mail_output = mail($email,"Email Confirmation","Please Click the Link to Confirm the Account");
         
         $query_nonactiveusers="INSERT INTO nonactiveusers VALUES('$email','$auth_key')";
+        $query_referral="INSERT INTO referrals VALUES('$email','$referral')";
         $res=mysqli_query($con,$exist_query);
         if(mysqli_num_rows($res) > 0){
             echo "<script> swal('','Account Already Exist', 'info');</script>";
@@ -123,6 +124,11 @@ session_start();
         else{
             // ADDING TO USERS TABLE
             $res=mysqli_query($con,$query);
+            // ADD TO REFERRAL TABLE
+            if(strcmp($referral,"") != 0)
+	    {
+	    	$res3 = mysqli_query($con,$query_referral);
+            }
             // ADDING TO NON CONFIRMED TABLE
             $res2=mysqli_query($con,$query_nonactiveusers);
 

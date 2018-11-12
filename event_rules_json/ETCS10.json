@@ -1,8 +1,9 @@
 {
     "Name":"Eyes Off",
     "Descriptions":"Take your eyes off the screen and give them their much needed rest. Code your way through the competition with your eyes off the screen.",
-    "Schedule":"Day: 1 Time: 10:00 AM",
-    "Prize":"6K",
+    "Schedule":"2",
+    "Prize":"7K",
+    "Fee":"150",
     "Rules":[
         "Individual Event",
         "The compiler provided will be TURBO C",

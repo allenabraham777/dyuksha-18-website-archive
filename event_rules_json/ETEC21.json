@@ -1,8 +1,9 @@
 {
     "Name":"Turbo bots",
     "Descriptions":"Victory matters irrespective of its twists and turns. Line up your Robot at the starting line, and race against time. The first one to cross the finish-line wins, as expected.",
-    "Schedule":"Day: 1 Time: 10:00 AM",
+    "Schedule":"3",
     "Prize":"12K",
+    "Fee":"200",
     "Rules":[
         "Round one : preliminary round", 
         "Round two : Final<br><br><b><u>BASICS</u></b>",
@@ -10,11 +11,11 @@
         "Both rounds will be judged on time basis",
         "Only those who qualify from the preliminary round will be allowed to participate in the final round",
         "Any malpractices will lead to disqualification.<br><br><b><u>ROBOT SPECIFICATIONS</u></b>",
-        "The maximum dimension of the robot can be 30cm x 30cm x30cm (l x b x h)",
+        "The maximum dimension of the robot can be 30cm x 25cm x30cm (l x b x h)",
         "The robot may be wired or wireless",
         "The length of the wire (for wired bots) should be long enough to cover the whole track and wire should remain slack during the complete run",
         "Max weight must not exceed 3 kg",
-        "The power supply will be allowed maximum up to 12 Volt",
+        "The power supply will be allowed maximum up to 18 Volt",
         "Readymade toys parts are not allowed<br><br><b><u>RULES AND REGULATIONS</u></b>",
         "This is a racing event so fastest and most balanced robot will win",
         "Robot should be as per the given specifications",
@@ -37,6 +38,6 @@
         "All about final round will be notified on the final day"
     ],
     "Contact":[
-        "Savina","9072407533","Adithya Vikraman","9400808970"
+        "Savina","9072407533","Sreekanth","8281951587"
     ]
 }

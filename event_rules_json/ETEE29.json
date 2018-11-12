@@ -1,8 +1,9 @@
 {
     "Name":"Envision",
     "Descriptions":"After all the excitement and chaos, you are tired. What better way to recover than by giving a presentation? Kidding, but who knows if you're the next visionary the world needs?",
-    "Schedule":"Day: 1 Time: 10:00 AM",
-    "Prize":"10K",
+    "Schedule":"3",
+    "Prize":"9K",
+    "Fee":"150",
     "Rules":[
         "Either a solo participant or a team of 2 members",
         "Team members can be from different colleges",

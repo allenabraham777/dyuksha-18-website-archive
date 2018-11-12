@@ -1,0 +1,143 @@
+
+body{
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(rgb(52,124,180,0.5),rgb(52,124,180,0.5)),
+                url("../images/bk_workshop.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+.workshop-card-1{
+    padding: 0;
+    border-radius: 1.1%;
+    font-family: 'Fira Sans Extra Condensed', Arial, sans-serif;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 8px;
+    min-width: 240px;
+    max-width: 315px;
+    min-height: 320px;
+    max-height: 420px;
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+    font-size: 16px;
+    background-color: #fff;
+    color: #111;
+    text-align: left;
+    box-shadow: 0px 0px 5px 1px grey;
+    text-align: center;
+    background: green;
+    transition: all 0.2s linear 0s;
+}
+.workshop-card-1 p{
+    visibility: hidden;
+    position: absolute;
+    color:white;
+    padding: 20px;
+    margin: 0;
+    left:0px;
+    right: 0px;
+    text-align:center;
+    cursor: pointer;
+    transition: all 0.01s linear 0s;
+}
+.workshop-card-1 p>span{
+    padding-top: 30px;
+}
+.workshop-card-1 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+.workshop-card-1:hover img{
+
+    filter: grayscale();
+}
+.workshop-card-1:hover p{
+    background: rgb(225,30,10,0.5);
+    padding-top: 30%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: visible;
+    text-align: justify;
+    transition: all 0.1s linear 0s;
+}
+.workshop-card-1:hover p button{
+    visibility: visible;
+    bottom: 5%;
+    width: 40px;
+    height: 40px;
+    line-height: 20px;
+    border: 2px solid white;
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    cursor: pointer;;
+    background: transparent;
+    transition: all 0.2s linear 0s;
+}
+
+.workshop-card-1:hover p .registered{
+    line-height:20px;
+
+    background: rgb(0,100,0) !important;
+}
+.workshop-card-1:hover p .registered:hover{
+    color: #fff;
+}
+.workshop-card-1 p button{
+    visibility: hidden;
+}
+
+
+.workshop-card-1:hover button:hover{
+    background: #fff;
+    color: #000;
+}
+
+.workshop-card-1:hover h4{
+    visibility: hidden;
+}
+.workshop-card-1 h4{
+    font-family: 'Chela One';
+    font-weight: normal;
+    text-transform: uppercase;
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    margin: 0;
+    color: white;
+    letter-spacing: 10px;
+    font-size: 150%;
+    padding-top:20px;
+}
+
+@media screen and (max-width: 960px){
+    body{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0;
+        margin: 0;
+    }
+    .workshop-card-1{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
+

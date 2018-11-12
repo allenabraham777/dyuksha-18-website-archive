@@ -7,9 +7,15 @@
     <title>Events</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="../images/logo.png" type="image/png" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/cards.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/menuitems.css" />
-    
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/cards_3.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/menu7.css" />
+    <script src="../js/menu7.js" type="text/javascript"></script>
+    <script>
+        @font-face{
+            font-family: roboto;
+            src: url("../css/fonts/roboto.ttf");
+        }
+    </script>
     <link href="https://fonts.googleapis.com/css?family=Chela+One" rel="stylesheet">
     <link href="../css/dialog.css" rel="stylesheet"/>
     <script src="../js/details.js" type="text/javascript"></script>
@@ -43,13 +49,13 @@
     ?>
    
 </script>
-<body onload="" style="background:#5DBCD2 !important;">
+<body onload="" style="background-image:url(../images/asad.png) !important; background-attachment:fixed; background-position:center; background-repeat:repeat;">
 
 
 <?php
     // Menu as a Include File
     include("register_button.php");
-    include("menu.php");
+    include("menu7.php");
 ?>
 
 <div align="center" style="margin-top: 70px;">
@@ -60,17 +66,33 @@
          //   $query="SELECT eventId,ename,price FROM eprices WHERE eventId NOT IN (SELECT itemID FROM dcart WHERE email='$email') AND eventId  NOT IN (SELECT itemID FROM purchases WHERE email='$email')  ";
             $query="SELECT eventId,ename,schedule,edesp FROM tech_events where eventId like '%ETIC%'";
             $res = mysqli_query($con,$query);
+            echo '<div class="cols">';
             while($row=mysqli_fetch_array($res)){
        
-                echo "<div class='events-card-1 {$row[0]}'>";
-                echo "<img src=\"images/event_img/{$row[0]}.jpg\" style=\"width:100%; margin-bottom:0px;\">";
-                echo "<h4>{$row[1]}</h4>";
-                echo "<p>{$row[3]} <br/><br/>";
-                echo "<span><i class=\"far fa-clock\"></i> Day: {$row[2]}</span>";
-                echo "<br/><br/>";
+                echo '<div class="col" ontouchstart="this.classList.toggle("hover");">';
+                echo '<div class="container">';
+                echo '<div class="front" style="background-image: url(images/event_img/'.$row[0].'.jpg)">';
+                echo '<div class="inner">';
+                echo '<p>';
+                echo $row[1];
+                echo '</p>';
+                echo '</div>';
+                echo '</div>';
+                echo '<div class="back">';
+                echo '<div class="inner">';
+                echo '<p style="text-align:justify; font-size:18px; margin-top:-40px; font-face:roboto;">';
+                echo $row[3];
+                echo "<br/><br/><span><i class=\"far fa-clock\"></i> Day: {$row[2]}</span><br/><br/><br/><br/>";
+                echo '<center>';
                 echo "<button onclick=\"readMore('{$row[0]}');\" style=\"position: absolute; right: 50%; transform: translateX(50%);\"><i class=\"fas fa-eye\"></i></button>";
-                echo "</p></div>";
+                echo '</center>';
+                echo '</p>';
+                echo '</div>';
+                echo '</div>';
+                echo '</div>';
+                echo '</div>';
           }
+          echo '</div>';
 
           mysqli_close($con);
 

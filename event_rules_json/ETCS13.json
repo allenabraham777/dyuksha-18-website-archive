@@ -1,8 +1,9 @@
 {
     "Name":"Debugger",
     "Descriptions":"Got a keen eye for correcting mistakes others make? Now you can correct those errors AND win prizes.",
-    "Schedule":"Day: 1 Time: 10:00 AM",
-    "Prize":"8K",
+    "Schedule":"1",
+    "Prize":"7K",
+    "Fee":"150",
     "Rules":[
         "Each team can have a maximum of two members",
         "Any number of teams is allowed from one college and inter-college teams are also allowed",

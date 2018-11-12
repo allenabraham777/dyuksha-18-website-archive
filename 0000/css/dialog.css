@@ -1,0 +1,138 @@
+.dialog{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 315px;
+    height: 315px;
+    border-radius: 5px;
+    box-shadow: #000 10px 10px 40px;
+    text-align: center;
+    background-color: #fff;
+}
+.dialog-container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index:99;
+    background-color: rgb(0,0,0,0.5);
+
+}
+
+.dialog-radio-container-parent {
+    width: 70%;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+.dialog-close-button{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: auto;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.dialog-filter-button{
+    height: 40px;
+    font-size: 15px;
+    line-height: 40px;
+    border: none;
+    background-color: #347cb4;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: #000 0 0 5px;
+}
+
+.dialog-radio-container {
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    font-size: 15px;
+    line-height: 35px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    margin: auto;
+    user-select: none;
+    text-align: left;
+}
+.dialog-radio-container .dialog-radio {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.dialog-radio-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    height: 25px;
+    width: 25px;
+    border: solid 0.5px #000;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+
+
+.dialog-radio-container:hover .dialog-radio ~ .dialog-radio-checkmark {
+   background-color: #ccc;
+  }
+
+.dialog-radio-container .dialog-radio:checked ~ .dialog-radio-checkmark {
+    background-color: #347cb4;
+    border: none;
+    
+
+}
+
+.dialog-radio-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.dialog-radio-container .dialog-radio:checked ~ .dialog-radio-checkmark:after {
+    display: block;
+}
+
+.dialog-radio-container .dialog-radio-checkmark:after {
+ 	top: 8px;
+    left: 8px;
+    position: absolute;
+    margin: auto;
+	width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: white;
+}
+
+
+@media screen and (max-width: 600px){
+    .dialog{
+        width: 95%;
+    }
+}

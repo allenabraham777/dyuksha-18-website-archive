@@ -1,0 +1,31 @@
+{
+    "Name":"Make The Beast",
+    "Descriptions":"Make a robot from scratch with given resources and complete the challenge.",
+    "Schedule":"Day: 1 Time: 10:00 AM",
+    "Prize":"8K",
+    "Rules":[
+        "Each team must have at least one and at most four members",
+        "Each team will be provided with system having Arduino IDE. Contestants are not allowed to use their own personal computers",
+        "Participants are not allowed to bring their own Arduino kit/ peripheral hardware",
+        "Any malpractice would lead to disqualification",
+        "The type of robot, specifications and the task to be performed will be disclosed only by the beginning of the event",
+        "More sophisticated rules related to the particular robot and the task will be disclosed only along with the specifications",
+        "Cross college teams allowed",
+        "All students with a valid identity card from their respective educational institution and a valid DYUKSHA ID are eligible to participate in the event",
+        "Decision of organizers will be ﬁnal and binding on all",
+        "The organizers have full rights to call off the event if the required number of entries are not met, if that is the case the registered participants will be informed at the earliest",
+        "Change in rules, if any will be highlighted on the website and notiﬁed to the registered teams<br><br><b><u>ROUNDS</u></b>",
+        "Round 1: Participants will be given the said equipment’s and they have to build a robot and code the Arduino which will perform the task (which will announced by the beginning of the round)",
+        "Round 2: Participants will be asked to make necessary changes to the existing code and hardware of the robot to perform a more advanced task<br><br><b><u>JUDGING CRITERIA</u></b>",
+        "Code efficiency and logic",
+        "Time taken to complete the robot",
+        "Parameters depending on the robot. Some parameters will be dependent on the functioning of the constructed robot. These parameters will be disclosed just before beginning the round",
+        "Construction neatness of the robot body",
+        "All these parameters will result into corresponding points and accumulation of all these points will result into the final score",
+        "Decision of the judges will be the final"
+
+    ],
+    "Contact":[
+        "Adrika","7907861714","Harikrishnan PA","8943066380"
+    ]
+}

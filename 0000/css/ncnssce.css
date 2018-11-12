@@ -1,0 +1,158 @@
+.bg{
+    background-image:url("nss.jpg");
+    background-size:cover;
+    height:320px;
+    background-position:top;
+}
+.banner{
+    font-weight: bold;
+    padding: 5px;
+    background-color:rgba(255, 166, 0, 0.438);
+}
+p{
+    text-align:justify;
+}
+h6{
+    color:rgb(88, 87, 87);
+    font-weight:normal;
+}
+#reg_button{
+    margin-top:20px;
+    display: block;
+    padding:15px;
+    text-align:center;
+    border-radius:3px;
+    width: 300px;
+    background: tomato;
+    color:white;
+    text-decoration:none;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    outline: none;
+}
+@keyframes blink{
+    from{
+        opacity: 0.6;
+    }
+    to{
+       opacity: 1;
+    }
+}
+.parties img
+{
+    margin:10px;
+    vertical-align: middle;
+        
+}
+
+
+#contact{
+    color:white;
+    padding:10px;
+    background-color: rgba(22, 21, 21, 0.89);
+}
+#contact .row{
+    padding: 0px;
+    margin: 0px;
+}
+#contact .col-md-3{
+    padding:0px;
+    margin: 0px;
+    margin-top:20px;
+}
+
+.outter_form{
+    position:fixed;
+    margin: auto;
+    left: 0;
+    right:0;
+    visibility: hidden;
+    top: 60px;
+    margin:auto;
+    z-index: 99;
+}
+.form{
+    text-align: center;
+    padding:20px;
+    background: white;
+    width: 310px;
+    box-shadow: 0px 0px 4px 2px rgba(128, 128, 128, 0.596);
+    margin-top: 30px;
+    border-radius:6px;
+}
+.form img{
+    margin-bottom:5px;
+}
+.form .options{
+    margin:10px;
+}
+#part1 .options{
+    display: inline-block;
+}
+
+
+.inputbox2,.selectbox2{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.inputbox2{
+    font-family: textfont;
+    font-size: 14px;
+    color:black;
+    padding:10px;
+    margin-left: 0px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    background-color:white;
+    text-align:center;
+    border:none;
+    border: 1px solid rgba(153, 149, 149, 0.637);
+    box-shadow:inset 0px 0px 5px 5px white;
+    width: 184px;
+    height: 20px;
+    border-radius:3px;
+
+}
+
+.textarea{
+    font-family: textfont;
+    font-size: 14px;
+    color:black;
+    padding:10px;
+    margin-left: 0px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-right: 0px;
+    background-color:white;
+    text-align:center;
+    border:none;
+    border: 1px solid rgba(153, 149, 149, 0.637);
+    box-shadow:inset 0px 0px 5px 5px white;
+    width: 238px;
+    height: 40px;
+    resize: none;
+    border-radius:3px;
+
+}
+
+.selectbox2{
+    font-family: textfont;
+    font-size: 14px;
+    color:black;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-right: 0px;
+    background-color:white;
+    text-align:center;
+    border:none;
+    border: 1px solid rgba(153, 149, 149, 0.637);
+    box-shadow:inset 0px 0px 5px 5px white;
+    width: 50px;
+    height: 42px;
+    border-radius:3px;
+}

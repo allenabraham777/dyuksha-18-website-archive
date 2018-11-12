@@ -1,0 +1,9 @@
+<?php
+ $redir="login";
+ if(isset($_GET["redir"])){
+     $redir=$_GET["redir"];
+ }
+ session_start();
+ session_destroy();
+ header("Location:$redir");
+?>

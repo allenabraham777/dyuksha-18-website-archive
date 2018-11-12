@@ -77,12 +77,12 @@ body{
     visibility: visible;
     bottom: 5%;
     width: 40px;
-    height: 40px;
+    height: 30px;
     line-height: 20px;
     border: 2px solid white;
     text-align: center;
     color:white;
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;;
     background: transparent;
     transition: all 0.2s linear 0s;

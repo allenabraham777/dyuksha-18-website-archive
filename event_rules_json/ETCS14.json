@@ -1,8 +1,9 @@
 {
     "Name":"Code War",
-    "Descriptions":"This is your chance to exhibit your proficiency in multiple languages. Code the given program in various languages and win big.",
-    "Schedule":"Day: 1 Time: 10:00 AM",
+    "Descriptions":"This is your chance to exhibit your proficiency in programing logic. Code the given program in your favourite language and win big.",
+    "Schedule":"3",
     "Prize":"8K",
+    "Fee":"150",
     "Rules":[
         "A team will consist of 2 members",
         "Each team will be given a set of questions",

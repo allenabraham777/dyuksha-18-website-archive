@@ -1,8 +1,9 @@
 {
     "Name":"Calcestruzzo",
     "Descriptions":"Curious to learn about building materials and their science? Be a master at mortar designing using cement and bag the price.",
-    "Schedule":"Day: 1 Time: 10:00 AM",
+    "Schedule":"1",
     "Prize":"12K",
+    "Fee":"200",
     "Rules":[
         "3 members per team",
         "Each team should bring 3 concrete cube of the given size at the day of the event and the average compressive strength is considers for judgement",

@@ -1,8 +1,9 @@
 {
     "Name":"Chain Reaction",
     "Descriptions":"Why try touching your nose around the head, when you can touch it from the front? In this contest, the former might just win you the prize. Execute a simple mechanism in the most complicated way possible, and you might just walk away with the prize.",
-    "Schedule":"Day: 1 Time: 10:00 AM",
+    "Schedule":"1",
     "Prize":"10K",
+    "Fee":"150",
     "Rules":[
         "Teams will be given three chances to complete the system",
         "Time for arrangement of the system is 3 hours",
@@ -21,6 +22,6 @@
         "Change in rules, if any will be highlighted on the website and notiﬁed to the registered teams"                
     ],
     "Contact":[
-        "Maneesha","9567250557","Rahul M Nair","8078293032"
+        "Maneesha","9567250557","Rahul M Nair","9633473032"
     ]
 }

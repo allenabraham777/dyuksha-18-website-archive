@@ -1,0 +1,411 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+.know-more-button{
+    border: solid 2px #fff;
+    color: #fff;
+    font-size: 15px;
+    background: transparent;
+    padding-right: 5px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+.tooltip1 {
+    text-align: center;
+    width: 150px;
+    background: #000;
+    padding: 10px;
+    color: white;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+}
+#fullpage{
+    margin-left: 70px;
+}
+
+
+
+.dyuksha-social{
+	position: absolute;
+    z-index: 120;
+    margin-right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    padding: auto;
+    text-align: center;
+}
+.dyuksha-social span{
+    width: 50px;
+    cursor: pointer;
+	height: 50px;
+	margin: 10px;
+	background: #fff;
+	border-radius: 50%;
+    line-height: 50px;
+    display: inline-block;
+    box-shadow: #000 3px 3px 10px;
+    font-size: 20px;
+    overflow: hidden;
+}
+.dyuksha-social span:hover{
+    background: #ccc;
+    font-size: 30px;    
+    transition: all 0.1s linear 0s;
+}
+.fa-facebook-f{
+    color: #3B5998;
+}
+.fa-instagram{
+    color: #8a3ab9;
+}
+.fa-youtube{
+    color: red;
+}
+
+
+
+.mid{
+    width: 100vw;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0px;
+}
+.bg-image{
+    position: relative;
+    background-image: url("main.jpg");
+    background-position: center;
+    width:100%;
+    height:100%;
+    background-size:cover;
+}
+.bg-image2{
+    position: relative;
+    background-image: url("fixbg1.jpg");
+    background-position: center;
+    width:100%;
+    height:100%;
+    background-size:cover;
+}
+.bg-image3{
+    position: relative;
+    background-image: url("fixbg3.jpg");
+    background-position: center;
+    width:100%;
+    height:100%;
+    background-size:cover;
+}
+.my-bg-overlay{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:rgba(25,25,25,0.8);
+}
+.place-vertical-middle{
+    position: absolute; height: 240px; top:0; bottom:0; left:0; right: 0; margin: auto;
+    
+}
+
+.text-blue{
+    color:dodgerblue;
+}
+.text-white{
+    color:white;
+}
+
+
+
+.about{
+    padding-left:20%;
+    padding-right:20%;
+    position: absolute;
+    max-height: 300px;
+    top:0;
+    bottom:0;
+    margin: auto;
+    
+}
+.about p{
+    text-align: justify;
+    font-size:22px;
+}
+
+.arrow {
+    position: absolute;
+    height: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 30px;
+    border-radius: 40px;
+    bottom:10%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+.clock{
+    display:inline-block; width:auto; zoom: 0.8;
+    -moz-transform: scale(0.8);
+}
+.my-clock{
+    text-align: center;
+}
+.my-clock img{
+   
+    width:400px;
+}
+
+.fp-slidesNav ul li a span{
+    background:white !important;
+}
+#fp-nav ul li a span{
+    opacity: 0;
+}
+
+.our-menu{
+   visibility: hidden;
+   position: absolute;
+}
+
+
+
+@media screen and (max-height:400px){
+    .about{
+        padding-left:20px;
+        padding-right:20px;
+        position: absolute;
+        max-height: 300px;
+        top:0;
+        bottom:0;
+        margin: auto;
+        
+    }
+
+    .about p{
+        text-align: justify;
+        font-size:16px;
+    }   
+   
+}
+@media screen and (max-width:960px) and (min-width:721px){
+    .about{
+        padding-left:20px;
+        padding-right:20px;
+        position: absolute;
+        max-height: 300px;
+        top:0;
+        bottom:0;
+        margin: auto;
+    }
+    .about p{
+        font-size: 16px;
+    }
+
+}
+@media screen and (max-width:720px) and (min-width:671px){
+
+    .about{
+        padding-left:20px;
+        padding-right:20px;
+        position: absolute;
+        max-height: 300px;
+        top:0;
+        bottom:0;
+        margin: auto;
+    }
+    .about p{
+        font-size: 16px;
+    }
+
+    .dyuksha-social{
+        margin: 0;
+        margin-top: 20px;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100vw;
+        height: 50px;
+        text-align: center;
+    }
+   
+}
+@media screen and (max-width:670px) and (min-width:561px){
+    .about{
+        padding-left:20px;
+        padding-right:20px;
+        position: absolute;
+        max-height: 300px;
+        top:0;
+        bottom:0;
+        margin: auto;
+    }
+    .about p{
+        font-size: 16px;
+    }
+   
+    .tooltip1{
+        visibility: hidden;
+    }
+    #fullpage{
+       margin: 0;
+    }
+    .about{
+        padding-left:20px;
+        padding-right:20px;
+        position: absolute;
+        max-height: 300px;
+        top:0;
+        bottom:0;
+        margin: auto;
+    }
+    .about p{
+        font-size: 16px;
+    }
+
+    .dyuksha-social{
+        margin: 0;
+        margin-top: 20px;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100vw;
+        height: 50px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:560px) and (min-width:330px){
+    
+    .tooltip1{
+        visibility: hidden;
+    }
+    #fullpage{
+       margin: 0;
+    }
+
+    .about{
+        padding-left:20px;
+        padding-right:20px;
+        position: absolute;
+        max-height: 240px;
+        top:0;
+        bottom:0;
+        margin: auto;
+        
+        
+    }
+    .about p{
+        text-align: justify;
+        font-size:16px;
+    }   
+    .my-clock h2{
+        font-size:14px;
+    }
+    .my-clock img{
+        width: 220px;
+    }
+    .clock{
+        display:inline-block; 
+        width:auto; 
+        zoom: 0.5;
+        -moz-transform: scale(0.5);
+    }
+    .about{
+        padding-left:20px;
+        padding-right:20px;
+        position: absolute;
+        max-height: 300px;
+        top:0;
+        bottom:0;
+        margin: auto;
+    }
+    .about p{
+        font-size: 16px;
+    }
+
+    .dyuksha-social{
+        margin: 0;
+        margin-top: 20px;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100vw;
+        height: 50px;
+        text-align: center;
+    }
+
+    
+   
+}
+@media screen and (max-width:329px){
+    .about{
+        padding-left:20px;
+        padding-right:20px;
+        position: absolute;
+        max-height: 300px;
+        top:0;
+        bottom:0;
+        margin: auto;
+        
+    }
+
+    .about p{
+        text-align: justify;
+        font-size:16px;
+    }   
+    .my-clock h2{
+        font-size:14px;
+    }
+    .my-clock img{
+        width: 220px;
+    }
+    .clock{
+        display:inline-block; 
+        width:auto; 
+        zoom: 0.48;
+        -moz-transform: scale(0.48);
+    }
+
+    .tooltip1{
+        visibility: hidden;
+    }
+    #fullpage{
+       margin: 0;
+    }
+    .about{
+        padding-left:20px;
+        padding-right:20px;
+        position: absolute;
+        max-height: 300px;
+        top:0;
+        bottom:0;
+        margin: auto;
+    }
+    .about p{
+        font-size: 16px;
+    }
+
+    .dyuksha-social{
+        margin: 0;
+        margin-top: 20px;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100vw;
+        height: 50px;
+        text-align: center;
+    }
+
+}

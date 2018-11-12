@@ -1,8 +1,9 @@
 {
     "Name":"Bomb Squad",
     "Descriptions":"There's a bomb rigged to explode and cause destruction on an unprecedented scale. Do you have what it takes to diffuse the bomb, and save the day? One wrong click though, and it could be your end. You've been warned.",
-    "Schedule":"Day: 1 Time: 10:00 AM",
+    "Schedule":"2",
     "Prize":"6K",
+    "Fee":"150",
     "Rules":[
         "Maximum of 2 members in a team. Team members can be from different colleges",
         "Preliminary test will be conducted based on number of candidates",

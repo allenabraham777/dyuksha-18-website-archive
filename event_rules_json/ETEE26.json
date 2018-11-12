@@ -1,8 +1,9 @@
 {
     "Name":"Light'em Up",
     "Descriptions":"You have gone back in time, and witnessed the lack of powerful technology that exists today. Design brilliant circuits with the most basic of equipment lying around, using just your knowledge from the future.",
-    "Schedule":"Day: 1 Time: 10:00 AM",
-    "Prize":"6K",
+    "Schedule":"1",
+    "Prize":"7K",
+    "Fee":"150",
     "Rules":[
         "Maximum of two members are allowed",
         "Number of stages will be decided according to number of participants",

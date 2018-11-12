@@ -1,8 +1,9 @@
 {
     "Name":"Logic Circuit Solver",
     "Descriptions":"Hey! Its a gate!! A logic gate. Want to get in through the gate? Then solve the logic problem using logic gates. Design and implement the logic circuit for the logic problem. Done?? Then the gate is open and you are welcome.",
-    "Schedule":"Day: 1 Time: 10:00 AM",
+    "Schedule":"1",
     "Prize":"8K",
+    "Fee":"150",
     "Rules":[
         "A team can consist of a minimum of one member and a maximum of two members",
         "The participants should  produce a valid identity card of their institute",

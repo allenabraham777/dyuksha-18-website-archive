@@ -1,12 +1,18 @@
 {
     "Name":"The Major Challenge",
     "Descriptions":"Sharpen your mind. Get ready to be grilled with questions. And make sure you answer them right. Do you think you have the brains to answer them all? Challenge yourself and others with this quiz competition!",
-    "Schedule":"Day: 1 Time: 10:00 AM",
+    "Schedule":"2",
     "Prize":"12K",
+    "Fee":"200",
     "Rules":[
-        "Will be updated soon"
+        "The team must consist of 2 contestants",
+        "The competition has 2 rounds",
+        "Top 8 teams from the first round will qualify for the finals",
+        "The next top 4 college/ school team will be distributed among the final eight on lots",
+        "Cross college teams are allowed",
+        "Decision of the quiz master is final"
     ],
     "Contact":[
-        "Akshay V S","8129467426","",""
+        "Akshay V S","8129467426","Ajay Soorya","7736249323"
     ]
 }

@@ -1,0 +1,324 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("../images/bk_desc (1).jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+@font-face{
+    font-family: fonarto;
+    src:url("fonts/Fonarto.ttf");
+}
+@media (max-width:699px){
+    .title
+    {
+        font-size:20px;
+        color: #ffffff;
+        font-weight: bold;
+        font-family: 'Roboto Mono', monospace;
+    }
+    .content
+    {
+        padding:20px;
+        overflow: auto;
+        font-family: 'Roboto Mono', monospace;
+
+    }
+    .heading
+    {
+        padding: 5px;
+        margin-top: 20px;
+        overflow: auto;
+        text-align: justify;
+    }
+    .heading .title
+    {
+        color: #035f68;
+        font-size: 50px;
+        font-family: fonarto;
+        font-weight: 100;
+    }
+    .heading .desc
+    {
+        margin-bottom: 20px;
+    }
+    .prize
+    {
+        margin: 0;
+        display: inline-block;
+        background-color: rgba(201,40,45,0.9);
+        background-image: url("../images/red.png") !important;
+        background-size: cover;
+        background-position: center;
+        overflow: auto;
+        width: 100%;
+        height: 150px;
+    }
+    .prize .title{
+        float: right;
+        margin: 20px;
+        padding:0;
+        margin-bottom: 0;
+    }
+    .prize .value{
+        float: right;
+        right: 0;
+        margin: 20px;
+        margin-top: -30px;
+        padding: 0;
+        font-size: 70px;
+        font-weight: bolder;
+        color:#ffffff;
+    }
+    .reg
+    {
+        margin-top: 20px;
+        display: inline-block;
+        background-image: url("../images/blu.png") !important;
+        background-position: center;
+        background-size: cover;
+        background-color: rgb(0,44,95,0.9);
+        width: 100%;
+        overflow: auto;
+        height: 150px;
+        padding: 0;
+        position: relative;
+    }
+    .reg .title
+    {
+        position: absolute;
+        bottom: 70px;
+    }
+    .reg .value{
+        position: absolute;
+        bottom: 10px;
+        left:10px;
+        font-size: 40px;
+        font-weight: bolder;
+        color:#ffffff;
+    }
+
+    .contact
+    {
+        margin-top: 20px;
+        display: inline-flex;
+        background-image: url("../images/vio.png") !important;
+        background-position: center;
+        background-size: cover;
+        background-color: rgb(201,40,144,0.7);
+        width: 100%;
+        height: 300px;
+        position: relative;
+        overflow: auto;
+    }
+    .contact .title
+    {
+        position: absolute;
+        right: 10px;
+        margin: 20px;
+    }
+    .contact .value
+    {
+        position: absolute;
+        overflow: auto;
+        bottom: 10px;
+        left: 10px;
+        color: white;
+        font-family: roboto;
+    }
+    .contact .value .name
+    {
+        font-size: 25px;
+    }
+    .contact .value .number
+    {
+        font-weight: bolder;
+        font-size: 35px;
+    }
+    .rules
+    {
+        margin: 0;
+        display: inline-block;
+        background-color: rgb(0,120,54,0.6);
+        background-image: url("../images/gre.png") !important;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        margin-top:20px;
+        overflow: auto;
+    }
+    .rules .title
+    {
+        float: left;
+        margin: 20px;
+    }
+    .rules .value
+    {
+        color: #ffffff;
+        font-family: roboto;
+        font-size: 20px;
+        padding: 20px;
+        padding-left: 30px;
+        text-align: justify;
+    }
+}
+
+@media (min-width:700px)
+{
+    .title
+    {
+        font-size:20px;
+        color: #ffffff;
+        font-weight: bold;
+        font-family: 'Roboto Mono', monospace;
+    }
+    .content
+    {
+        padding:20px;
+        overflow: auto;
+        font-family: 'Roboto Mono', monospace;
+
+    }
+    .heading
+    {
+        padding: 5px;
+        overflow: auto;
+        text-align: right;
+    }
+    .heading .title
+    {
+        color: #035f68;
+        font-size: 50px;
+        font-family: fonarto;
+        font-weight: 100;
+    }
+    .heading .desc
+    {
+        width: 50%;
+        float: right;
+        margin-bottom: 20px;
+    }
+    .prize
+    {
+        margin: 0;
+        display: inline-block;
+        background-image: url("../images/red.png") !important;
+        background-color: rgba(201,40,45,0.9);;
+        width: 50%;
+        overflow: auto;
+        height: 150px;
+    }
+    .prize .title{
+        float: right;
+        margin: 20px;
+        padding:0;
+        margin-bottom: 0;
+    }
+    .prize .value{
+        float: right;
+        right: 0;
+        margin: 20px;
+        margin-top: -30px;
+        padding: 0;
+        font-size: 70px;
+        font-weight: bolder;
+        color:#ffffff;
+    }
+    .reg
+    {
+        margin: auto;
+        display: inline-block;
+        background-image: url("../images/blu.png") !important;
+        background-position: center;
+        background-size: cover;
+        background-color: rgb(0,44,95,0.9);
+        width: 16%;
+        overflow: auto;
+        height: 150px;
+        padding: 0;
+        position: relative;
+    }
+    .reg .title
+    {
+        position: absolute;
+        bottom: 70px;
+    }
+    .reg .value{
+        position: absolute;
+        bottom: 10px;
+        left:10px;
+        font-size: 40px;
+        font-weight: bolder;
+        color:#ffffff;
+    }
+
+    .contact
+    {
+        margin: auto;
+        display: inline-flex;
+        background-image: url("../images/vio.png") !important;
+        background-position: center;
+        background-size: cover;
+        background-color: rgb(201,40,144,0.7);
+        width: 32%;
+        height: 400px;
+        float: right;
+        position: relative;
+        overflow: auto;
+    }
+    .contact .title
+    {
+        position: absolute;
+        right: 10px;
+        margin: 20px;
+    }
+    .contact .value
+    {
+        position: absolute;
+        overflow: auto;
+        bottom: 10px;
+        left: 10px;
+        color: white;
+        font-family: roboto;
+    }
+    .contact .value .name
+    {
+        font-size: 25px;
+    }
+    .contact .value .number
+    {
+        font-weight: bolder;
+        font-size: 35px;
+    }
+    .rules
+    {
+        margin: 0;
+        display: inline-block;
+        background-image: url("../images/gre.png") !important;
+        background-position: center;
+        background-size: cover;
+        background-color: rgb(0,120,54,0.6);
+        width: 66.3%;
+        margin-top:10px;
+        overflow: auto;
+    }
+    .rules .title
+    {
+        float: right;
+        margin: 20px;
+    }
+    .rules .value
+    {
+        color: #ffffff;
+        font-family: roboto;
+        font-size: 20px;
+        padding: 25px;
+        padding-left: 30px;
+        text-align: justify;
+    }
+}

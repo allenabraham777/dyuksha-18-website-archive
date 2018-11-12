@@ -1,0 +1,21 @@
+.college_select{
+    color:rgba(0,0,0,0);
+    text-transform: uppercase;
+    outline:none;
+    position:absolute;
+    top:5px;
+    right:-25px;
+    width:30px;
+    padding: 10px 10px 10px 10px;
+    border-left: none;
+    background:#ffffff url('http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png') no-repeat 7.5px center;
+    appearance: none;
+    height:42px;
+    line-height:20px;
+    margin:0;
+    padding:0;
+}
+.college_select > option{
+    color: #000000;
+    margin: 10px;
+}

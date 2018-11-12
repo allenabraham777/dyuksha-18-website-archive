@@ -43,10 +43,10 @@
         // Check whether the payment was successfull
         
         // ORIGINAL KEY
-        // $api = new Instamojo\Instamojo("2d91fc9f3cc6edd636a73ff69fe4d7ec","038026548903b5fa12d59aa06ff3e664");//,"https://test.instamojo.com/api/1.1/");     
+        $api = new Instamojo\Instamojo("2d91fc9f3cc6edd636a73ff69fe4d7ec","038026548903b5fa12d59aa06ff3e664");//,"https://test.instamojo.com/api/1.1/");     
 
         // TEST KEY INSTALLED       
-        $api = new Instamojo\Instamojo("test_660de698c90df23def44a6f660a","test_ac345a4fca86cc30fe9c4761feb","https://test.instamojo.com/api/1.1/");
+        // $api = new Instamojo\Instamojo("test_660de698c90df23def44a6f660a","test_ac345a4fca86cc30fe9c4761feb","https://test.instamojo.com/api/1.1/");
         
         
         try {

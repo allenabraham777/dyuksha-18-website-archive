@@ -1,0 +1,28 @@
+{
+    "Name":"Explorer",
+    "Descriptions":"Showcase your awesome social media stalking skills by navigating your way through the Wikipedia pages and reaching the given article in the shortest amount of time, using the minimum number of clicks.",
+    "Schedule":"Day: 1 Time: 10:00 AM",
+    "Prize":"6K",
+    "Rules":[
+        "This game can only be played as an individual",
+        "Each participant will be provided with individual system",
+        "Use of any other electronic gadgets or websites is not permitted during the event",
+        "Any malpractice would lead to immediate disqualification",
+        "All students with a valid identity card from their respective educational institution and a valid DYUKSHA ID are eligible to participate in the event",
+        "Decision of organizers will be ﬁnal and binding on all",
+        "The organizers have full rights to call off the event if the required number of entries is not met; if that is the case the registered participants will be informed at the earliest",
+        "Change in rules, if any will be highlighted on the website and notiﬁed to the registered teams",
+        "Consist of two rounds",
+        "<b>Round One</b>-Each participant will be provided a random starting page and a destination. The aim is to navigate using the links in Wikipedia pages to reach the given destination page. On reaching the destination, the points for the section are accumulated and a new page and destination is provided and so on till the timer runs out. Accumulate maximum points to move to next round",
+        "<b>Round Two</b>-Each finalist will be given the same starting page and destination. The aim is to navigate using the links in Wikipedia pages to reach the given destination page, faster than your opponents",
+        "Only the participants who qualify the preliminary round can participate in the final round",
+        "Points will be alloted for each completed section based on the path (shortest path has more points)",
+        "Participants securing maximum points in preliminary round moves to the final round",
+        "Fastest ones to reach the destination in finals will be pronounced winners",
+        "In case of a tie in finals, the winners are decided based on the shortest path",
+        "In case of a tie even after considering the path, the winners will share the prize money"
+    ],
+    "Contact":[
+        "Mubashira M K","8891216895","Arjun P","9567881757"
+    ]
+}

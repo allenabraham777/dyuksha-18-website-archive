@@ -1,8 +1,9 @@
 {
     "Name":"Spot Design",
-    "Descriptions":"Creativity is intelligence having fun! Hey, out of the box thinkers. We got a problem. You got a solution? Come up with a creative solution for a faulty product design before the clock dies out. Be innovative. Be spontaneous. SPOT DESIGN",
-    "Schedule":"Day: 1 Time: 10:00 AM",
-    "Prize":"8K",
+    "Descriptions":"Creativity is intelligence having fun! Hey, out of the box thinkers. We got a problem. You got a solution? Come up with a creative solution for a faulty product design before the clock dies out. Be innovative. Be spontaneous.",
+    "Schedule":"3",
+    "Prize":"10K",
+    "Fee":"150",
     "Rules":[
         "A team can consist of a minimum of 3 member and a maximum of 4 members",
         "The participants should produce a valid identity card of their institute",

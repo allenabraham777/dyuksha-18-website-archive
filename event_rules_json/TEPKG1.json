@@ -1,17 +1,13 @@
 {
-    "Name":"Event Name Here",
-    "Descriptions":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias porro error quibusdam aut? Consectetur quam rerum distinctio similique, dolor deleniti commodi, quis natus libero, temporibus esse aliquid quibusdam qui.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias porro error quibusdam aut? Consectetur quam rerum distinctio similique, dolor deleniti commodi, quis natus libero, temporibus esse aliquid quibusdam qui.",
-    "Schedule":"Day: 1 Time: 10:00 AM",
-    "Prize":"15K",
+    "Name":"Technical Event Package",
+    "Descriptions":"Dyuksha 18 packs up the entire technical(department) events under one hood. So why wait in line when you can participate in the tech events of your choice for just 300 rupees. Add to cart and get a chance to bang the prizes",
+    "Schedule":"-",
+    "Prize":"-",
+    "Fee":"300",
     "Rules":[
-        "Rule One",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias porro error quibusdam aut? Consectetur quam rerum distinctio similique, dolor deleniti commodi, quis natus libero, temporibus esse aliquid quibusdam qui.",
-        "Rule Two",
-        "Rule Three",
-        "Rule Four",
-        "Upto Rule N"
+        "Will be updated soon"
     ],
     "Contact":[
-        "","","",""
+        "Alvin Sebastian","9407167101","Arun K R","8593807003"
     ]
 }

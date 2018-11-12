@@ -1,10 +1,20 @@
 {
     "Name":"Da Vinci Code",
     "Descriptions":"Grab your gear. It's time for a quest. Get ready for a one of a kind one day adventure.  Dyuksha presents you an augmented reality based treasure hunt. Get ready for a fun filled experience!",
-    "Schedule":"Day: 1 Time: 10:00 AM",
-    "Prize":"15K",
+    "Schedule":"2",
+    "Prize":"12K",
+    "Fee":"300",
     "Rules":[
-        "Will be updated soon"
+        "Maximum of 4 members per team",
+        "The team should have atleast 2 smartphones with GPS and internet connection",
+        "Prelims will be conducted in form of an online puzzle the previous day",
+        "The Treasure Hunt consists of  multiple clues in each level , each one leading to the next clue. Each correctly solved clue carries equal importance. One has to collect all the clues on the way without losing them to the final level",
+        "The clues are to be found in a particular order.Every clue has an unique solution to it. Team cannot skip a clue. Skipping a clue leads to disqualification of the team",
+        "Do not search for clues in off-limit areas",
+        "No participate can argue with the coordinators , the decision made by them is final and not amendable. If seen arguing, that team is liable for disqualification",
+        "If you found other team’s clue by any chance never tamper it , or found cheating .A violation of this rule could cause disqualification of your team",
+        "You move any object to search the clue, kindly replace it back",
+        "All the clues of the teams are different and located at different places but the final destination i.e. the treasure is same. The team which finds the treasure wins first"
     ],
     "Contact":[
         "Sarang","9961074488","Milind","8547642750"

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registration Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ncnssce.css" />
+    <link rel="stylesheet" type="text/css" href="css/create.css">
+</head>
+
+<body>
+   
+    <div class="" align="center" style="margin-top:10px;" >
+    <form action="ncnssce_memory.php" class="create-box" method="POST">
+        <h5>Registration</h5><br/> 
+        <select name="number" id="parties" class="selectbox" onchange="showFields();" placeholder="Number Of Attendee" required>
+            <option value="" disabled selected>Number of Authors</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="4">4</option>
+        </select><br/>
+        
+        <div class="author_outter_field">
+        <div class="author_field">
+        <select name="title1" class="selectbox2">
+            <option value="Mr">Mr</option>
+            <option value="Ms">Ms</option>
+            <option value="Dr">Dr</option>
+            <option value="Prof">Prof</option>
+        </select>
+          <input type="text" name="name1" class="inputbox2" placeholder="Name of Author 1" required>
+        </div>
+        <input type="text" name = "designation1" class="inputbox" placeholder="Designation" list="designation" required><br/>
+        <input type="text" name = "email1" class="inputbox" placeholder="Email Id" required><br/>
+        <input type="text" name = "phone1" class="inputbox" placeholder="Phone Number" required><br/>
+        <input type="text" name = "college1" class="inputbox" placeholder="College Name" list="college" required><br/>
+        <datalist id="college">
+            <option value="NSS College of Engineering Palakkad"></option>
+        </datalist>
+        <datalist id="designation">
+            <option value="Student"></option>
+        </datalist>
+        </div>
+        <br/>
+        
+        <div class="common_details">
+            <textarea class="textarea" name = "address" placeholder="Residence Address" required></textarea>
+            <input type="text" name = "city" class="inputbox" placeholder="City" required><br/>
+            <input type="text" name = "state" class="inputbox" placeholder="State" required><br/>
+            <input type="text" name = "pincode" class="inputbox" placeholder="Pincode" required><br/>
+        </div>
+        
+        <br/>
+        <div class = "paper_details">
+                <select name="main_theme" id="main_theme" onchange="setSubCategory()" class="selectbox" onchange="showFields();" required>
+                        <option value="" disabled selected>Paper Category</option>
+                        <option value="1">Civil Engineering</option>
+                        <option value="2">Mechanical Engineering</option>
+                        <option value="3">Electrial and Electronics Engineering</option>
+                        <option value="4">Electronics and Communication Engineering</option>
+                        <option value="5">Instrumentation Control Engineering</option>
+                        <option value="6">Computer Science Engineering</option>
+                </select><br/>
+
+                <select name="sub_theme" id="sub_theme" class="selectbox" onchange="" required>
+                            <option value="" disabled selected>Please Select Main Category</option>
+                </select><br/>
+        </div>
+
+        <div class="author_outter_field">
+        <br/>
+        <div class="author_field">
+            <select name="title2" class="selectbox2">
+                <option value="Mr">Mr</option>
+                <option value="Ms">Ms</option>
+                <option value="Dr">Dr</option>
+                <option value="Prof">Prof</option>
+            </select>
+              <input type="text" name="name2" class="inputbox2" placeholder="Name of Author 2">
+            </div>
+        <input type="text" name = "designation2" class="inputbox" placeholder="Designation" list="designation" ><br/>
+        <input type="text" name = "email2" class="inputbox" placeholder="Email Id"><br/>
+        <input type="text" name = "phone2" class="inputbox" placeholder="Phone Number"><br/>
+        <input type="text" name = "college2" class="inputbox" placeholder="College Name" list="college"><br/>
+       
+        </div>
+        
+
+        <div class="author_outter_field">
+        <br/>
+        <div class="author_field">
+            <select name="title3" class="selectbox2">
+                <option value="Mr">Mr</option>
+                <option value="Ms">Ms</option>
+                <option value="Dr">Dr</option>
+                <option value="Prof">Prof</option>
+            </select>
+              <input type="text" name="name3" class="inputbox2" placeholder="Name of Author 3">
+            </div>
+        <input type="text" name = "designation3" class="inputbox" placeholder="Designation" list="designation"><br/>    
+        <input type="text" name = "email3" class="inputbox" placeholder="Email Id"><br/>
+        <input type="text" name = "phone3" class="inputbox" placeholder="Phone Number"><br/>
+        <input type="text" name = "college3" class="inputbox" placeholder="College Name" list="college"><br/>
+        
+        </div>
+        
+        
+
+        <div class="author_outter_field">
+         <br/>
+        <div class="author_field">
+            <select name="title4" class="selectbox2">
+                <option value="Mr">Mr</option>
+                <option value="Ms">Ms</option>
+                <option value="Dr">Dr</option>
+                <option value="Prof">Prof</option>
+            </select>
+              <input type="text" name="name4" class="inputbox2" placeholder="Name of Author 4">
+            </div>
+        <input type="text" name = "designation4"  class="inputbox" placeholder="Designation" list="designation"><br/>
+        <input type="text" name = "email4" class="inputbox" placeholder="Email Id"><br/>
+        <input type="text" name = "phone4" class="inputbox" placeholder="Phone Number"><br/>
+        <input type="text" name = "college4" class="inputbox" placeholder="College Name" list="college"><br/>
+        </div>
+        <br/>
+        <br/>
+        
+        <input type="submit" value="Submit"class="button-tomato">
+
+    </form>
+
+    </div>
+
+</body>
+<script>
+        sub_cat_me = ["Advanced Cooling System", "Sustainable Energy Transfer Methods", "Digital Manufacturing",
+                "Automated Vehicle Systems", "Micro Fluidics ", "Smart Materials", "Magnetic Levitation", "Nano Technology", "Cryogenic Engineering",
+                "Robotics and Automation", "Eco friendly Fuel Systems", "Renewable Energy resources", "Hybrid Engines", "Next generation IC engines"];
+
+        sub_cat_eee=["IoT", "Smart Grid and automation", "Renewable Energy Sources",
+        "Power Electronics", "Energy Storage Systems", 
+        "Power Quality control", "Control Systems", "Electric Vehicles", 
+        "HVDC Transmission", "Machines and Drives"
+        ];
+
+        sub_cat_ec=["Rehabilitation and Assistive Technology", "Analog/ Digital Mixed System Design",
+        "Power Electronics", "Embedded System", "Machine Learning", "Signal Processing",
+        "Image Processing", "Micro Wave Devices", "Bio-Medical Communication", "VLSI", "RF Design"
+        ];
+
+        sub_cat_cs=["Machine Learning", "Deep Learning", "Social Networks", "Distributed Computing", "Natural Language Processing", "Image Processing", "Big Data Analytics", "Cloud Computing", "Cyber Security", "Block Chain Technology", "E- Commerce"];
+
+        sub_cat_civil=["Sustainable building materials", "Green Ground Improvements", "Ground Water Recharging Methods", "Sustainable Waste Water Treatments"];
+
+        sub_cat_ic=["Intelligent Control", "Sensors and Control","Rehabilitation and Assistive Technology", "Analog/ Digital Mixed System Design",
+        "Power Electronics", "Embedded System", "Machine Learning", "Signal Processing",
+        "Image Processing", "Micro Wave Devices", "Bio-Medical Communication", "VLSI", "RF Design"];
+
+
+        function setSubCategory(){
+            
+            var main_paper = document.getElementById("main_theme");
+            var sub_theme = document.getElementById("sub_theme");
+            var x = main_paper.value;
+           
+            var out = "";
+            
+            switch(x){
+                case '1':
+                 
+                    out = "";
+                    for(i = 0;i < sub_cat_civil.length; i++){
+                        out += "<option value='" + sub_cat_civil[i] +"'>"+ sub_cat_civil[i] +"</option>";
+                    }
+                    
+                    sub_theme.innerHTML = out;
+                    break;
+                case '2':
+                    out = "";
+                    for(i = 0;i<sub_cat_me.length;i++){
+                        out += "<option value='" + sub_cat_me[i] +"'>"+ sub_cat_me[i] +"</option>";
+                    }
+                    sub_theme.innerHTML = out;
+                    break;
+                case '3':
+                    out = "";
+                    for(i = 0;i<sub_cat_eee.length;i++){
+                        out += "<option value='" + sub_cat_eee[i] +"'>"+ sub_cat_eee[i] +"</option>";
+                    }
+                    sub_theme.innerHTML = out;
+                    break;
+                case '4':
+                    out = "";
+                    for(i = 0;i<sub_cat_ec.length;i++){
+                        out += "<option value='" + sub_cat_ec[i] +"'>"+ sub_cat_ec[i] +"</option>";
+                    }
+                    sub_theme.innerHTML = out;
+                    break;
+                case '5':
+                    out = "";
+                    for(i = 0;i<sub_cat_ic.length;i++){
+                        out += "<option value='" + sub_cat_ic[i] +"'>"+ sub_cat_ic[i] +"</option>";
+                    }
+                    sub_theme.innerHTML = out;
+                    break;
+                case '6':
+                    out = "";
+                    for(i = 0;i<sub_cat_cs.length;i++){
+                        out += "<option value='" + sub_cat_cs[i] +"'>"+ sub_cat_cs[i] +"</option>";
+                    }
+                    sub_theme.innerHTML = out;
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        function hideFields(){
+            var fields = document.getElementsByClassName("author_outter_field");
+            fields[2].style.display = "none";
+            fields[1].style.display = "none";
+            fields[3].style.display = "none";
+        }
+    
+        function showFields(){
+            var x = document.getElementById("parties").value; 
+            var form = document.getElementsByClassName("create-box")[0];
+            var fields = document.getElementsByClassName("author_outter_field");
+            if(x == 1)
+            {
+                hideFields();
+            }
+            else if(x == 2){
+                
+                hideFields();
+                fields[1].style.display = "block";
+                
+            }
+            else if(x == 4){
+                hideFields();
+                fields[1].style.display = "block";
+                fields[2].style.display = "block";
+                fields[3].style.display = "block";
+            }
+            else 
+            {
+                hideFields();
+            }
+            
+        }
+    </script>
+</html>

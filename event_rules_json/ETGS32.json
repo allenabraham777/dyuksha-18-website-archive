@@ -1,12 +1,23 @@
 {
     "Name":"Euphony",
     "Descriptions":"Rock the floor with the music you love. Dyuksha invites you to participate in the 'Band competition'; a stage for you to flaunt your vocal and musical dominance. Come with a team and perform your best and let the crowd mosh and head bang with your magic.",
-    "Schedule":"Day: 1 Time: 10:00 AM",
+    "Schedule":"3",
     "Prize":"30K",
+    "Fee":"200",
     "Rules":[
-        "Will be updated soon"
+        "Maximum of 10 participants per team and team members can be from different institutions",
+        "All the band members should be students",
+        "Time limit : 15 mins performance and 5 mins testing time",
+        "No spot registration",
+        "Teams can perform songs in languages of their own choice",
+        "Processors are permitted for guitars",
+        "Prerecorded sounds are not permitted",
+        "Growling is not permitted",
+        "A 5 piece drum kit with cymbals will be provided by Dyuksha team except for double pedals",
+        "All participants should compulsorily bring their student ID cards",
+        "Own compositions will be given more weightage"
     ],
     "Contact":[
-        "Rizwan","","Gokul","7736235319"
+        "Rizan","9633624062","Gokul","7736235319"
     ]
 }

@@ -3,11 +3,15 @@
     font-family: Archivo;
     src: url("fonts/Archivo-Medium.ttf");
 }
+@font-face{
+    font-family: Title;
+    src: url("fonts/fonarto.regular.ttf");
+}
 body{
     margin: 0;
     position: absolute;
     width: 100%;
-    background-image: url("../images/bk_event.jpeg");
+    background-image: url("../images/asad.png");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -37,7 +41,7 @@ body{
     text-align: left;
     box-shadow: 0px 0px 5px 1px grey;
     text-align: center;
-    background: green;
+    background: blue;
     transition: all 0.2s linear 0s;
 }
 .events-card-1 p{
@@ -103,7 +107,7 @@ body{
     visibility: hidden;
 }
 .events-card-1 h4{
-    font-family: 'Chela One';
+    font-family: 'Title';
     font-weight: normal;
     text-transform: uppercase;
     position: absolute;
@@ -113,7 +117,7 @@ body{
     margin: 0;
     color: white;
     letter-spacing: 10px;
-    font-size: 150%;
+    font-size: 170%;
     padding-top:20px;
 }
 

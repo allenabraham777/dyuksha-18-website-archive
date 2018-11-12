@@ -1,0 +1,104 @@
+
+/*--------------------------------------------------------------
+                        Menu Bar
+--------------------------------------------------------------*/
+
+#menubar{
+  width: 100vw;
+  position: absolute;
+  z-index: 998;
+  background-color: black;
+  font-family: verdana;
+  text-align: center;
+  line-height: 100vh;
+}
+
+#menubar > .heading{
+  line-height: 20vh;
+  height: 20vh;
+}
+
+#menubar > .heading > img{
+  margin-top: 2vh;
+  height: 12vh;
+}
+
+
+#menu{
+  text-align: left;
+  margin-left: 45vw;
+  line-height: 8vh;
+}
+
+#menubar > .menus > ul{
+  list-style: none;
+}
+
+#menubar > .menus > ul > li > a{
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+}
+
+.menu-open{
+  margin-top: -0.1vh;
+  overflow: hidden;
+  height: 100vh;
+  transition: all 0.2s linear 0.8s;
+}
+
+.menu-close{
+  overflow: hidden;
+  height: 0;
+  transition: all 0.2s linear 0s;
+}
+
+.menubar-close{
+  height: 0;
+  overflow: hidden;
+}
+
+.menubar-open{
+  height: 100vh;
+  overflow: hidden;
+}
+
+.menu-button{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  right: 50px;
+  bottom: 50px;
+  z-index: 1000;
+  border:none;
+  border-radius: 20px;
+}
+
+.slide-container{
+  overflow: hidden;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+.slidex{
+  
+  position: absolute;
+  z-index: 999;
+  top: 100vh;
+  height: 100vh;
+  width: 200vw;
+  right: 0;
+  transform-origin: top right;
+  background-color: white;
+  animation-name: fall;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(1,.05,1,1);
+}
+
+@keyframes fall {
+  0%   { top: 0;}
+  60%   { transform: rotate(-20deg); animation-timing-function: linear;}
+  80%  {transition: rotate(0deg); animation-timing-function: linear;}
+}

@@ -7,11 +7,24 @@
     <title>Dyuksha Workshops</title>
     <link rel="icon" href="images/logo.png" type="image/png" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/workshop.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/menuitems.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/cards_3.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/menu7.css" />
+    <script src="js/menu7.js" type="text/javascript"></script>
     <link href="https://fonts.googleapis.com/css?family=Chela+One" rel="stylesheet">
     <script src="main.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
+    <style>
+    .registered{
+        color:white;
+        background-color:green;
+        border-color:white;
+    }
+    .registration_closed:hover{
+        background-color:rgba(255,0,0,0.5);
+        color:white;
+        border-color:white;
+    }
+    </style>
 </head>
 <script>
     var workshoplist = ["w100","w101","w102","w103","w104","w105"];
@@ -46,7 +59,7 @@
 <body style="background:#000000 !important;">
 
 <?php
-    include("menu.php"); // This menu php page is in Parent Directory
+    include("menu7.php"); // This menu php page is in Parent Directory
 ?>
 
 <div align="center" style="margin-top: 70px;">
@@ -57,54 +70,109 @@
             
             $email = $userObj->email;
             // Fetches All the Workshops user did not purchase
-            $query="SELECT workshopid,wname,wprice,wdesp FROM wprices WHERE workshopid NOT IN (SELECT itemId FROM purchases WHERE email='$email')" ;
+            $query="SELECT workshopid,wname,wprice,wdesp,seats FROM wprices WHERE workshopid NOT IN (SELECT itemId FROM purchases WHERE email='$email')" ;
             // Fetches All The workshops that user Registerd
             $query2="SELECT workshopid,wname,wprice,wdesp FROM wprices WHERE workshopid IN (SELECT itemId FROM purchases WHERE email='$email')" ;
             
             $res = mysqli_query($con,$query);
+            echo '<div class="cols">';            
             while($row=mysqli_fetch_array($res)){
-                echo  "<div class='workshop-card-1'>";
-                echo  "<img src=\"images/workshop/{$row[0]}.jpg\" style='width:100%; margin-bottom:0px;'>";
-                echo "<h4>{$row[1]}</h4>";
-                echo "<p>";
-                echo "{$row[3]}";       
-                echo "<br/><br/>";
-                echo "<span>Price : Rs.{$row[2]}</span>";
-                echo "<br/><br/>";       
-                echo "<button onclick=\"getTicketWorkshop('{$row[0]}')\" style='width: 70%; margin: 0; position: absolute; left: 50%; transform: translateX(-50%);'><i class='fas fa-file-signature'></i>&nbsp;&nbsp;Register Now</button>";   
-                echo "</p>";
-                echo "</div>";
+                echo '<div class="col" ontouchstart="this.classList.toggle("hover");">';
+                echo '<div class="container">';
+                echo '<div class="front" style="background-image: url(images/workshop/'.$row[0].'.jpg)">';
+                echo '<div class="inner">';
+                echo '<p>';
+                echo $row[1];
+                echo '</p>';
+                echo '</div>';
+                echo '</div>';
+                echo '<div class="back">';
+                echo '<div class="inner">';
+                echo '<p style="text-align:justify; font-size:14px; margin-top:-40px; font-face:roboto;">';
+                echo $row[3];
+                echo "<br/><br/><span>Price: {$row[2]}</span><br/><br/>";
+                echo '<br/><br/><center>';
+                if($row[4] != 0){
+                    echo "<button onclick=\"getTicketWorkshop('{$row[0]}')\" style='width: 70%; margin: 0; position: absolute; left: 50%; transform: translateX(-50%);'><i class='fas fa-file-signature'></i>&nbsp;&nbsp;Register Now</button>";
+                }
+                else{
+                    echo "<button class=\"registration_closed\" style='width: 70%; margin: 0; position: absolute; left: 50%; transform: translateX(-50%);'><i class='fas fa-file-signature'></i>&nbsp;&nbsp; Closed</button>";
+                } 
+              //  echo "<button onclick=\"getTicketWorkshop('{$row[0]}')\" style='width: 70%; margin: 0; position: absolute; left: 50%; transform: translateX(-50%);'><i class='fas fa-file-signature'></i>&nbsp;&nbsp;Register Now</button>";
+                echo '</center>';
+                echo '</p>';
+                echo '</div>';
+                echo '</div>';
+                echo '</div>';
+                echo '</div>';
             }
 
             // Now Print the Workshops that user has already registered for
             $res2= mysqli_query($con,$query2);
             while($row=mysqli_fetch_array($res2)){
-                echo "<div class=\"workshop-card-1\">";
-                echo "<img src=\"images/workshop/{$row[0]}.jpg\" style=\"width:100%; margin-bottom:0px;\">";
-                echo "<h4>{$row[1]}</h4>";
-                echo "<p> {$row[3]}";
-                echo "<br/><br/><span>Price : Rs.{$row[2]}</span><br/> <br/>";
+                echo '<div class="col" ontouchstart="this.classList.toggle("hover");">';
+                echo '<div class="container">';
+                echo '<div class="front" style="background-image: url(images/workshop/'.$row[0].'.jpg)">';
+                echo '<div class="inner">';
+                echo '<p>';
+                echo $row[1];
+                echo '</p>';
+                echo '</div>';
+                echo '</div>';
+                echo '<div class="back">';
+                echo '<div class="inner">';
+                echo '<p style="text-align:justify; font-size:14px; margin-top:-40px; font-face:roboto;">';
+                echo $row[3];
+                echo "<br/><br/><span>Price: {$row[2]}</span><br/><br/>";
+                echo '<center>';
                 echo "<button class=\"registered\" style=\"width: 70%; margin: 0; position: absolute; left: 50%; transform: translateX(-50%);\"><i class=\"fas fa-file-contract\"></i>&nbsp;Registered</button>"; 
-                echo "</p></div>";                
+                echo '<br/><br/></center>';
+                echo '</p>';
+                echo '</div>';
+                echo '</div>';
+                echo '</div>';
+                echo '</div>';                
             }
+            echo '<div class="cols">';            
+
 
         }
         else{
-            $query="SELECT workshopid,wname,wprice,wdesp FROM wprices";
+            $query="SELECT workshopid,wname,wprice,wdesp,seats FROM wprices";
             $res = mysqli_query($con,$query);
+            echo '<div class="cols">';            
+
             while($row=mysqli_fetch_array($res)){
-                echo "<div class='workshop-card-1'>";
-                echo "<img src=\"images/workshop/{$row[0]}.jpg\" style='width:100%; margin-bottom:0px;'>";
-                echo "<h4>{$row[1]}</h4>";
-                echo "<p>";
-                echo "{$row[3]}";       
-                echo "<br/><br/>";
-                echo "<span>Price : {$row[2]}</span>";
-                echo "<br/><br/>";       
-                echo "<button onclick=\"getTicketWorkshop('{$row[0]}')\" style='width: 70%; margin: 0; position: absolute; left: 50%; transform: translateX(-50%);'><i class='fas fa-file-signature'></i>&nbsp;&nbsp;Register Now</button>";   
-                echo "</p>";
-                echo "</div>";
+                echo '<div class="col" ontouchstart="this.classList.toggle("hover");">';
+                echo '<div class="container">';
+                echo '<div class="front" style="background-image: url(images/workshop/'.$row[0].'.jpg)">';
+                echo '<div class="inner">';
+                echo '<p>';
+                echo $row[1];
+                echo '</p>';
+                echo '</div>';
+                echo '</div>';
+                echo '<div class="back">';
+                echo '<div class="inner">';
+                echo '<p style="text-align:justify; font-size:14px; margin-top:-40px; font-face:roboto;">';
+                echo $row[3];
+                echo "<br/><br/><span>Registration Fee: {$row[2]} per head</span><br/><br/>";
+                echo '<br/><br/><center>';
+                if($row[4] != 0){
+                    echo "<button onclick=\"getTicketWorkshop('{$row[0]}')\" style='width: 70%; margin: 0; position: absolute; left: 50%; transform: translateX(-50%);'><i class='fas fa-file-signature'></i>&nbsp;&nbsp;Register Now</button>";
+                }
+                else{
+                    echo "<button class=\"registration_closed\" style='width: 70%; margin: 0; position: absolute; left: 50%; transform: translateX(-50%);'><i class='fas fa-file-signature'></i>&nbsp;&nbsp;Closed</button>";
+                } 
+                echo '</center>';
+                echo '</p>';
+                echo '</div>';
+                echo '</div>';
+                echo '</div>';
+                echo '</div>';
             }
+            echo '</div>';            
+
         }
         
 ?>

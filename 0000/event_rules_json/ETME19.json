@@ -1,0 +1,23 @@
+{
+    "Name":"Hydro Launch",
+    "Descriptions":"Design a simple water rocket from bottles to establish air supremacy. The mission is simple: Shoot for the Horizon, and you might just win this one.",
+    "Schedule":"Day: 1 Time: 10:00 AM",
+    "Prize":"6K",
+    "Rules":[
+        "The team may consist of at most 3 people",
+        "The utmost allowed volume of rocket is 2 L",
+        "No soda cans can be used as it can withstand a greater psi,only plastic bottles and  for fins only cardboard Styrofoam and  thin plastic sheets can be used",
+        "The rocket must be made such that it can be used again",
+        "The first round rocket will be launched at and length covered will be taken as a parameter to find the winner.If there is a clear tie, then deviation of rocket will be taken as parameter", 
+        "The maximum allowed pressure limit is 40psi",
+        "The second round will be based on the hang time(the time from the moment rocket is released till it touches the ground).Participants are not allowed to attach parachute to rocket", 
+        "Only one chance will be provided for each group in a round",
+        "All students with a valid identity card from their respective educational institution and a valid DYUKSHA ID are eligible to participate in the event".
+        "Decision of organizers will be ﬁnal and binding on all", 
+        "The organizers have full rights to call off the event if the required number of entries are not met, if that is the case the registered participants will be informed at the earliest", 
+        "Change in rules, if any will be highlighted on the website and notiﬁed to the registered teams" 
+       ],
+    "Contact":[
+        "Dilkush","8086691002","Sreehari Vishnu","9447388703"
+    ]
+}

@@ -10,7 +10,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap.css" />
     
     <link rel="stylesheet" type="text/css" media="screen" href="../css/cards.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/menuitems.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/menu7.css" />
+    <script src="../js/menu7.js"></script>
     
     <link href="https://fonts.googleapis.com/css?family=Chela+One" rel="stylesheet">
 
@@ -45,7 +46,6 @@ else{
     
     
     .basic{
-        margin-top:60px;
     }
     .row div  img{
         padding:50px;
@@ -83,9 +83,9 @@ else{
        background-color:#ffd740;
     }
 </style>
-<body > 
+<body>
     <?php 
-        include("menu.php");
+        include("menu7.php");
         include("register_button.php");
     ?>
     <div class="container-fluid basic">

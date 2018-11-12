@@ -66,8 +66,12 @@
 
           </div>
           <div class="banner">
-              <marquee>Welcome to NCNSSCE   &#8226; Last date of paper submission is September 5th  &#8226; Registration Starting Soon !</marquee>
+              <marquee>Welcome to NCNSSCE   &#8226; Last date of registration is October 30th  &#8226;</marquee>
           </div>
+	  </br>
+	  <div class="alert alert-success">
+		<strong>NB: </strong> Dates postponed due to unexpected torrential downpour at Kerala, Make use of the extended time to ensure quality output. #DoForKerala
+	  </div>
           <br/>
           <h4>About Institution</h4>
           <p>
@@ -81,7 +85,7 @@
           <br/>
          <h4>About NCNSSCE’18</h4>
          <p>
-            National Conference at NSS College of Engineering <b>(NCNSSCE’18)</b> on Technological Advancement for Sustainability of Mankind is a prestigious event organized  with a motivation to provide an excellent platform for the Academicians, Researchers, Engineers, Industrial Participants and Budding Students across the country to share their research findings with the global experts.  It will be held at NSS college of Engineering, Palakkad during <b>September 14th and 15th of 2018</b>. Delegates can either present and publish their own paper or attend all simultaneous programs in the conference. All Selected Papers will be published in conference proceedings with an <b>ISBN</b> numbers.
+            National Conference at NSS College of Engineering <b>(NCNSSCE’18)</b> on Technological Advancement for Sustainability of Mankind is a prestigious event organized  with a motivation to provide an excellent platform for the Academicians, Researchers, Engineers, Industrial Participants and Budding Students across the country to share their research findings with the global experts.  It will be held at NSS college of Engineering, Palakkad during <b>November 2nd and 3rd of 2018</b>. Delegates can either present and publish their own paper or attend all simultaneous programs in the conference. All Selected Papers will be published in conference proceedings with an <b>ISBN</b> numbers.
         </p>
         <p>
             The key intention of NCNSSCE'18 is to provide opportunity for the participants to express their ideas and experience in person with their peers expected to join from different parts of country. In addition, this gathering will help the delegates to establish research or business relations as well as to find national linkage for future collaborations in their career path. We hope that NCNSSCE’18 would deliver significant contribution to the advancing knowledge base of scientific fields in scope.
@@ -89,7 +93,7 @@
          
          <div align="center" class="parties">
              <img src="images/n4.png" width="80px">
-             <img src="images/n2.png" width="64px">
+             <img src="images/n2.PNG" width="64px">
              <img src="images/n3.png" width="60px">
              
              <img src="images/n1.png" width="64px">
@@ -116,7 +120,7 @@
                         Paper submission deadline
                     </td>
                     <td>
-                        5th  September, 2018
+                        25th  October, 2018
                    </td>
                 </tr>
                 
@@ -125,7 +129,7 @@
                         Intimation of Acceptance
                     </td>
                     <td>
-                        8th  September, 2018
+                        25th  October, 2018
                    </td>
                 </tr>
                 
@@ -134,7 +138,7 @@
                         Date of Conference
                     </td>
                     <td>
-                        14th & 15th  September, 2018
+                        2nd & 3rd November, 2018
                    </td>
                 </tr>
              </table>
@@ -200,10 +204,10 @@
                 
                 <p>
                     Check your topics for paper presentation at
-                    <a href="downloads/ncnssce_topics.pdf"><i>Topics</i></a>
+                    <a href="downloads/ncnssce_topics.pdf"><b><i>Topics</i></b></a>
                 <br/>
                     Check your template for paper submission at
-                    <a href="downloads/ncnssce_template.docx"><i>Template</i></a>
+                    <a href="downloads/ncnssce_template.docx"><b><i>Template</i></b></a>
                 </p>
                 
             </div>
@@ -278,7 +282,7 @@
                         
                         <tr>
                                 <td>
-                                    Early Bird Registration
+                                    Early Bird Registration (Limited)
                                 </td>
                                 
                                 <td>
@@ -317,7 +321,7 @@
             <b>General Chair</b><br/>
              Dr. T. Sudha, Principal, NSSCE<br/><br/>
 
-            <b>Cheif Advisors</b><br/>
+            <b>Chief Advisors</b><br/>
 
             Dr. P.R Suresh, Professor, ME Dept, NSSCE<br/>
             Mr. Pradip. C, Assoc. Professor, EEE Dept, NSSCE<br/><br/>
@@ -372,7 +376,7 @@
                 </div>
                 <div class="col-md-3">
                         <i class="fas fa-user-tie"></i> Nidhin S (Student Coordinator)<br/>
-                        <i class="fas fa-phone"></i> +91 815684224
+                        <i class="fas fa-phone"></i> +91 8156841224
                 </div>
                 <div class="col-md-3">
                         <i class="fas fa-user-tie"></i> Surin Suresh  (Registration Help)<br/>

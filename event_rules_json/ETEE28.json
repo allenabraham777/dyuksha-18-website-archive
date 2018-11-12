@@ -1,8 +1,9 @@
 {
-    "Name":"ArduinoKryptering",
+    "Name":"Arduino Kryptering",
     "Descriptions":"Are you a pro in Arduino then this is your event...we will give you a task and you'll code it..flashit..and do it..",
-    "Schedule":"Day: 1 Time: 10:00 AM",
+    "Schedule":"2",
     "Prize":"8K",
+    "Fee":"150",
     "Rules":[
         "Maximum of 3 members in a team",
         "Team members can be from different colleges",

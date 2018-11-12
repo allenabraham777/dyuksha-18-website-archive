@@ -1,0 +1,25 @@
+{
+    "Name":"Logic Circuit Solver",
+    "Descriptions":"Hey! Its a gate!! A logic gate. Want to get in through the gate? Then solve the logic problem using logic gates. Design and implement the logic circuit for the logic problem. Done?? Then the gate is open and you are welcome.",
+    "Schedule":"Day: 1 Time: 10:00 AM",
+    "Prize":"8K",
+    "Rules":[
+        "A team can consist of a minimum of one member and a maximum of two members",
+        "The participants should  produce a valid identity card of their institute",
+        "Cross college teams are allowed",
+        "Each team will be provided with one system",
+        "Any number of teams are allowed from one college and inter-college teams are also allowed. In case of inter-college teams, points will be distributed equally among the two colleges",
+        "Resources like the internet or reference books will not be allowed",
+        "Any malpractice would lead to disqualification",
+        "The software used for simulation will be multisim",
+        "Event Managers will hold the right to settle any disputes and their decisions will be final and binding",
+        "The finalised rules will be disclosed 5 minutes before the actual event",
+        "<b>ROUND 1</b>-This will be a pick and place round. Place the given set of logic gates applying suitable logic and crack it open. The fastest qualify to the next round",
+        "<b>ROUND 2</b>-In this stage the problem would contain multiple logical flaws. Your job is to rectify the mistakes, fill up the flaws and make the simulation run as we want it to. Logic will be well commented to guide you explaining what each fragment does achieve",
+        "<b>ROUND 3</b>-In this stage the logic gates are in a very “interesting” shape and we mean literally.  A real life logical problem is to be implemented using gates. You get more points if you are correct, concise and quick",
+        "College ID is compulsory"
+    ],
+    "Contact":[
+        "Vignesh","8606454524","Shahana","7736343825"
+    ]
+}

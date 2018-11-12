@@ -1,8 +1,9 @@
 {
     "Name":"Wave Tracer",
     "Descriptions":"Do you have some time?? Then get into this exciting wavepool!! Simulate and trace the desired waveforms within the specified time. Lets run those waves.",
-    "Schedule":"Day: 1 Time: 10:00 AM",
+    "Schedule":"2",
     "Prize":"8K",
+    "Fee":"150",
     "Rules":[
         "Only Given Software will be allowed (LT Spice)",
         "Circuit designing using other resources like Internet or reference book will not be allowed",
@@ -18,6 +19,6 @@
         "College ID is compulsory"
     ],
     "Contact":[
-        "Sanooplal","8129376009","Dhanusree","8921965073"
+        "Sanooplal","8129376009","Dhanasree","8921965073"
     ]
 }

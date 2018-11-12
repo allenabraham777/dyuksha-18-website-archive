@@ -1,0 +1,24 @@
+{
+    "Name":"Debugger",
+    "Descriptions":"Got a keen eye for correcting mistakes others make? Now you can correct those errors AND win prizes.",
+    "Schedule":"Day: 1 Time: 10:00 AM",
+    "Prize":"8K",
+    "Rules":[
+        "Each team can have a maximum of two members",
+        "Any number of teams is allowed from one college and inter-college teams are also allowed",
+        "Each team will be provided with one system",
+        "Laptops, books or any type of written/printed materials, use of internet/mobile phones are strictly prohibited",
+        "Compiling or debugging the code using any kind of applications is not permitted",
+        "Organizing committee has a right to disqualify a participant in case of any indiscipline",
+        "Results of all the rounds are not subject to discussion and judge’s decision is final",
+        "The codes would be written in C/C++",
+        "Further details will be provided at the time of event",
+        "All students with a valid identity card from their respective educational institution and a valid DYUKSHA ID are eligible to participate in the event",
+        "Decision of organizers will be ﬁnal and binding on all",
+        "The organizers have full rights to call off the event if the required number of entries is not met; if that is the case the registered participants will be informed at the earliest",
+        "Change in rules, if any will be highlighted on the website and notiﬁed to the registered teams"
+    ],
+    "Contact":[
+        "Nivedhitha Suresh","7994044674","Harish","8547942922"
+    ]
+}

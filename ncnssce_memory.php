@@ -76,7 +76,7 @@
             <h4>Successfully Registered</h4>
         </div>
         <div class="messageboxx">
-                <h4>Payment Link will be forwarded to your mail <?php echo $email1 ?> soon ! Last date of paper submission is September 5th <br/> Kindly mail you paper to ncnssce@dyuksha.org</h4>
+                <h4>Payment Link will be forwarded to your mail <?php echo $email1 ?> soon ! Last date of paper submission is October 25th <br/> Kindly mail you paper to ncnssce@dyuksha.org</h4>
         </div>
     </div>
     </body>

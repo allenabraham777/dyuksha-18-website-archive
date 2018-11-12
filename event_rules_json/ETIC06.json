@@ -1,8 +1,9 @@
 {
     "Name":"Chip Finder",
-    "Descriptions":"What kind of chip is that? Where is the way out? Draw the pin layout and give a name to the chip in your hand. Its going to be amazing. Don't forget to look at the time going. CHIP FINDER.",
-    "Schedule":"Day: 1 Time: 10:00 AM",
+    "Descriptions":"What kind of chip is that? Where is the way out? Draw the pin layout and give a name to the chip in your hand. Its going to be amazing. Don't forget to look at the time going.",
+    "Schedule":"2",
     "Prize":"6K",
+    "Fee":"150",
     "Rules":[
         "A team can consist of a minimum of one member and a maximum of two members",
         "The participants should produce a valid identity card of their institute",

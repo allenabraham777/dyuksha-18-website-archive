@@ -1,0 +1,25 @@
+{
+    "Name":"Chip Finder",
+    "Descriptions":"What kind of chip is that? Where is the way out? Draw the pin layout and give a name to the chip in your hand. Its going to be amazing. Don't forget to look at the time going. CHIP FINDER.",
+    "Schedule":"Day: 1 Time: 10:00 AM",
+    "Prize":"6K",
+    "Rules":[
+        "A team can consist of a minimum of one member and a maximum of two members",
+        "The participants should produce a valid identity card of their institute",
+        "Cross college teams are allowed",
+        "Teams will be provided with IC chips with no labels",
+        "Any number of teams is allowed from one college and inter-college teams are also allowed. In case of inter-college teams, points will be distributed equally among the two colleges",
+        "Resources like the internet or reference books will not be allowed",
+        "Any malpractice would lead to disqualification",
+        "Be careful enough to not tamper the given chips",
+        "Event Managers will hold the right to settle any disputes and their decisions will be final and binding",
+        "The finalised rules will be disclosed 5 minutes before the actual event",
+        "<b>ROUND 1</b>: A quiz on basic properties of ICs, Participants are required to identify the chips based on the clues given. The fastest qualifies to the next round",
+        "<b>ROUND 2</b>: This round consists of identifying chips based on their pin diagrams which will be given",
+        "<b>ROUND 3</b>: In this round, participants will be provided with circuits on trainer with ICs. They have to identify the IC with the outputs observed with the help of given circuit",
+        "College ID is compulsory"
+    ],
+    "Contact":[
+        "Akshay","9567230700","Dhanusree","8921965073"
+    ]
+}

@@ -1,8 +1,9 @@
 {
     "Name":"Matlab Master",
-    "Descriptions":"There are problems all around. Are you a master in MATLAB?? Put those problems into a matrix and show your coding skills in MATLAB. Solve the problems, code it and run it. MATLAB MASTER.",
-    "Schedule":"Day: 1 Time: 10:00 AM",
-    "Prize":"10K",
+    "Descriptions":"There are problems all around. Are you a master in MATLAB?? Put those problems into a matrix and show your coding skills in MATLAB. Solve the problems, code it and run it.",
+    "Schedule":"3",
+    "Prize":"6K",
+    "Fee":"150",
     "Rules":[
        "A team can consist of a minimum of 2 members and a maximum of 4 members",
        "The participants should produce a valid identity card of their institute",

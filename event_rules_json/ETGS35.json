@@ -1,12 +1,21 @@
 {
-    "Name":"Moriarty",
-    "Descriptions":"Do you consider yourself a master detective? Love those Sherlock Holmes novels? Want to enter such a world with you as the detective? Dyuksha presents you an opportunity to become the next Sherlock Holmes. Solve the case and claim that title!",
-    "Schedule":"Day: 1 Time: 10:00 AM",
-    "Prize":"10K",
+    "Name":"Bulls and Bears",
+    "Descriptions":"<b>Bear Market:</b> A weak and falling market where buyers are absent<br><br> <b>Bull Market:</b> A rising market where buyers far outnumber the seller<br><br>A bull market is one where prices are rising, whereas a bear market is one where pricesare falling. The two terms are used to describe the type of investors. BULLS AND BEARS is based on the buying and selling of stocks in order to profit,either by a rise in the prices of stock held or by receipt of income in the form of dividends. Although much depends on the individual player’s luck he can increase his winning by selling certain stocks and holding other stocks at the proper time. The objective of the game is for one player, by wisely manipulating the holdings, to maximize the profit and to become the master in trading. This competition is a multi-stock exchange platform which simulates a real live stock market situation.",
+    "Schedule":"-",
+    "Prize":"7K",
+    "Fee":"100",
     "Rules":[
-        "Will be updated soon"
+        "This is an Individual event as well as a one-day event",
+        "Each participants begins the transaction with a certain amount of Virtual Money in hand",
+        "Stock status will be uploaded in fixed intervals of time",
+        "Participant must have a strong internet connection with them",
+        "The stock amounts published may not be logically correct, they will only be mock values",
+        "The detailed rules will be specified on the day of the event",
+        "The winner will be determined on the basis of transaction done on both the days",
+        "Prize money will be awarded for the winner",
+        "The decision made by the organizing committee will be final"
     ],
     "Contact":[
-        "Abinav","8281141744","Ann liya","9447702212"
+        "Neeraj C","9495864657","Nithin","8156841224"
     ]
 }
